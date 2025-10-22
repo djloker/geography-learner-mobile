@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://gojydo1frwxb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ev1gq"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_mcygm"]
+
+[sub_resource type="Resource" id="Resource_bw8ea"]
+script = ExtResource("1_ev1gq")
+start_index = 0
+count = 8
+bbox = Vector4(-169.948, -19.1379, -169.793, -18.966)
+
+[resource]
+script = ExtResource("2_mcygm")
+name = "Niue"
+alt_names = Array[String]([])
+code = "NU"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Niue_mesh.tres"
+outline_file = "res://resources/countries/Niue_outline.tres"
+polygons = Array[ExtResource("1_ev1gq")]([SubResource("Resource_bw8ea")])

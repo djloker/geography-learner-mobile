@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://d3kru3bw4ops"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_80m6k"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_fbrc8"]
+
+[sub_resource type="Resource" id="Resource_3g880"]
+script = ExtResource("1_80m6k")
+start_index = 0
+count = 8
+bbox = Vector4(-64.8628, 32.2596, -64.6683, 32.3869)
+
+[resource]
+script = ExtResource("2_fbrc8")
+name = "Bermuda"
+alt_names = Array[String]([])
+code = "BM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Bermuda_mesh.tres"
+outline_file = "res://resources/countries/Bermuda_outline.tres"
+polygons = Array[ExtResource("1_80m6k")]([SubResource("Resource_3g880")])

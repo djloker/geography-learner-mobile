@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=24 format=3 uid="uid://c6bsg1adgeiim"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_k5t2j"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_uvc0r"]
+
+[sub_resource type="Resource" id="Resource_vble3"]
+script = ExtResource("1_k5t2j")
+start_index = 0
+count = 8
+bbox = Vector4(-138.568, -20.8759, -138.506, -20.7712)
+
+[sub_resource type="Resource" id="Resource_piofa"]
+script = ExtResource("1_k5t2j")
+start_index = 8
+count = 13
+bbox = Vector4(-136.479, -18.5663, -136.294, -18.4632)
+
+[sub_resource type="Resource" id="Resource_quk15"]
+script = ExtResource("1_k5t2j")
+start_index = 21
+count = 6
+bbox = Vector4(-140.782, -18.4161, -140.672, -18.3342)
+
+[sub_resource type="Resource" id="Resource_boia5"]
+script = ExtResource("1_k5t2j")
+start_index = 27
+count = 5
+bbox = Vector4(-137.068, -18.3609, -136.971, -18.2653)
+
+[sub_resource type="Resource" id="Resource_eycxe"]
+script = ExtResource("1_k5t2j")
+start_index = 32
+count = 9
+bbox = Vector4(-140.974, -18.2169, -140.823, -18.0592)
+
+[sub_resource type="Resource" id="Resource_euptb"]
+script = ExtResource("1_k5t2j")
+start_index = 41
+count = 17
+bbox = Vector4(-140.852, -17.8757, -140.638, -17.6697)
+
+[sub_resource type="Resource" id="Resource_s56ax"]
+script = ExtResource("1_k5t2j")
+start_index = 58
+count = 16
+bbox = Vector4(-149.635, -17.8623, -149.151, -17.4964)
+
+[sub_resource type="Resource" id="Resource_e5o53"]
+script = ExtResource("1_k5t2j")
+start_index = 74
+count = 9
+bbox = Vector4(-149.912, -17.5711, -149.782, -17.4695)
+
+[sub_resource type="Resource" id="Resource_fopj6"]
+script = ExtResource("1_k5t2j")
+start_index = 83
+count = 8
+bbox = Vector4(-151.486, -16.8793, -151.365, -16.7396)
+
+[sub_resource type="Resource" id="Resource_pwpc8"]
+script = ExtResource("1_k5t2j")
+start_index = 91
+count = 7
+bbox = Vector4(-143.551, -16.6688, -143.386, -16.6123)
+
+[sub_resource type="Resource" id="Resource_rq7c8"]
+script = ExtResource("1_k5t2j")
+start_index = 98
+count = 6
+bbox = Vector4(-143.707, -16.6404, -143.571, -16.5809)
+
+[sub_resource type="Resource" id="Resource_mj8xb"]
+script = ExtResource("1_k5t2j")
+start_index = 104
+count = 8
+bbox = Vector4(-151.512, -16.6651, -151.438, -16.574)
+
+[sub_resource type="Resource" id="Resource_10fj1"]
+script = ExtResource("1_k5t2j")
+start_index = 112
+count = 13
+bbox = Vector4(-145.614, -16.3468, -145.482, -16.0792)
+
+[sub_resource type="Resource" id="Resource_x1xtm"]
+script = ExtResource("1_k5t2j")
+start_index = 125
+count = 5
+bbox = Vector4(-142.53, -16.1071, -142.481, -16.0178)
+
+[sub_resource type="Resource" id="Resource_x4d7e"]
+script = ExtResource("1_k5t2j")
+start_index = 130
+count = 7
+bbox = Vector4(-145.161, -15.9011, -145.051, -15.757)
+
+[sub_resource type="Resource" id="Resource_qywfq"]
+script = ExtResource("1_k5t2j")
+start_index = 137
+count = 7
+bbox = Vector4(-138.69, -10.5324, -138.624, -10.4256)
+
+[sub_resource type="Resource" id="Resource_kmags"]
+script = ExtResource("1_k5t2j")
+start_index = 144
+count = 6
+bbox = Vector4(-139.134, -10.0096, -139.06, -9.91543)
+
+[sub_resource type="Resource" id="Resource_2q3xh"]
+script = ExtResource("1_k5t2j")
+start_index = 150
+count = 9
+bbox = Vector4(-139.166, -9.8457, -138.827, -9.69522)
+
+[sub_resource type="Resource" id="Resource_hpqm7"]
+script = ExtResource("1_k5t2j")
+start_index = 159
+count = 7
+bbox = Vector4(-140.144, -9.44414, -140.031, -9.32813)
+
+[sub_resource type="Resource" id="Resource_03ey3"]
+script = ExtResource("1_k5t2j")
+start_index = 166
+count = 9
+bbox = Vector4(-139.632, -8.94795, -139.508, -8.86006)
+
+[sub_resource type="Resource" id="Resource_w786k"]
+script = ExtResource("1_k5t2j")
+start_index = 175
+count = 10
+bbox = Vector4(-140.253, -8.93398, -140.044, -8.78154)
+
+[resource]
+script = ExtResource("2_uvc0r")
+name = "Fr. Polynesia"
+alt_names = Array[String]([])
+code = "PF"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Fr. Polynesia_mesh.tres"
+outline_file = "res://resources/countries/Fr. Polynesia_outline.tres"
+polygons = Array[ExtResource("1_k5t2j")]([SubResource("Resource_vble3"), SubResource("Resource_piofa"), SubResource("Resource_quk15"), SubResource("Resource_boia5"), SubResource("Resource_eycxe"), SubResource("Resource_euptb"), SubResource("Resource_s56ax"), SubResource("Resource_e5o53"), SubResource("Resource_fopj6"), SubResource("Resource_pwpc8"), SubResource("Resource_rq7c8"), SubResource("Resource_mj8xb"), SubResource("Resource_10fj1"), SubResource("Resource_x1xtm"), SubResource("Resource_x4d7e"), SubResource("Resource_qywfq"), SubResource("Resource_kmags"), SubResource("Resource_2q3xh"), SubResource("Resource_hpqm7"), SubResource("Resource_03ey3"), SubResource("Resource_w786k")])

@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=20 format=3 uid="uid://blpg1ivsu7jqg"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_vc1bb"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_r3x7b"]
+
+[sub_resource type="Resource" id="Resource_sjn82"]
+script = ExtResource("1_vc1bb")
+start_index = 0
+count = 1648
+bbox = Vector4(-74.0021, -33.7422, -34.8055, 5.25796)
+
+[sub_resource type="Resource" id="Resource_djfo4"]
+script = ExtResource("1_vc1bb")
+start_index = 1648
+count = 10
+bbox = Vector4(-48.5546, -27.8122, -48.3779, -27.3996)
+
+[sub_resource type="Resource" id="Resource_ofa24"]
+script = ExtResource("1_vc1bb")
+start_index = 1658
+count = 8
+bbox = Vector4(-48.6658, -26.4138, -48.4976, -26.1703)
+
+[sub_resource type="Resource" id="Resource_i06kg"]
+script = ExtResource("1_vc1bb")
+start_index = 1666
+count = 11
+bbox = Vector4(-45.4514, -23.9413, -45.2331, -23.7275)
+
+[sub_resource type="Resource" id="Resource_bvjpe"]
+script = ExtResource("1_vc1bb")
+start_index = 1677
+count = 11
+bbox = Vector4(-44.3602, -23.2123, -44.098, -23.0741)
+
+[sub_resource type="Resource" id="Resource_6lw67"]
+script = ExtResource("1_vc1bb")
+start_index = 1688
+count = 9
+bbox = Vector4(-39.0222, -13.5323, -38.9036, -13.3984)
+
+[sub_resource type="Resource" id="Resource_qg68k"]
+script = ExtResource("1_vc1bb")
+start_index = 1697
+count = 9
+bbox = Vector4(-38.787, -13.1187, -38.6003, -12.8802)
+
+[sub_resource type="Resource" id="Resource_iuabw"]
+script = ExtResource("1_vc1bb")
+start_index = 1706
+count = 10
+bbox = Vector4(-44.5978, -3.0376, -44.4814, -2.71758)
+
+[sub_resource type="Resource" id="Resource_wvb7r"]
+script = ExtResource("1_vc1bb")
+start_index = 1716
+count = 9
+bbox = Vector4(-45.0209, -1.39082, -44.8831, -1.26729)
+
+[sub_resource type="Resource" id="Resource_xrv4s"]
+script = ExtResource("1_vc1bb")
+start_index = 1725
+count = 14
+bbox = Vector4(-51.9384, -1.45264, -51.1607, -0.541406)
+
+[sub_resource type="Resource" id="Resource_6ar25"]
+script = ExtResource("1_vc1bb")
+start_index = 1739
+count = 75
+bbox = Vector4(-50.7961, -1.80068, -48.3797, -0.116406)
+
+[sub_resource type="Resource" id="Resource_oxkof"]
+script = ExtResource("1_vc1bb")
+start_index = 1814
+count = 12
+bbox = Vector4(-51.0381, -0.327344, -50.6506, -0.0408691)
+
+[sub_resource type="Resource" id="Resource_xalep"]
+script = ExtResource("1_vc1bb")
+start_index = 1826
+count = 11
+bbox = Vector4(-49.8301, -0.14375, -49.3723, 0.0836914)
+
+[sub_resource type="Resource" id="Resource_5ts74"]
+script = ExtResource("1_vc1bb")
+start_index = 1837
+count = 13
+bbox = Vector4(-50.3451, -0.0292969, -49.6973, 0.304541)
+
+[sub_resource type="Resource" id="Resource_r3tcm"]
+script = ExtResource("1_vc1bb")
+start_index = 1850
+count = 14
+bbox = Vector4(-50.6239, -0.00766602, -50.3323, 0.590869)
+
+[sub_resource type="Resource" id="Resource_dq71w"]
+script = ExtResource("1_vc1bb")
+start_index = 1864
+count = 11
+bbox = Vector4(-50.2817, 0.35918, -50.0368, 0.638037)
+
+[sub_resource type="Resource" id="Resource_kkujh"]
+script = ExtResource("1_vc1bb")
+start_index = 1875
+count = 10
+bbox = Vector4(-50.509, 1.89287, -50.2921, 2.16147)
+
+[resource]
+script = ExtResource("2_r3x7b")
+name = "Brazil"
+alt_names = Array[String]([])
+code = "BR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Brazil_mesh.tres"
+outline_file = "res://resources/countries/Brazil_outline.tres"
+polygons = Array[ExtResource("1_vc1bb")]([SubResource("Resource_sjn82"), SubResource("Resource_djfo4"), SubResource("Resource_ofa24"), SubResource("Resource_i06kg"), SubResource("Resource_bvjpe"), SubResource("Resource_6lw67"), SubResource("Resource_qg68k"), SubResource("Resource_iuabw"), SubResource("Resource_wvb7r"), SubResource("Resource_xrv4s"), SubResource("Resource_6ar25"), SubResource("Resource_oxkof"), SubResource("Resource_xalep"), SubResource("Resource_5ts74"), SubResource("Resource_r3tcm"), SubResource("Resource_dq71w"), SubResource("Resource_kkujh")])

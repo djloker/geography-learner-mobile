@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://s4jat34v8q7p"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_hht86"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_6b8ov"]
+
+[sub_resource type="Resource" id="Resource_44vo8"]
+script = ExtResource("1_hht86")
+start_index = 0
+count = 468
+bbox = Vector4(26.096, 35.8314, 44.8172, 42.0633)
+
+[sub_resource type="Resource" id="Resource_hqbxg"]
+script = ExtResource("1_hht86")
+start_index = 468
+count = 86
+bbox = Vector4(26.039, 40.0754, 29.0572, 42.0933)
+
+[sub_resource type="Resource" id="Resource_bd46e"]
+script = ExtResource("1_hht86")
+start_index = 554
+count = 8
+bbox = Vector4(25.6689, 40.1055, 25.9771, 40.238)
+
+[resource]
+script = ExtResource("2_6b8ov")
+name = "Turkey"
+alt_names = Array[String]([])
+code = "TR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Turkey_mesh.tres"
+outline_file = "res://resources/countries/Turkey_outline.tres"
+polygons = Array[ExtResource("1_hht86")]([SubResource("Resource_44vo8"), SubResource("Resource_hqbxg"), SubResource("Resource_bd46e")])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://c0f16oucp5kpq"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_k78u2"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_gng61"]
+
+[sub_resource type="Resource" id="Resource_kqxbh"]
+script = ExtResource("1_k78u2")
+start_index = 0
+count = 516
+bbox = Vector4(-73.3662, 0.687988, -59.8289, 12.1779)
+
+[sub_resource type="Resource" id="Resource_ynsgw"]
+script = ExtResource("1_k78u2")
+start_index = 516
+count = 12
+bbox = Vector4(-61.0692, 8.84702, -60.8492, 9.07031)
+
+[sub_resource type="Resource" id="Resource_3snh1"]
+script = ExtResource("1_k78u2")
+start_index = 528
+count = 11
+bbox = Vector4(-60.9414, 9.10557, -60.7358, 9.21836)
+
+[sub_resource type="Resource" id="Resource_e72xr"]
+script = ExtResource("1_k78u2")
+start_index = 539
+count = 8
+bbox = Vector4(-65.4146, 10.884, -65.2125, 10.9738)
+
+[sub_resource type="Resource" id="Resource_b0bgr"]
+script = ExtResource("1_k78u2")
+start_index = 547
+count = 20
+bbox = Vector4(-64.4023, 10.8812, -63.8173, 11.1672)
+
+[resource]
+script = ExtResource("2_gng61")
+name = "Venezuela"
+alt_names = Array[String]([])
+code = "VE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Venezuela_mesh.tres"
+outline_file = "res://resources/countries/Venezuela_outline.tres"
+polygons = Array[ExtResource("1_k78u2")]([SubResource("Resource_kqxbh"), SubResource("Resource_ynsgw"), SubResource("Resource_3snh1"), SubResource("Resource_e72xr"), SubResource("Resource_b0bgr")])

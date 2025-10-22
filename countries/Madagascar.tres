@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://yx40jcpp037x"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_1je71"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_30mqj"]
+
+[sub_resource type="Resource" id="Resource_fuogn"]
+script = ExtResource("1_1je71")
+start_index = 0
+count = 6
+bbox = Vector4(49.824, -17.0865, 50.023, -16.6953)
+
+[sub_resource type="Resource" id="Resource_w3te0"]
+script = ExtResource("1_1je71")
+start_index = 6
+count = 9
+bbox = Vector4(48.1912, -13.4004, 48.3511, -13.1982)
+
+[sub_resource type="Resource" id="Resource_rdxw1"]
+script = ExtResource("1_1je71")
+start_index = 15
+count = 251
+bbox = Vector4(43.2571, -25.5705, 50.4827, -12.0796)
+
+[resource]
+script = ExtResource("2_30mqj")
+name = "Madagascar"
+alt_names = Array[String]([])
+code = "MG"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Madagascar_mesh.tres"
+outline_file = "res://resources/countries/Madagascar_outline.tres"
+polygons = Array[ExtResource("1_1je71")]([SubResource("Resource_fuogn"), SubResource("Resource_w3te0"), SubResource("Resource_rdxw1")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://c5yuxo6s21dei"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_txdds"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yxfsj"]
+
+[sub_resource type="Resource" id="Resource_fc21r"]
+script = ExtResource("1_txdds")
+start_index = 0
+count = 9
+bbox = Vector4(-128.35, -24.4126, -128.29, -24.3232)
+
+[resource]
+script = ExtResource("2_yxfsj")
+name = "Pitcairn Is."
+alt_names = Array[String]([])
+code = "PN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Pitcairn Is._mesh.tres"
+outline_file = "res://resources/countries/Pitcairn Is._outline.tres"
+polygons = Array[ExtResource("1_txdds")]([SubResource("Resource_fc21r")])

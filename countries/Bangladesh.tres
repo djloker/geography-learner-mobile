@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=10 format=3 uid="uid://bpvfbkgngjuyw"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_8ibbw"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_8jgf4"]
+
+[sub_resource type="Resource" id="Resource_ee6ya"]
+script = ExtResource("1_8ibbw")
+start_index = 0
+count = 10
+bbox = Vector4(91.857, 21.5033, 91.9619, 21.7229)
+
+[sub_resource type="Resource" id="Resource_nj3dv"]
+script = ExtResource("1_8ibbw")
+start_index = 10
+count = 8
+bbox = Vector4(91.8197, 21.7502, 91.8825, 21.9271)
+
+[sub_resource type="Resource" id="Resource_jtea0"]
+script = ExtResource("1_8ibbw")
+start_index = 18
+count = 6
+bbox = Vector4(91.0447, 22.1052, 91.1782, 22.5197)
+
+[sub_resource type="Resource" id="Resource_pavk5"]
+script = ExtResource("1_8ibbw")
+start_index = 24
+count = 10
+bbox = Vector4(91.4113, 22.3528, 91.5567, 22.6165)
+
+[sub_resource type="Resource" id="Resource_11hhd"]
+script = ExtResource("1_8ibbw")
+start_index = 34
+count = 19
+bbox = Vector4(90.5029, 22.0542, 90.8682, 22.8635)
+
+[sub_resource type="Resource" id="Resource_2n2xc"]
+script = ExtResource("1_8ibbw")
+start_index = 53
+count = 7
+bbox = Vector4(90.5363, 22.92, 90.6596, 23.0354)
+
+[sub_resource type="Resource" id="Resource_f1nc6"]
+script = ExtResource("1_8ibbw")
+start_index = 60
+count = 324
+bbox = Vector4(88.0234, 20.7904, 92.6316, 26.5715)
+
+[resource]
+script = ExtResource("2_8jgf4")
+name = "Bangladesh"
+alt_names = Array[String]([])
+code = "BD"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Bangladesh_mesh.tres"
+outline_file = "res://resources/countries/Bangladesh_outline.tres"
+polygons = Array[ExtResource("1_8ibbw")]([SubResource("Resource_ee6ya"), SubResource("Resource_nj3dv"), SubResource("Resource_jtea0"), SubResource("Resource_pavk5"), SubResource("Resource_11hhd"), SubResource("Resource_2n2xc"), SubResource("Resource_f1nc6")])

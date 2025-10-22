@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://da1cw122uxgke"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_nfgji"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_roa5b"]
+
+[sub_resource type="Resource" id="Resource_dd5jx"]
+script = ExtResource("1_nfgji")
+start_index = 0
+count = 14
+bbox = Vector4(-6.93486, 61.4143, -6.67969, 61.6343)
+
+[sub_resource type="Resource" id="Resource_kefl6"]
+script = ExtResource("1_nfgji")
+start_index = 14
+count = 12
+bbox = Vector4(-6.88477, 61.7683, -6.62319, 61.9037)
+
+[sub_resource type="Resource" id="Resource_qjnj1"]
+script = ExtResource("1_nfgji")
+start_index = 26
+count = 11
+bbox = Vector4(-7.42261, 62.04, -7.06519, 62.1512)
+
+[sub_resource type="Resource" id="Resource_ojllr"]
+script = ExtResource("1_nfgji")
+start_index = 37
+count = 17
+bbox = Vector4(-7.17217, 61.9515, -6.63105, 62.3163)
+
+[sub_resource type="Resource" id="Resource_88c6i"]
+script = ExtResource("1_nfgji")
+start_index = 54
+count = 9
+bbox = Vector4(-6.55947, 62.1865, -6.40605, 62.3557)
+
+[resource]
+script = ExtResource("2_roa5b")
+name = "Faeroe Is."
+alt_names = Array[String]([])
+code = "FO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Faeroe Is._mesh.tres"
+outline_file = "res://resources/countries/Faeroe Is._outline.tres"
+polygons = Array[ExtResource("1_nfgji")]([SubResource("Resource_dd5jx"), SubResource("Resource_kefl6"), SubResource("Resource_qjnj1"), SubResource("Resource_ojllr"), SubResource("Resource_88c6i")])

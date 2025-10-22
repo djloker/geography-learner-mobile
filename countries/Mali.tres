@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://ck3jm7gr5usj4"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_2dar3"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_hsn1e"]
+
+[sub_resource type="Resource" id="Resource_uc38n"]
+script = ExtResource("1_2dar3")
+start_index = 0
+count = 474
+bbox = Vector4(-12.2806, 10.1433, 4.23467, 24.9956)
+
+[resource]
+script = ExtResource("2_hsn1e")
+name = "Mali"
+alt_names = Array[String]([])
+code = "ML"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Mali_mesh.tres"
+outline_file = "res://resources/countries/Mali_outline.tres"
+polygons = Array[ExtResource("1_2dar3")]([SubResource("Resource_uc38n")])

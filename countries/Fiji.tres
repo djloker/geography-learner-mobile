@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=24 format=3 uid="uid://ck3vxf3of8vrv"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_np8p8"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_nrm37"]
+
+[sub_resource type="Resource" id="Resource_plql8"]
+script = ExtResource("1_np8p8")
+start_index = 0
+count = 7
+bbox = Vector4(174.587, -21.7059, 174.63, -21.6675)
+
+[sub_resource type="Resource" id="Resource_dixhj"]
+script = ExtResource("1_np8p8")
+start_index = 7
+count = 11
+bbox = Vector4(-178.731, -20.6705, -178.71, -20.6452)
+
+[sub_resource type="Resource" id="Resource_so6to"]
+script = ExtResource("1_np8p8")
+start_index = 18
+count = 14
+bbox = Vector4(-178.599, -19.175, -178.535, -19.1093)
+
+[sub_resource type="Resource" id="Resource_d5ino"]
+script = ExtResource("1_np8p8")
+start_index = 32
+count = 20
+bbox = Vector4(177.959, -19.1517, 178.488, -18.9345)
+
+[sub_resource type="Resource" id="Resource_qm0wv"]
+script = ExtResource("1_np8p8")
+start_index = 52
+count = 14
+bbox = Vector4(-179.867, -19.0029, -179.798, -18.9242)
+
+[sub_resource type="Resource" id="Resource_8rrfx"]
+script = ExtResource("1_np8p8")
+start_index = 66
+count = 7
+bbox = Vector4(-178.848, -18.2524, -178.762, -18.1863)
+
+[sub_resource type="Resource" id="Resource_imri2"]
+script = ExtResource("1_np8p8")
+start_index = 73
+count = 9
+bbox = Vector4(179.254, -18.1104, 179.362, -17.944)
+
+[sub_resource type="Resource" id="Resource_tretc"]
+script = ExtResource("1_np8p8")
+start_index = 82
+count = 8
+bbox = Vector4(-179.079, -17.9918, -178.988, -17.9204)
+
+[sub_resource type="Resource" id="Resource_47eag"]
+script = ExtResource("1_np8p8")
+start_index = 90
+count = 7
+bbox = Vector4(-178.357, -17.9633, -178.251, -17.8758)
+
+[sub_resource type="Resource" id="Resource_xauis"]
+script = ExtResource("1_np8p8")
+start_index = 97
+count = 7
+bbox = Vector4(178.748, -17.7468, 178.853, -17.6188)
+
+[sub_resource type="Resource" id="Resource_gog25"]
+script = ExtResource("1_np8p8")
+start_index = 104
+count = 46
+bbox = Vector4(177.255, -18.2641, 178.668, -17.313)
+
+[sub_resource type="Resource" id="Resource_b4h2h"]
+script = ExtResource("1_np8p8")
+start_index = 150
+count = 7
+bbox = Vector4(179.373, -17.3938, 179.447, -17.2562)
+
+[sub_resource type="Resource" id="Resource_86iay"]
+script = ExtResource("1_np8p8")
+start_index = 157
+count = 13
+bbox = Vector4(-179.018, -17.307, -178.915, -17.1483)
+
+[sub_resource type="Resource" id="Resource_dx8qy"]
+script = ExtResource("1_np8p8")
+start_index = 170
+count = 8
+bbox = Vector4(177.183, -17.1639, 177.287, -17.0486)
+
+[sub_resource type="Resource" id="Resource_tyr6l"]
+script = ExtResource("1_np8p8")
+start_index = 178
+count = 7
+bbox = Vector4(179.897, -17.0003, 180, -16.7857)
+
+[sub_resource type="Resource" id="Resource_hcq46"]
+script = ExtResource("1_np8p8")
+start_index = 185
+count = 11
+bbox = Vector4(-180, -16.963, -179.822, -16.6883)
+
+[sub_resource type="Resource" id="Resource_gxtu5"]
+script = ExtResource("1_np8p8")
+start_index = 196
+count = 5
+bbox = Vector4(179.985, -16.5412, 180, -16.4889)
+
+[sub_resource type="Resource" id="Resource_try4x"]
+script = ExtResource("1_np8p8")
+start_index = 201
+count = 7
+bbox = Vector4(-180, -16.54, -179.901, -16.4315)
+
+[sub_resource type="Resource" id="Resource_v1uq7"]
+script = ExtResource("1_np8p8")
+start_index = 208
+count = 57
+bbox = Vector4(178.497, -16.9762, 180, -16.1529)
+
+[sub_resource type="Resource" id="Resource_4qr3f"]
+script = ExtResource("1_np8p8")
+start_index = 265
+count = 7
+bbox = Vector4(-180, -16.1683, -179.945, -16.1261)
+
+[sub_resource type="Resource" id="Resource_mohhg"]
+script = ExtResource("1_np8p8")
+start_index = 272
+count = 9
+bbox = Vector4(177.006, -12.5156, 177.127, -12.477)
+
+[resource]
+script = ExtResource("2_nrm37")
+name = "Fiji"
+alt_names = Array[String]([])
+code = "FJ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Fiji_mesh.tres"
+outline_file = "res://resources/countries/Fiji_outline.tres"
+polygons = Array[ExtResource("1_np8p8")]([SubResource("Resource_plql8"), SubResource("Resource_dixhj"), SubResource("Resource_so6to"), SubResource("Resource_d5ino"), SubResource("Resource_qm0wv"), SubResource("Resource_8rrfx"), SubResource("Resource_imri2"), SubResource("Resource_tretc"), SubResource("Resource_47eag"), SubResource("Resource_xauis"), SubResource("Resource_gog25"), SubResource("Resource_b4h2h"), SubResource("Resource_86iay"), SubResource("Resource_dx8qy"), SubResource("Resource_tyr6l"), SubResource("Resource_hcq46"), SubResource("Resource_gxtu5"), SubResource("Resource_try4x"), SubResource("Resource_v1uq7"), SubResource("Resource_4qr3f"), SubResource("Resource_mohhg")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://q28kxbuohsin"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_8f7x7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_22t66"]
+
+[sub_resource type="Resource" id="Resource_losdp"]
+script = ExtResource("1_8f7x7")
+start_index = 0
+count = 7
+bbox = Vector4(-63.1247, 18.0192, -63.0112, 18.0689)
+
+[resource]
+script = ExtResource("2_22t66")
+name = "Sint Maarten"
+alt_names = Array[String]([])
+code = "SX"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Sint Maarten_mesh.tres"
+outline_file = "res://resources/countries/Sint Maarten_outline.tres"
+polygons = Array[ExtResource("1_8f7x7")]([SubResource("Resource_losdp")])

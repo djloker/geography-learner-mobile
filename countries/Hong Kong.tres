@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://ca2unnq56mt52"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_k5ru7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_cwtmy"]
+
+[sub_resource type="Resource" id="Resource_ldop0"]
+script = ExtResource("1_k5ru7")
+start_index = 0
+count = 23
+bbox = Vector4(113.896, 22.2956, 114.335, 22.565)
+
+[sub_resource type="Resource" id="Resource_18qh3"]
+script = ExtResource("1_k5ru7")
+start_index = 23
+count = 8
+bbox = Vector4(114.134, 22.1952, 114.247, 22.2966)
+
+[sub_resource type="Resource" id="Resource_0auva"]
+script = ExtResource("1_k5ru7")
+start_index = 31
+count = 8
+bbox = Vector4(113.839, 22.2104, 114.044, 22.3334)
+
+[resource]
+script = ExtResource("2_cwtmy")
+name = "Hong Kong"
+alt_names = Array[String]([])
+code = "HK"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Hong Kong_mesh.tres"
+outline_file = "res://resources/countries/Hong Kong_outline.tres"
+polygons = Array[ExtResource("1_k5ru7")]([SubResource("Resource_ldop0"), SubResource("Resource_18qh3"), SubResource("Resource_0auva")])

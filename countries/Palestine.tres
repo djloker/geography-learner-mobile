@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://fnkwggvtaxs6"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_3g872"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_jsy85"]
+
+[sub_resource type="Resource" id="Resource_66jux"]
+script = ExtResource("1_3g872")
+start_index = 0
+count = 10
+bbox = Vector4(34.1981, 31.2083, 34.5256, 31.5849)
+
+[sub_resource type="Resource" id="Resource_2sq05"]
+script = ExtResource("1_3g872")
+start_index = 10
+count = 40
+bbox = Vector4(34.8728, 31.3513, 35.5721, 32.5344)
+
+[resource]
+script = ExtResource("2_jsy85")
+name = "Palestine"
+alt_names = Array[String]([])
+code = "PS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Palestine_mesh.tres"
+outline_file = "res://resources/countries/Palestine_outline.tres"
+polygons = Array[ExtResource("1_3g872")]([SubResource("Resource_66jux"), SubResource("Resource_2sq05")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://cdgkcl8lj4g1f"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_raufp"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_te6ks"]
+
+[sub_resource type="Resource" id="Resource_i8bff"]
+script = ExtResource("1_raufp")
+start_index = 0
+count = 296
+bbox = Vector4(11.7431, -18.0197, 24.0467, -5.85518)
+
+[sub_resource type="Resource" id="Resource_2c7j8"]
+script = ExtResource("1_raufp")
+start_index = 296
+count = 42
+bbox = Vector4(12.0184, -5.75869, 13.0728, -4.42891)
+
+[resource]
+script = ExtResource("2_te6ks")
+name = "Angola"
+alt_names = Array[String]([])
+code = "AO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Angola_mesh.tres"
+outline_file = "res://resources/countries/Angola_outline.tres"
+polygons = Array[ExtResource("1_raufp")]([SubResource("Resource_i8bff"), SubResource("Resource_2c7j8")])

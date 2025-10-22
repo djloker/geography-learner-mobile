@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://l1euo44hnf1g"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_l7tkj"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_pjrs2"]
+
+[sub_resource type="Resource" id="Resource_s37fa"]
+script = ExtResource("1_l7tkj")
+start_index = 0
+count = 589
+bbox = Vector4(-81.3366, -18.3456, -68.6853, -0.041748)
+
+[resource]
+script = ExtResource("2_pjrs2")
+name = "Peru"
+alt_names = Array[String]([])
+code = "PE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Peru_mesh.tres"
+outline_file = "res://resources/countries/Peru_outline.tres"
+polygons = Array[ExtResource("1_l7tkj")]([SubResource("Resource_s37fa")])

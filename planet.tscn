@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://801gaxanuxvr"]
+
+[ext_resource type="Material" uid="uid://bpqc6o7rd4iv5" path="res://shaders/planet_shaded_material.tres" id="1_a75xc"]
+[ext_resource type="Script" uid="uid://3xhj8l3766rv" path="res://scripts/planet_3d.gd" id="1_mtr83"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_kirb7"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ip60r"]
+
+[node name="Planet3D" type="StaticBody3D"]
+script = ExtResource("1_mtr83")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_a75xc")
+mesh = SubResource("SphereMesh_kirb7")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ip60r")

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://xwaw730hb3ms"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_aq7nu"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xck8v"]
+
+[sub_resource type="Resource" id="Resource_3rbrb"]
+script = ExtResource("1_aq7nu")
+start_index = 0
+count = 289
+bbox = Vector4(-8.60356, 4.35132, -2.50586, 10.7241)
+
+[sub_resource type="Resource" id="Resource_70724"]
+script = ExtResource("1_aq7nu")
+start_index = 289
+count = 5
+bbox = Vector4(-3.24639, 5.08867, -3.08672, 5.14722)
+
+[resource]
+script = ExtResource("2_xck8v")
+name = "Côte d'Ivoire"
+alt_names = Array[String]([])
+code = "CI"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Côte d'Ivoire_mesh.tres"
+outline_file = "res://resources/countries/Côte d'Ivoire_outline.tres"
+polygons = Array[ExtResource("1_aq7nu")]([SubResource("Resource_3rbrb"), SubResource("Resource_70724")])

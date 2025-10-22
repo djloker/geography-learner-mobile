@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cjsxko044s2vm"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_k8qkg"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ayity"]
+
+[sub_resource type="Resource" id="Resource_2ihtb"]
+script = ExtResource("1_k8qkg")
+start_index = 0
+count = 243
+bbox = Vector4(-17.5356, 12.328, -11.3824, 16.6789)
+
+[resource]
+script = ExtResource("2_ayity")
+name = "Senegal"
+alt_names = Array[String]([])
+code = "SN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Senegal_mesh.tres"
+outline_file = "res://resources/countries/Senegal_outline.tres"
+polygons = Array[ExtResource("1_k8qkg")]([SubResource("Resource_2ihtb")])

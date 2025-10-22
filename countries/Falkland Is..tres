@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=9 format=3 uid="uid://dx3vwbpk8mmck"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ywxqb"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_m55ja"]
+
+[sub_resource type="Resource" id="Resource_ysmcp"]
+script = ExtResource("1_ywxqb")
+start_index = 0
+count = 9
+bbox = Vector4(-59.7933, -52.2509, -59.681, -52.1342)
+
+[sub_resource type="Resource" id="Resource_2xhxp"]
+script = ExtResource("1_ywxqb")
+start_index = 9
+count = 7
+bbox = Vector4(-58.5414, -52.099, -58.4327, -51.9994)
+
+[sub_resource type="Resource" id="Resource_p5lmv"]
+script = ExtResource("1_ywxqb")
+start_index = 16
+count = 10
+bbox = Vector4(-61.145, -51.9463, -60.876, -51.7857)
+
+[sub_resource type="Resource" id="Resource_7qff8"]
+script = ExtResource("1_ywxqb")
+start_index = 26
+count = 58
+bbox = Vector4(-60.9614, -52.1947, -59.2681, -51.3543)
+
+[sub_resource type="Resource" id="Resource_w18j1"]
+script = ExtResource("1_ywxqb")
+start_index = 84
+count = 8
+bbox = Vector4(-60.2759, -51.396, -60.0698, -51.2734)
+
+[sub_resource type="Resource" id="Resource_fns77"]
+script = ExtResource("1_ywxqb")
+start_index = 92
+count = 57
+bbox = Vector4(-59.6492, -52.308, -57.7918, -51.2699)
+
+[resource]
+script = ExtResource("2_m55ja")
+name = "Falkland Is."
+alt_names = Array[String]([])
+code = "FK"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Falkland Is._mesh.tres"
+outline_file = "res://resources/countries/Falkland Is._outline.tres"
+polygons = Array[ExtResource("1_ywxqb")]([SubResource("Resource_ysmcp"), SubResource("Resource_2xhxp"), SubResource("Resource_p5lmv"), SubResource("Resource_7qff8"), SubResource("Resource_w18j1"), SubResource("Resource_fns77")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://561m0wp0l5j3"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_y6c4g"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_dbllv"]
+
+[sub_resource type="Resource" id="Resource_hpgju"]
+script = ExtResource("1_y6c4g")
+start_index = 0
+count = 221
+bbox = Vector4(19.9773, -26.8542, 29.3648, -17.7876)
+
+[resource]
+script = ExtResource("2_dbllv")
+name = "Botswana"
+alt_names = Array[String]([])
+code = "BW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Botswana_mesh.tres"
+outline_file = "res://resources/countries/Botswana_outline.tres"
+polygons = Array[ExtResource("1_y6c4g")]([SubResource("Resource_hpgju")])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://5ievw2rmwxyr"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_u18tt"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_3qrq2"]
+
+[sub_resource type="Resource" id="Resource_3psfk"]
+script = ExtResource("1_u18tt")
+start_index = 0
+count = 6
+bbox = Vector4(162.921, 5.27725, 162.993, 5.33501)
+
+[sub_resource type="Resource" id="Resource_6rpq7"]
+script = ExtResource("1_u18tt")
+start_index = 6
+count = 11
+bbox = Vector4(158.128, 6.79102, 158.335, 6.97773)
+
+[sub_resource type="Resource" id="Resource_52eow"]
+script = ExtResource("1_u18tt")
+start_index = 17
+count = 13
+bbox = Vector4(151.57, 7.33301, 151.65, 7.39043)
+
+[sub_resource type="Resource" id="Resource_msf1o"]
+script = ExtResource("1_u18tt")
+start_index = 30
+count = 9
+bbox = Vector4(151.856, 7.42676, 151.913, 7.46709)
+
+[sub_resource type="Resource" id="Resource_07ktw"]
+script = ExtResource("1_u18tt")
+start_index = 39
+count = 10
+bbox = Vector4(138.062, 9.41904, 138.214, 9.59331)
+
+[resource]
+script = ExtResource("2_3qrq2")
+name = "Micronesia"
+alt_names = Array[String]([])
+code = "FM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Micronesia_mesh.tres"
+outline_file = "res://resources/countries/Micronesia_outline.tres"
+polygons = Array[ExtResource("1_u18tt")]([SubResource("Resource_3psfk"), SubResource("Resource_6rpq7"), SubResource("Resource_52eow"), SubResource("Resource_msf1o"), SubResource("Resource_07ktw")])

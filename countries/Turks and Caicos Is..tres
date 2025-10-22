@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://d2eakhfw62bmi"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_3ptdk"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_pnk4q"]
+
+[sub_resource type="Resource" id="Resource_i8tgl"]
+script = ExtResource("1_3ptdk")
+start_index = 0
+count = 10
+bbox = Vector4(-72.3424, 21.7552, -72.1443, 21.8514)
+
+[sub_resource type="Resource" id="Resource_1f2yn"]
+script = ExtResource("1_3ptdk")
+start_index = 10
+count = 9
+bbox = Vector4(-71.8477, 21.7517, -71.6369, 21.8521)
+
+[sub_resource type="Resource" id="Resource_0j78m"]
+script = ExtResource("1_3ptdk")
+start_index = 19
+count = 10
+bbox = Vector4(-72.019, 21.8299, -71.8799, 21.9519)
+
+[resource]
+script = ExtResource("2_pnk4q")
+name = "Turks and Caicos Is."
+alt_names = Array[String]([])
+code = "TC"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Turks and Caicos Is._mesh.tres"
+outline_file = "res://resources/countries/Turks and Caicos Is._outline.tres"
+polygons = Array[ExtResource("1_3ptdk")]([SubResource("Resource_i8tgl"), SubResource("Resource_1f2yn"), SubResource("Resource_0j78m")])

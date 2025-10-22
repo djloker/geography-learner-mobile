@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bifq6qkklcv41"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_wkyl5"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_lavkx"]
+
+[sub_resource type="Resource" id="Resource_tu2am"]
+script = ExtResource("1_wkyl5")
+start_index = 0
+count = 214
+bbox = Vector4(16.0931, 45.753, 22.8767, 48.5535)
+
+[resource]
+script = ExtResource("2_lavkx")
+name = "Hungary"
+alt_names = Array[String]([])
+code = "HU"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Hungary_mesh.tres"
+outline_file = "res://resources/countries/Hungary_outline.tres"
+polygons = Array[ExtResource("1_wkyl5")]([SubResource("Resource_tu2am")])

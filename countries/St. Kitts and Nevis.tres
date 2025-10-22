@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://bwlnvbjg7el8s"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_nj07o"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_v0rhm"]
+
+[sub_resource type="Resource" id="Resource_bhdn5"]
+script = ExtResource("1_nj07o")
+start_index = 0
+count = 7
+bbox = Vector4(-62.6249, 17.1006, -62.5322, 17.201)
+
+[sub_resource type="Resource" id="Resource_25rhm"]
+script = ExtResource("1_nj07o")
+start_index = 7
+count = 13
+bbox = Vector4(-62.8405, 17.2244, -62.6307, 17.4026)
+
+[resource]
+script = ExtResource("2_v0rhm")
+name = "St. Kitts and Nevis"
+alt_names = Array[String]([])
+code = "KN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/St. Kitts and Nevis_mesh.tres"
+outline_file = "res://resources/countries/St. Kitts and Nevis_outline.tres"
+polygons = Array[ExtResource("1_nj07o")]([SubResource("Resource_bhdn5"), SubResource("Resource_25rhm")])

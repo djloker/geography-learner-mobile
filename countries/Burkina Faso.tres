@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://b2uwltn07y4we"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_m5lu5"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_lqkmo"]
+
+[sub_resource type="Resource" id="Resource_2c364"]
+script = ExtResource("1_m5lu5")
+start_index = 0
+count = 253
+bbox = Vector4(-5.52354, 9.42471, 2.38916, 15.0779)
+
+[resource]
+script = ExtResource("2_lqkmo")
+name = "Burkina Faso"
+alt_names = Array[String]([])
+code = "BF"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Burkina Faso_mesh.tres"
+outline_file = "res://resources/countries/Burkina Faso_outline.tres"
+polygons = Array[ExtResource("1_m5lu5")]([SubResource("Resource_2c364")])

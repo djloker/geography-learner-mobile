@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://0670jmbeghcb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_xurew"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_16qm0"]
+
+[sub_resource type="Resource" id="Resource_muq36"]
+script = ExtResource("1_xurew")
+count = 272
+bbox = Vector4(9.52402, 46.3997, 17.1474, 49.0011)
+
+[resource]
+script = ExtResource("2_16qm0")
+name = "Austria"
+code = "AT"
+mesh_file = "res://resources/countries/Austria_mesh.tres"
+outline_file = "res://resources/countries/Austria_outline.tres"
+polygons = Array[ExtResource("1_xurew")]([SubResource("Resource_muq36")])

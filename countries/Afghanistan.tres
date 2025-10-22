@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://b0n1ms0rjbxw3"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_e30ng"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ylju6"]
+
+[sub_resource type="Resource" id="Resource_i76ba"]
+script = ExtResource("1_e30ng")
+count = 410
+bbox = Vector4(60.4857, 29.3919, 74.8913, 38.4564)
+
+[resource]
+script = ExtResource("2_ylju6")
+name = "Afghanistan"
+code = "AF"
+mesh_file = "res://resources/countries/Afghanistan_mesh.tres"
+outline_file = "res://resources/countries/Afghanistan_outline.tres"
+polygons = Array[ExtResource("1_e30ng")]([SubResource("Resource_i76ba")])

@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=11 format=3 uid="uid://b4hfitul3mbct"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_d6foh"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_0nlcv"]
+
+[sub_resource type="Resource" id="Resource_t5b6a"]
+script = ExtResource("1_d6foh")
+start_index = 0
+count = 10
+bbox = Vector4(-24.5171, 14.8182, -24.2958, 15.0383)
+
+[sub_resource type="Resource" id="Resource_mx6yk"]
+script = ExtResource("1_d6foh")
+start_index = 10
+count = 10
+bbox = Vector4(-23.2518, 15.1331, -23.1159, 15.3235)
+
+[sub_resource type="Resource" id="Resource_dcelm"]
+script = ExtResource("1_d6foh")
+start_index = 20
+count = 14
+bbox = Vector4(-23.785, 14.9161, -23.4442, 15.3285)
+
+[sub_resource type="Resource" id="Resource_8uk36"]
+script = ExtResource("1_d6foh")
+start_index = 34
+count = 12
+bbox = Vector4(-22.9593, 15.986, -22.6819, 16.2373)
+
+[sub_resource type="Resource" id="Resource_atekx"]
+script = ExtResource("1_d6foh")
+start_index = 46
+count = 12
+bbox = Vector4(-24.3981, 16.4931, -24.0327, 16.6778)
+
+[sub_resource type="Resource" id="Resource_8fcyq"]
+script = ExtResource("1_d6foh")
+start_index = 58
+count = 9
+bbox = Vector4(-22.9909, 16.6079, -22.8883, 16.8438)
+
+[sub_resource type="Resource" id="Resource_sqhaa"]
+script = ExtResource("1_d6foh")
+start_index = 67
+count = 9
+bbox = Vector4(-25.0931, 16.7942, -24.8871, 16.9221)
+
+[sub_resource type="Resource" id="Resource_tuolx"]
+script = ExtResource("1_d6foh")
+start_index = 76
+count = 11
+bbox = Vector4(-25.3416, 16.9259, -24.9797, 17.1937)
+
+[resource]
+script = ExtResource("2_0nlcv")
+name = "Cabo Verde"
+alt_names = Array[String]([])
+code = "CV"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Cabo Verde_mesh.tres"
+outline_file = "res://resources/countries/Cabo Verde_outline.tres"
+polygons = Array[ExtResource("1_d6foh")]([SubResource("Resource_t5b6a"), SubResource("Resource_mx6yk"), SubResource("Resource_dcelm"), SubResource("Resource_8uk36"), SubResource("Resource_atekx"), SubResource("Resource_8fcyq"), SubResource("Resource_sqhaa"), SubResource("Resource_tuolx")])

@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=12 format=3 uid="uid://26eq1pjnmumw"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_yjpyl"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_kcv4v"]
+
+[sub_resource type="Resource" id="Resource_0qobl"]
+script = ExtResource("1_yjpyl")
+start_index = 0
+count = 241
+bbox = Vector4(-80.9628, -4.99062, -75.2496, 1.45537)
+
+[sub_resource type="Resource" id="Resource_6qxmj"]
+script = ExtResource("1_yjpyl")
+start_index = 241
+count = 15
+bbox = Vector4(-80.2729, -3.01172, -79.909, -2.66885)
+
+[sub_resource type="Resource" id="Resource_avky7"]
+script = ExtResource("1_yjpyl")
+start_index = 256
+count = 8
+bbox = Vector4(-90.5195, -1.34199, -90.3792, -1.221)
+
+[sub_resource type="Resource" id="Resource_6o4tf"]
+script = ExtResource("1_yjpyl")
+start_index = 264
+count = 15
+bbox = Vector4(-89.6086, -0.952344, -89.2594, -0.680078)
+
+[sub_resource type="Resource" id="Resource_4ctj0"]
+script = ExtResource("1_yjpyl")
+start_index = 279
+count = 11
+bbox = Vector4(-90.5421, -0.77334, -90.1853, -0.484668)
+
+[sub_resource type="Resource" id="Resource_tjel8"]
+script = ExtResource("1_yjpyl")
+start_index = 290
+count = 10
+bbox = Vector4(-91.6542, -0.478223, -91.3994, -0.255664)
+
+[sub_resource type="Resource" id="Resource_3bsoa"]
+script = ExtResource("1_yjpyl")
+start_index = 300
+count = 9
+bbox = Vector4(-90.8678, -0.364258, -90.5533, -0.160449)
+
+[sub_resource type="Resource" id="Resource_xay7e"]
+script = ExtResource("1_yjpyl")
+start_index = 309
+count = 32
+bbox = Vector4(-91.5968, -1.01963, -90.7997, 0.12583)
+
+[sub_resource type="Resource" id="Resource_th42r"]
+script = ExtResource("1_yjpyl")
+start_index = 341
+count = 6
+bbox = Vector4(-78.9917, 1.24536, -78.8998, 1.35977)
+
+[resource]
+script = ExtResource("2_kcv4v")
+name = "Ecuador"
+alt_names = Array[String]([])
+code = "EC"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ecuador_mesh.tres"
+outline_file = "res://resources/countries/Ecuador_outline.tres"
+polygons = Array[ExtResource("1_yjpyl")]([SubResource("Resource_0qobl"), SubResource("Resource_6qxmj"), SubResource("Resource_avky7"), SubResource("Resource_6o4tf"), SubResource("Resource_4ctj0"), SubResource("Resource_tjel8"), SubResource("Resource_3bsoa"), SubResource("Resource_xay7e"), SubResource("Resource_th42r")])

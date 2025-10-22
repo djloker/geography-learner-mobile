@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://qcttaesosbck"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_llmod"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_em0rh"]
+
+[sub_resource type="Resource" id="Resource_xvm25"]
+script = ExtResource("1_llmod")
+start_index = 0
+count = 229
+bbox = Vector4(-17.0988, 20.8062, -8.68213, 27.6564)
+
+[resource]
+script = ExtResource("2_em0rh")
+name = "W. Sahara"
+alt_names = Array[String]([])
+code = "EH"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/W. Sahara_mesh.tres"
+outline_file = "res://resources/countries/W. Sahara_outline.tres"
+polygons = Array[ExtResource("1_llmod")]([SubResource("Resource_xvm25")])

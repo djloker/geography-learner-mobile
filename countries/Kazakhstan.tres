@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://b7c6614m0532r"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ae1hl"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ubfwx"]
+
+[sub_resource type="Resource" id="Resource_eabog"]
+script = ExtResource("1_ae1hl")
+start_index = 0
+count = 1113
+bbox = Vector4(46.6092, 40.6086, 87.3229, 55.3896)
+
+[sub_resource type="Resource" id="Resource_b0gpj"]
+script = ExtResource("1_ae1hl")
+start_index = 1113
+count = 12
+bbox = Vector4(49.9951, 44.8265, 50.1845, 45.0819)
+
+[sub_resource type="Resource" id="Resource_m5t8n"]
+script = ExtResource("1_ae1hl")
+start_index = 1125
+count = 7
+bbox = Vector4(50.2562, 44.9586, 50.3497, 45.083)
+
+[sub_resource type="Resource" id="Resource_ckowg"]
+script = ExtResource("1_ae1hl")
+start_index = 1132
+count = 8
+bbox = Vector4(52.5543, 45.4013, 52.693, 45.528)
+
+[resource]
+script = ExtResource("2_ubfwx")
+name = "Kazakhstan"
+alt_names = Array[String]([])
+code = "KZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Kazakhstan_mesh.tres"
+outline_file = "res://resources/countries/Kazakhstan_outline.tres"
+polygons = Array[ExtResource("1_ae1hl")]([SubResource("Resource_eabog"), SubResource("Resource_b0gpj"), SubResource("Resource_m5t8n"), SubResource("Resource_ckowg")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://bk77f4ug5pvwx"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_cqj7q"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_lilhi"]
+
+[sub_resource type="Resource" id="Resource_iogsw"]
+script = ExtResource("1_cqj7q")
+start_index = 0
+count = 51
+bbox = Vector4(46.5314, 28.5332, 48.4425, 30.0973)
+
+[sub_resource type="Resource" id="Resource_ej0r1"]
+script = ExtResource("1_cqj7q")
+start_index = 51
+count = 16
+bbox = Vector4(48.0814, 29.602, 48.3482, 29.9789)
+
+[resource]
+script = ExtResource("2_lilhi")
+name = "Kuwait"
+alt_names = Array[String]([])
+code = "KW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Kuwait_mesh.tres"
+outline_file = "res://resources/countries/Kuwait_outline.tres"
+polygons = Array[ExtResource("1_cqj7q")]([SubResource("Resource_iogsw"), SubResource("Resource_ej0r1")])

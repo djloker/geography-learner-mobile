@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://bsxp8lhrsa7c3"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_qy7ae"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_j1523"]
+
+[sub_resource type="Resource" id="Resource_wfu0b"]
+script = ExtResource("1_qy7ae")
+start_index = 0
+count = 165
+bbox = Vector4(7.49561, 30.2294, 11.5359, 37.3404)
+
+[sub_resource type="Resource" id="Resource_tfqnl"]
+script = ExtResource("1_qy7ae")
+start_index = 165
+count = 15
+bbox = Vector4(10.7221, 33.6872, 11.0376, 33.8931)
+
+[sub_resource type="Resource" id="Resource_7rmcw"]
+script = ExtResource("1_qy7ae")
+start_index = 180
+count = 6
+bbox = Vector4(11.1236, 34.6817, 11.2811, 34.8203)
+
+[resource]
+script = ExtResource("2_j1523")
+name = "Tunisia"
+alt_names = Array[String]([])
+code = "TN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Tunisia_mesh.tres"
+outline_file = "res://resources/countries/Tunisia_outline.tres"
+polygons = Array[ExtResource("1_qy7ae")]([SubResource("Resource_wfu0b"), SubResource("Resource_tfqnl"), SubResource("Resource_7rmcw")])

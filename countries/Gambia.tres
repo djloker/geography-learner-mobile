@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://brequgyji8ial"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_p0n7f"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_1co5l"]
+
+[sub_resource type="Resource" id="Resource_ek6ut"]
+script = ExtResource("1_p0n7f")
+start_index = 0
+count = 73
+bbox = Vector4(-16.8248, 13.0642, -13.8267, 13.8121)
+
+[resource]
+script = ExtResource("2_1co5l")
+name = "Gambia"
+alt_names = Array[String]([])
+code = "GM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Gambia_mesh.tres"
+outline_file = "res://resources/countries/Gambia_outline.tres"
+polygons = Array[ExtResource("1_p0n7f")]([SubResource("Resource_ek6ut")])

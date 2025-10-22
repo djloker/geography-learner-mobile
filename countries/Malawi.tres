@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://de12ybb0mhxel"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_2aicj"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_fjnr6"]
+
+[sub_resource type="Resource" id="Resource_vnm4x"]
+script = ExtResource("1_2aicj")
+start_index = 0
+count = 226
+bbox = Vector4(32.6704, -17.1311, 35.8928, -9.39502)
+
+[sub_resource type="Resource" id="Resource_84cia"]
+script = ExtResource("1_2aicj")
+start_index = 226
+count = 8
+bbox = Vector4(34.5416, -12.0666, 34.6416, -11.9711)
+
+[sub_resource type="Resource" id="Resource_troqk"]
+script = ExtResource("1_2aicj")
+start_index = 234
+count = 11
+bbox = Vector4(34.6621, -12.1187, 34.7562, -12.0027)
+
+[resource]
+script = ExtResource("2_fjnr6")
+name = "Malawi"
+alt_names = Array[String]([])
+code = "MW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Malawi_mesh.tres"
+outline_file = "res://resources/countries/Malawi_outline.tres"
+polygons = Array[ExtResource("1_2aicj")]([SubResource("Resource_vnm4x"), SubResource("Resource_84cia"), SubResource("Resource_troqk")])

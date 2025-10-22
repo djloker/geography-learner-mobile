@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=9 format=3 uid="uid://cvglsk4ps623v"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ib5y3"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_wa6ed"]
+
+[sub_resource type="Resource" id="Resource_8ddt7"]
+script = ExtResource("1_ib5y3")
+start_index = 0
+count = 10
+bbox = Vector4(53.6345, 24.1355, 53.9281, 24.2589)
+
+[sub_resource type="Resource" id="Resource_ijcw1"]
+script = ExtResource("1_ib5y3")
+start_index = 10
+count = 7
+bbox = Vector4(52.5822, 24.2813, 52.6576, 24.3768)
+
+[sub_resource type="Resource" id="Resource_g5qsa"]
+script = ExtResource("1_ib5y3")
+start_index = 17
+count = 10
+bbox = Vector4(53.1909, 24.2529, 53.4453, 24.411)
+
+[sub_resource type="Resource" id="Resource_xyb7l"]
+script = ExtResource("1_ib5y3")
+start_index = 27
+count = 9
+bbox = Vector4(54.3348, 24.4233, 54.4654, 24.5063)
+
+[sub_resource type="Resource" id="Resource_ir3nt"]
+script = ExtResource("1_ib5y3")
+start_index = 36
+count = 139
+bbox = Vector4(51.5684, 22.6215, 56.388, 26.0682)
+
+[sub_resource type="Resource" id="Resource_1pgyb"]
+script = ExtResource("1_ib5y3")
+start_index = 175
+count = 8
+bbox = Vector4(56.2105, 25.2088, 56.2878, 25.3038)
+
+[resource]
+script = ExtResource("2_wa6ed")
+name = "United Arab Emirates"
+alt_names = Array[String]([])
+code = "AE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/United Arab Emirates_mesh.tres"
+outline_file = "res://resources/countries/United Arab Emirates_outline.tres"
+polygons = Array[ExtResource("1_ib5y3")]([SubResource("Resource_8ddt7"), SubResource("Resource_ijcw1"), SubResource("Resource_g5qsa"), SubResource("Resource_xyb7l"), SubResource("Resource_ir3nt"), SubResource("Resource_1pgyb")])

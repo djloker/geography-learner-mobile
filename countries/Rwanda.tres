@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cmcevqcsxuywr"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_i2rao"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_hd6rt"]
+
+[sub_resource type="Resource" id="Resource_ntvc2"]
+script = ExtResource("1_i2rao")
+start_index = 0
+count = 83
+bbox = Vector4(28.8576, -2.80859, 30.8766, -1.06309)
+
+[resource]
+script = ExtResource("2_hd6rt")
+name = "Rwanda"
+alt_names = Array[String]([])
+code = "RW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Rwanda_mesh.tres"
+outline_file = "res://resources/countries/Rwanda_outline.tres"
+polygons = Array[ExtResource("1_i2rao")]([SubResource("Resource_ntvc2")])

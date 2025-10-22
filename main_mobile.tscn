@@ -1,0 +1,164 @@
+[gd_scene load_steps=25 format=3 uid="uid://cfpxbgdrvs8n1"]
+
+[ext_resource type="Script" uid="uid://dinh208v21nj1" path="res://scripts/main_mobile.gd" id="1_ip60r"]
+[ext_resource type="Texture2D" uid="uid://dackv1p74tonb" path="res://textures/countries_identities.png" id="2_juscq"]
+[ext_resource type="Material" uid="uid://bpqc6o7rd4iv5" path="res://shaders/planet_shaded_material.tres" id="2_pcave"]
+[ext_resource type="Resource" uid="uid://doaxg244i7bjy" path="res://countries_list.tres" id="3_0w4rd"]
+[ext_resource type="Script" uid="uid://cnmf2ytbbnm4m" path="res://scripts/camera_3d_mobile.gd" id="3_4j66o"]
+[ext_resource type="Environment" uid="uid://co1do6iw4fvla" path="res://environment/main_environment.tres" id="3_qvu74"]
+[ext_resource type="Theme" uid="uid://xf3txcnn1n8d" path="res://theming/theme.tres" id="3_ti0qx"]
+[ext_resource type="AudioStream" uid="uid://c8wrrybgg22x2" path="res://SFX/pepSound2.ogg" id="4_rklv3"]
+[ext_resource type="PackedScene" uid="uid://d0mxt4twx6bc7" path="res://country_input_dialog.tscn" id="8_1ex10"]
+[ext_resource type="ButtonGroup" uid="uid://nirdrmjr2euy" path="res://panels.button_group.tres" id="8_ucg0i"]
+[ext_resource type="Texture2D" uid="uid://isdvgdsgkebk" path="res://icons/2x/question_2x.png" id="11_0w4rd"]
+[ext_resource type="Texture2D" uid="uid://dmexk7af3qy8t" path="res://icons/2x/audioOn_2x.png" id="11_d0wab"]
+[ext_resource type="Texture2D" uid="uid://bcssdc7koiv03" path="res://icons/2x/question_pressed_2x.png" id="12_0w4rd"]
+[ext_resource type="Texture2D" uid="uid://burxcou37jgu0" path="res://icons/2x/audioOff_pressed_2x.png" id="12_lnqqy"]
+[ext_resource type="Texture2D" uid="uid://ddr433df3rnst" path="res://icons/2x/barsHorizontal_2x.png" id="13_d0wab"]
+[ext_resource type="Texture2D" uid="uid://cgoltrme7bhix" path="res://icons/2x/flag_2x.png" id="13_ilvtw"]
+[ext_resource type="Texture2D" uid="uid://c2er7epmmnf7y" path="res://icons/2x/flag_pressed_2x.png" id="14_2bnc1"]
+[ext_resource type="Texture2D" uid="uid://cfstgqqf8kaj" path="res://icons/2x/barsHorizontal_pressed_2x.png" id="14_lnqqy"]
+[ext_resource type="PackedScene" uid="uid://dshnudx3xoewj" path="res://settings.tscn" id="15_d0wab"]
+[ext_resource type="Texture2D" uid="uid://btch0omosnt2a" path="res://icons/2x/checkmark_2x.png" id="15_lnqqy"]
+[ext_resource type="Texture2D" uid="uid://csvyetg3ym72c" path="res://icons/2x/checkmark_pressed_2x.png" id="16_0w4rd"]
+[ext_resource type="PackedScene" uid="uid://dmwn2xu4nw7xn" path="res://word_bank.tscn" id="16_d0wab"]
+[ext_resource type="PackedScene" uid="uid://801gaxanuxvr" path="res://planet.tscn" id="18_hlluc"]
+[ext_resource type="Material" uid="uid://1cwe14agabsm" path="res://shaders/planet_unshaded_material.tres" id="19_2q1f4"]
+
+[node name="MAIN" type="Node" node_paths=PackedStringArray("camera", "raycast")]
+script = ExtResource("1_ip60r")
+camera = NodePath("Camera3D")
+raycast = NodePath("Camera3D/RayCast3D")
+country_ids = ExtResource("2_juscq")
+country_list = ExtResource("3_0w4rd")
+
+[node name="SolveSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rklv3")
+volume_db = 12.0
+
+[node name="GUI" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_ti0qx")
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ButtonsPanelsVBox" type="VBoxContainer" parent="GUI"]
+layout_mode = 2
+
+[node name="ButtonsHBox" type="HBoxContainer" parent="GUI/ButtonsPanelsVBox"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="SettingsButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+toggle_mode = true
+button_group = ExtResource("8_ucg0i")
+texture_normal = ExtResource("13_d0wab")
+texture_pressed = ExtResource("14_lnqqy")
+
+[node name="WordBankButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+toggle_mode = true
+button_group = ExtResource("8_ucg0i")
+texture_normal = ExtResource("11_0w4rd")
+texture_pressed = ExtResource("12_0w4rd")
+
+[node name="ShowLabelsButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 0
+toggle_mode = true
+button_pressed = true
+texture_normal = ExtResource("13_ilvtw")
+texture_pressed = ExtResource("14_2bnc1")
+
+[node name="ShowSolvedButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+toggle_mode = true
+texture_normal = ExtResource("15_lnqqy")
+texture_pressed = ExtResource("16_0w4rd")
+
+[node name="AudioButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+toggle_mode = true
+texture_normal = ExtResource("11_d0wab")
+texture_pressed = ExtResource("12_lnqqy")
+
+[node name="Settings" parent="GUI/ButtonsPanelsVBox" instance=ExtResource("15_d0wab")]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(392, 0)
+layout_mode = 2
+
+[node name="WordBank" parent="GUI/ButtonsPanelsVBox" node_paths=PackedStringArray("control_below") instance=ExtResource("16_d0wab")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 8
+control_below = NodePath("../CountryInputDialog")
+
+[node name="CountryInputDialog" parent="GUI/ButtonsPanelsVBox" instance=ExtResource("8_1ex10")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 10
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.99492335, 0, 0.10062329, 0, 1, 0, -0.10062329, 0, 0.99492335, 0, 0, 0)
+
+[node name="Planet3D" parent="." node_paths=PackedStringArray("sun_light") instance=ExtResource("18_hlluc")]
+orbit_speed = 0.1
+shaded_material = ExtResource("2_pcave")
+unshaded_material = ExtResource("19_2q1f4")
+sun_light = NodePath("../DirectionalLight3D")
+
+[node name="PlanetLabels" type="Node3D" parent="Planet3D"]
+unique_name_in_owner = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 2)
+script = ExtResource("3_4j66o")
+drag_zoom_power = 3.0
+cam_distance_tick = 0.025
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("3_qvu74")
+
+[connection signal="toggled" from="GUI/ButtonsPanelsVBox/ButtonsHBox/SettingsButton" to="GUI/ButtonsPanelsVBox/Settings" method="set_visible"]
+[connection signal="toggled" from="GUI/ButtonsPanelsVBox/ButtonsHBox/WordBankButton" to="GUI/ButtonsPanelsVBox/WordBank" method="set_visible"]
+[connection signal="toggled" from="GUI/ButtonsPanelsVBox/ButtonsHBox/ShowLabelsButton" to="Planet3D/PlanetLabels" method="set_visible"]
+[connection signal="toggled" from="GUI/ButtonsPanelsVBox/ButtonsHBox/ShowSolvedButton" to="Planet3D" method="set_show_solved"]
+[connection signal="render_mode_changed" from="GUI/ButtonsPanelsVBox/Settings" to="Planet3D" method="set_render_mode"]
+[connection signal="reset_all_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="reset_solved"]
+[connection signal="solve_capitals_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_capitals"]
+[connection signal="solve_countries_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_countries"]
+[connection signal="request_goto" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_goto"]
+[connection signal="request_next" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_next"]
+[connection signal="request_previous" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_previous"]
+[connection signal="solved_capital" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_capital"]
+[connection signal="solved_country" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_country"]
+[connection signal="country_selected" from="Camera3D" to="." method="_on_camera_3d_country_selected"]
+[connection signal="distance_changed" from="Camera3D" to="." method="_on_camera_distance_changed"]
+[connection signal="world_clicked" from="Camera3D" to="." method="_on_camera_3d_world_clicked"]

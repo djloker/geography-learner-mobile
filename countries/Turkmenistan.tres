@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://ded8160w18qlc"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_58wwr"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_5qrfj"]
+
+[sub_resource type="Resource" id="Resource_kw8m6"]
+script = ExtResource("1_58wwr")
+start_index = 0
+count = 425
+bbox = Vector4(52.4938, 35.1708, 66.6293, 42.7785)
+
+[sub_resource type="Resource" id="Resource_mm8fw"]
+script = ExtResource("1_58wwr")
+start_index = 425
+count = 8
+bbox = Vector4(53.0186, 38.7562, 53.1096, 39.0966)
+
+[resource]
+script = ExtResource("2_5qrfj")
+name = "Turkmenistan"
+alt_names = Array[String]([])
+code = "TM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Turkmenistan_mesh.tres"
+outline_file = "res://resources/countries/Turkmenistan_outline.tres"
+polygons = Array[ExtResource("1_58wwr")]([SubResource("Resource_kw8m6"), SubResource("Resource_mm8fw")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://dhegl7k000ckh"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_13hlh"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_bxr5j"]
+
+[sub_resource type="Resource" id="Resource_7ibpl"]
+script = ExtResource("1_13hlh")
+start_index = 0
+count = 736
+bbox = Vector4(87.7432, 41.5955, 119.898, 52.1173)
+
+[resource]
+script = ExtResource("2_bxr5j")
+name = "Mongolia"
+alt_names = Array[String]([])
+code = "MN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Mongolia_mesh.tres"
+outline_file = "res://resources/countries/Mongolia_outline.tres"
+polygons = Array[ExtResource("1_13hlh")]([SubResource("Resource_7ibpl")])

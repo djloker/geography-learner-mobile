@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://bdaxujjh2gox0"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_a4y0w"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_65p3k"]
+
+[sub_resource type="Resource" id="Resource_yhx2h"]
+script = ExtResource("1_a4y0w")
+start_index = 0
+count = 581
+bbox = Vector4(44.0232, 25.1021, 63.3052, 39.7686)
+
+[sub_resource type="Resource" id="Resource_2glph"]
+script = ExtResource("1_a4y0w")
+start_index = 581
+count = 24
+bbox = Vector4(55.295, 26.5831, 56.2794, 27.0033)
+
+[resource]
+script = ExtResource("2_65p3k")
+name = "Iran"
+alt_names = Array[String]([])
+code = "IR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Iran_mesh.tres"
+outline_file = "res://resources/countries/Iran_outline.tres"
+polygons = Array[ExtResource("1_a4y0w")]([SubResource("Resource_yhx2h"), SubResource("Resource_2glph")])

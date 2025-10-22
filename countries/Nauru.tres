@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bc6q0s3l8rxnh"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_aqpen"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yeukh"]
+
+[sub_resource type="Resource" id="Resource_vnef2"]
+script = ExtResource("1_aqpen")
+start_index = 0
+count = 8
+bbox = Vector4(166.907, -0.550781, 166.958, -0.489355)
+
+[resource]
+script = ExtResource("2_yeukh")
+name = "Nauru"
+alt_names = Array[String]([])
+code = "NR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Nauru_mesh.tres"
+outline_file = "res://resources/countries/Nauru_outline.tres"
+polygons = Array[ExtResource("1_aqpen")]([SubResource("Resource_vnef2")])

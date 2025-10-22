@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=22 format=3 uid="uid://dt0sy1ta0yp3t"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_h58ik"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_sk0ik"]
+
+[sub_resource type="Resource" id="Resource_ilx1f"]
+script = ExtResource("1_h58ik")
+start_index = 0
+count = 9
+bbox = Vector4(-151.819, -11.4568, -151.783, -11.3918)
+
+[sub_resource type="Resource" id="Resource_5fncu"]
+script = ExtResource("1_h58ik")
+start_index = 9
+count = 10
+bbox = Vector4(-155.929, -5.63184, -155.862, -5.60752)
+
+[sub_resource type="Resource" id="Resource_puhrm"]
+script = ExtResource("1_h58ik")
+start_index = 19
+count = 14
+bbox = Vector4(-174.541, -4.69473, -174.501, -4.65732)
+
+[sub_resource type="Resource" id="Resource_ssuig"]
+script = ExtResource("1_h58ik")
+start_index = 33
+count = 14
+bbox = Vector4(-172.228, -4.52441, -172.181, -4.4917)
+
+[sub_resource type="Resource" id="Resource_t63x2"]
+script = ExtResource("1_h58ik")
+start_index = 47
+count = 9
+bbox = Vector4(-171.262, -4.46807, -171.232, -4.4416)
+
+[sub_resource type="Resource" id="Resource_21df5"]
+script = ExtResource("1_h58ik")
+start_index = 56
+count = 11
+bbox = Vector4(-155.015, -4.09385, -154.943, -4.03105)
+
+[sub_resource type="Resource" id="Resource_83fx0"]
+script = ExtResource("1_h58ik")
+start_index = 67
+count = 7
+bbox = Vector4(-171.097, -3.14326, -171.081, -3.11504)
+
+[sub_resource type="Resource" id="Resource_6jtde"]
+script = ExtResource("1_h58ik")
+start_index = 74
+count = 24
+bbox = Vector4(-171.728, -2.85586, -171.628, -2.76143)
+
+[sub_resource type="Resource" id="Resource_cy7fw"]
+script = ExtResource("1_h58ik")
+start_index = 98
+count = 9
+bbox = Vector4(174.717, -1.26338, 174.779, -1.13369)
+
+[sub_resource type="Resource" id="Resource_r0wk7"]
+script = ExtResource("1_h58ik")
+start_index = 107
+count = 7
+bbox = Vector4(169.523, -0.875977, 169.555, -0.846875)
+
+[sub_resource type="Resource" id="Resource_kqju8"]
+script = ExtResource("1_h58ik")
+start_index = 114
+count = 12
+bbox = Vector4(174.381, -0.829004, 174.509, -0.591797)
+
+[sub_resource type="Resource" id="Resource_71h65"]
+script = ExtResource("1_h58ik")
+start_index = 126
+count = 14
+bbox = Vector4(172.97, 0.835449, 173.087, 1.0251)
+
+[sub_resource type="Resource" id="Resource_xjv3h"]
+script = ExtResource("1_h58ik")
+start_index = 140
+count = 11
+bbox = Vector4(173.011, 1.33838, 173.172, 1.38755)
+
+[sub_resource type="Resource" id="Resource_dgegy"]
+script = ExtResource("1_h58ik")
+start_index = 151
+count = 9
+bbox = Vector4(172.993, 1.71309, 173.045, 1.80933)
+
+[sub_resource type="Resource" id="Resource_0sxwa"]
+script = ExtResource("1_h58ik")
+start_index = 160
+count = 9
+bbox = Vector4(172.933, 1.82256, 173.024, 1.9437)
+
+[sub_resource type="Resource" id="Resource_xy1m3"]
+script = ExtResource("1_h58ik")
+start_index = 169
+count = 14
+bbox = Vector4(-157.579, 1.73174, -157.176, 2.0293)
+
+[sub_resource type="Resource" id="Resource_j5723"]
+script = ExtResource("1_h58ik")
+start_index = 183
+count = 8
+bbox = Vector4(172.75, 3.01255, 172.887, 3.07397)
+
+[sub_resource type="Resource" id="Resource_shse8"]
+script = ExtResource("1_h58ik")
+start_index = 191
+count = 6
+bbox = Vector4(172.887, 3.0959, 172.97, 3.14878)
+
+[sub_resource type="Resource" id="Resource_s0v3j"]
+script = ExtResource("1_h58ik")
+start_index = 197
+count = 15
+bbox = Vector4(-159.409, 3.79658, -159.259, 3.92354)
+
+[resource]
+script = ExtResource("2_sk0ik")
+name = "Kiribati"
+alt_names = Array[String]([])
+code = "KI"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Kiribati_mesh.tres"
+outline_file = "res://resources/countries/Kiribati_outline.tres"
+polygons = Array[ExtResource("1_h58ik")]([SubResource("Resource_ilx1f"), SubResource("Resource_5fncu"), SubResource("Resource_puhrm"), SubResource("Resource_ssuig"), SubResource("Resource_t63x2"), SubResource("Resource_21df5"), SubResource("Resource_83fx0"), SubResource("Resource_6jtde"), SubResource("Resource_cy7fw"), SubResource("Resource_r0wk7"), SubResource("Resource_kqju8"), SubResource("Resource_71h65"), SubResource("Resource_xjv3h"), SubResource("Resource_dgegy"), SubResource("Resource_0sxwa"), SubResource("Resource_xy1m3"), SubResource("Resource_j5723"), SubResource("Resource_shse8"), SubResource("Resource_s0v3j")])

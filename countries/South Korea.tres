@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=14 format=3 uid="uid://bujvk5743sjqw"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_qv3f7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_82exp"]
+
+[sub_resource type="Resource" id="Resource_igcoo"]
+script = ExtResource("1_qv3f7")
+start_index = 0
+count = 17
+bbox = Vector4(126.166, 33.2015, 126.931, 33.5532)
+
+[sub_resource type="Resource" id="Resource_je1g7"]
+script = ExtResource("1_qv3f7")
+start_index = 17
+count = 7
+bbox = Vector4(126.646, 34.2964, 126.77, 34.3959)
+
+[sub_resource type="Resource" id="Resource_ia4rh"]
+script = ExtResource("1_qv3f7")
+start_index = 24
+count = 11
+bbox = Vector4(126.109, 34.3552, 126.38, 34.5633)
+
+[sub_resource type="Resource" id="Resource_03yan"]
+script = ExtResource("1_qv3f7")
+start_index = 35
+count = 5
+bbox = Vector4(127.737, 34.5841, 127.799, 34.6821)
+
+[sub_resource type="Resource" id="Resource_ejhbb"]
+script = ExtResource("1_qv3f7")
+start_index = 40
+count = 9
+bbox = Vector4(126.008, 34.707, 126.172, 34.9148)
+
+[sub_resource type="Resource" id="Resource_fxa5n"]
+script = ExtResource("1_qv3f7")
+start_index = 49
+count = 12
+bbox = Vector4(127.832, 34.7032, 128.066, 34.921)
+
+[sub_resource type="Resource" id="Resource_74r8v"]
+script = ExtResource("1_qv3f7")
+start_index = 61
+count = 8
+bbox = Vector4(128.489, 34.7369, 128.741, 35.0136)
+
+[sub_resource type="Resource" id="Resource_18hmb"]
+script = ExtResource("1_qv3f7")
+start_index = 69
+count = 6
+bbox = Vector4(126.319, 36.4279, 126.418, 36.6125)
+
+[sub_resource type="Resource" id="Resource_8mdsv"]
+script = ExtResource("1_qv3f7")
+start_index = 75
+count = 8
+bbox = Vector4(130.81, 37.4487, 130.934, 37.5537)
+
+[sub_resource type="Resource" id="Resource_kwoex"]
+script = ExtResource("1_qv3f7")
+start_index = 83
+count = 9
+bbox = Vector4(126.369, 37.6047, 126.521, 37.8227)
+
+[sub_resource type="Resource" id="Resource_saqmp"]
+script = ExtResource("1_qv3f7")
+start_index = 92
+count = 168
+bbox = Vector4(126.161, 34.3143, 129.573, 38.6234)
+
+[resource]
+script = ExtResource("2_82exp")
+name = "South Korea"
+alt_names = Array[String]([])
+code = "KR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/South Korea_mesh.tres"
+outline_file = "res://resources/countries/South Korea_outline.tres"
+polygons = Array[ExtResource("1_qv3f7")]([SubResource("Resource_igcoo"), SubResource("Resource_je1g7"), SubResource("Resource_ia4rh"), SubResource("Resource_03yan"), SubResource("Resource_ejhbb"), SubResource("Resource_fxa5n"), SubResource("Resource_74r8v"), SubResource("Resource_18hmb"), SubResource("Resource_8mdsv"), SubResource("Resource_kwoex"), SubResource("Resource_saqmp")])

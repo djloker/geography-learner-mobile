@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://glcckbp3256o"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_wvnd2"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_p5gpm"]
+
+[sub_resource type="Resource" id="Resource_1t571"]
+script = ExtResource("1_wvnd2")
+start_index = 0
+count = 34
+bbox = Vector4(50.7546, 24.5646, 51.6089, 26.1533)
+
+[resource]
+script = ExtResource("2_p5gpm")
+name = "Qatar"
+alt_names = Array[String]([])
+code = "QA"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Qatar_mesh.tres"
+outline_file = "res://resources/countries/Qatar_outline.tres"
+polygons = Array[ExtResource("1_wvnd2")]([SubResource("Resource_1t571")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bx73kcaqm4r3l"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_pnc6r"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_up6e1"]
+
+[sub_resource type="Resource" id="Resource_kvxef"]
+script = ExtResource("1_pnc6r")
+start_index = 0
+count = 170
+bbox = Vector4(25.224, -22.4021, 33.0067, -15.6431)
+
+[resource]
+script = ExtResource("2_up6e1")
+name = "Zimbabwe"
+alt_names = Array[String]([])
+code = "ZW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Zimbabwe_mesh.tres"
+outline_file = "res://resources/countries/Zimbabwe_outline.tres"
+polygons = Array[ExtResource("1_pnc6r")]([SubResource("Resource_kvxef")])

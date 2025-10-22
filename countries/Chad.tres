@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://iu432jo7o1y3"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_144nj"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_lj0il"]
+
+[sub_resource type="Resource" id="Resource_l5o1t"]
+script = ExtResource("1_144nj")
+start_index = 0
+count = 291
+bbox = Vector4(13.4482, 7.47529, 23.9834, 23.4452)
+
+[resource]
+script = ExtResource("2_lj0il")
+name = "Chad"
+alt_names = Array[String]([])
+code = "TD"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Chad_mesh.tres"
+outline_file = "res://resources/countries/Chad_outline.tres"
+polygons = Array[ExtResource("1_144nj")]([SubResource("Resource_l5o1t")])

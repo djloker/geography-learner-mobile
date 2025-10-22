@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://bua3bfuco6vol"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_d4yaa"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_r2y25"]
+
+[sub_resource type="Resource" id="Resource_e1705"]
+script = ExtResource("1_d4yaa")
+start_index = 0
+count = 349
+bbox = Vector4(69.2291, 39.2075, 80.2462, 43.2404)
+
+[sub_resource type="Resource" id="Resource_sklgf"]
+script = ExtResource("1_d4yaa")
+start_index = 349
+count = 11
+bbox = Vector4(70.4828, 39.7868, 70.7017, 39.8827)
+
+[sub_resource type="Resource" id="Resource_hog2e"]
+script = ExtResource("1_d4yaa")
+start_index = 360
+count = 9
+bbox = Vector4(71.6689, 39.9071, 71.7899, 39.9953)
+
+[sub_resource type="Resource" id="Resource_gkhc6"]
+script = ExtResource("1_d4yaa")
+start_index = 369
+count = 19
+bbox = Vector4(70.9606, 39.8834, 71.2287, 40.1523)
+
+[resource]
+script = ExtResource("2_r2y25")
+name = "Kyrgyzstan"
+alt_names = Array[String]([])
+code = "KG"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Kyrgyzstan_mesh.tres"
+outline_file = "res://resources/countries/Kyrgyzstan_outline.tres"
+polygons = Array[ExtResource("1_d4yaa")]([SubResource("Resource_e1705"), SubResource("Resource_sklgf"), SubResource("Resource_hog2e"), SubResource("Resource_gkhc6")])

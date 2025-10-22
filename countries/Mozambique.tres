@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://dv2p4djpd6ur8"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_cqo2e"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_itagh"]
+
+[sub_resource type="Resource" id="Resource_p7ktn"]
+script = ExtResource("1_cqo2e")
+start_index = 0
+count = 450
+bbox = Vector4(30.2218, -26.8616, 40.8445, -10.4644)
+
+[sub_resource type="Resource" id="Resource_6eed4"]
+script = ExtResource("1_cqo2e")
+start_index = 450
+count = 8
+bbox = Vector4(34.5416, -12.0666, 34.6416, -11.9711)
+
+[sub_resource type="Resource" id="Resource_ksfey"]
+script = ExtResource("1_cqo2e")
+start_index = 458
+count = 11
+bbox = Vector4(34.6621, -12.1187, 34.7562, -12.0027)
+
+[resource]
+script = ExtResource("2_itagh")
+name = "Mozambique"
+alt_names = Array[String]([])
+code = "MZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Mozambique_mesh.tres"
+outline_file = "res://resources/countries/Mozambique_outline.tres"
+polygons = Array[ExtResource("1_cqo2e")]([SubResource("Resource_p7ktn"), SubResource("Resource_6eed4"), SubResource("Resource_ksfey")])

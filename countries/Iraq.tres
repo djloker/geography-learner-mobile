@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://duvpo18w12tre"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ga38x"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_g5jfr"]
+
+[sub_resource type="Resource" id="Resource_nakqc"]
+script = ExtResource("1_ga38x")
+start_index = 0
+count = 233
+bbox = Vector4(38.7735, 29.0637, 48.5465, 37.3719)
+
+[resource]
+script = ExtResource("2_g5jfr")
+name = "Iraq"
+alt_names = Array[String]([])
+code = "IQ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Iraq_mesh.tres"
+outline_file = "res://resources/countries/Iraq_outline.tres"
+polygons = Array[ExtResource("1_ga38x")]([SubResource("Resource_nakqc")])

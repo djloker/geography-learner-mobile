@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://8sjrew1p4lk8"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_1q0c0"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_8217m"]
+
+[sub_resource type="Resource" id="Resource_twbmw"]
+script = ExtResource("1_1q0c0")
+start_index = 0
+count = 185
+bbox = Vector4(42.6578, 12.6077, 53.0856, 18.9961)
+
+[sub_resource type="Resource" id="Resource_l18os"]
+script = ExtResource("1_1q0c0")
+start_index = 185
+count = 19
+bbox = Vector4(53.3158, 12.319, 54.5111, 12.7158)
+
+[sub_resource type="Resource" id="Resource_upjon"]
+script = ExtResource("1_1q0c0")
+start_index = 204
+count = 6
+bbox = Vector4(42.6897, 13.6736, 42.7941, 13.7693)
+
+[sub_resource type="Resource" id="Resource_wywce"]
+script = ExtResource("1_1q0c0")
+start_index = 210
+count = 7
+bbox = Vector4(42.694, 13.9502, 42.7983, 14.0675)
+
+[sub_resource type="Resource" id="Resource_fpdg8"]
+script = ExtResource("1_1q0c0")
+start_index = 217
+count = 8
+bbox = Vector4(42.549, 15.2812, 42.6245, 15.4325)
+
+[resource]
+script = ExtResource("2_8217m")
+name = "Yemen"
+alt_names = Array[String]([])
+code = "YE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Yemen_mesh.tres"
+outline_file = "res://resources/countries/Yemen_outline.tres"
+polygons = Array[ExtResource("1_1q0c0")]([SubResource("Resource_twbmw"), SubResource("Resource_l18os"), SubResource("Resource_upjon"), SubResource("Resource_wywce"), SubResource("Resource_fpdg8")])

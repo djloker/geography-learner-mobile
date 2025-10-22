@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://b2s5hqgfj8lse"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_7oku7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_d0cxu"]
+
+[sub_resource type="Resource" id="Resource_u7kvf"]
+script = ExtResource("1_7oku7")
+start_index = 0
+count = 350
+bbox = Vector4(67.3496, 36.684, 75.1188, 41.0351)
+
+[sub_resource type="Resource" id="Resource_hpaov"]
+script = ExtResource("1_7oku7")
+start_index = 350
+count = 11
+bbox = Vector4(70.4828, 39.7868, 70.7017, 39.8827)
+
+[sub_resource type="Resource" id="Resource_cxsp3"]
+script = ExtResource("1_7oku7")
+start_index = 361
+count = 8
+bbox = Vector4(70.55, 40.9344, 70.6525, 41.0248)
+
+[resource]
+script = ExtResource("2_d0cxu")
+name = "Tajikistan"
+alt_names = Array[String]([])
+code = "TJ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Tajikistan_mesh.tres"
+outline_file = "res://resources/countries/Tajikistan_outline.tres"
+polygons = Array[ExtResource("1_7oku7")]([SubResource("Resource_u7kvf"), SubResource("Resource_hpaov"), SubResource("Resource_cxsp3")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://d3h4j05443wp2"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_302dp"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_vnfgg"]
+
+[sub_resource type="Resource" id="Resource_abn6m"]
+script = ExtResource("1_302dp")
+start_index = 0
+count = 274
+bbox = Vector4(20.2418, 43.6708, 29.7059, 48.2635)
+
+[resource]
+script = ExtResource("2_vnfgg")
+name = "Romania"
+alt_names = Array[String]([])
+code = "RO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Romania_mesh.tres"
+outline_file = "res://resources/countries/Romania_outline.tres"
+polygons = Array[ExtResource("1_302dp")]([SubResource("Resource_abn6m")])

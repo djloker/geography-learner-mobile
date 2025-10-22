@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bg26ex0h8i5m1"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_qwrsw"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_7sqlr"]
+
+[sub_resource type="Resource" id="Resource_48bge"]
+script = ExtResource("1_qwrsw")
+start_index = 0
+count = 316
+bbox = Vector4(14.1286, 49.0208, 24.1058, 54.8382)
+
+[resource]
+script = ExtResource("2_7sqlr")
+name = "Poland"
+alt_names = Array[String]([])
+code = "PL"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Poland_mesh.tres"
+outline_file = "res://resources/countries/Poland_outline.tres"
+polygons = Array[ExtResource("1_qwrsw")]([SubResource("Resource_48bge")])

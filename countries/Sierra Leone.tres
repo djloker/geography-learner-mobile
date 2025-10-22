@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://0eiaecn7frtq"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_2la5k"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_uklmo"]
+
+[sub_resource type="Resource" id="Resource_xwwsx"]
+script = ExtResource("1_2la5k")
+start_index = 0
+count = 116
+bbox = Vector4(-13.2927, 6.90654, -10.2832, 9.99653)
+
+[sub_resource type="Resource" id="Resource_y6sbw"]
+script = ExtResource("1_2la5k")
+start_index = 116
+count = 10
+bbox = Vector4(-12.9516, 7.41025, -12.5006, 7.63721)
+
+[resource]
+script = ExtResource("2_uklmo")
+name = "Sierra Leone"
+alt_names = Array[String]([])
+code = "SL"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Sierra Leone_mesh.tres"
+outline_file = "res://resources/countries/Sierra Leone_outline.tres"
+polygons = Array[ExtResource("1_2la5k")]([SubResource("Resource_xwwsx"), SubResource("Resource_y6sbw")])

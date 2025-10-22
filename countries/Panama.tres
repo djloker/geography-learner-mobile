@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://cyov6y3mold7h"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_i7ky6"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_bxl6h"]
+
+[sub_resource type="Resource" id="Resource_tjhbq"]
+script = ExtResource("1_i7ky6")
+start_index = 0
+count = 209
+bbox = Vector4(-83.0273, 7.22007, -77.196, 9.59785)
+
+[sub_resource type="Resource" id="Resource_4r7f5"]
+script = ExtResource("1_i7ky6")
+start_index = 209
+count = 14
+bbox = Vector4(-81.8586, 7.32754, -81.6033, 7.62163)
+
+[sub_resource type="Resource" id="Resource_e8kl3"]
+script = ExtResource("1_i7ky6")
+start_index = 223
+count = 6
+bbox = Vector4(-79.1275, 8.20981, -79.0654, 8.2958)
+
+[sub_resource type="Resource" id="Resource_y0f0u"]
+script = ExtResource("1_i7ky6")
+start_index = 229
+count = 11
+bbox = Vector4(-78.9649, 8.23193, -78.8392, 8.46025)
+
+[sub_resource type="Resource" id="Resource_5occ5"]
+script = ExtResource("1_i7ky6")
+start_index = 240
+count = 6
+bbox = Vector4(-82.3217, 9.33408, -82.2335, 9.43188)
+
+[resource]
+script = ExtResource("2_bxl6h")
+name = "Panama"
+alt_names = Array[String]([])
+code = "PA"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Panama_mesh.tres"
+outline_file = "res://resources/countries/Panama_outline.tres"
+polygons = Array[ExtResource("1_i7ky6")]([SubResource("Resource_tjhbq"), SubResource("Resource_4r7f5"), SubResource("Resource_e8kl3"), SubResource("Resource_y0f0u"), SubResource("Resource_5occ5")])

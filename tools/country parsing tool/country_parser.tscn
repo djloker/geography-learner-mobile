@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://fjdax3qbeod5"]
+
+[ext_resource type="Script" uid="uid://dkooo62uxvnqf" path="res://tools/country parsing tool/country_parser.gd" id="1_8u7g5"]
+
+[node name="Country Parser TOOL" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8u7g5")
+countries_base_data = "res://tools/country parsing tool/base data/country_base_data.txt"
+countries_addendum = "res://tools/country parsing tool/base data/country_addendum.txt"
+output_path = "res://tools/country parsing tool/output"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="LoadButton" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load Country Data"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/LoadButton" to="." method="_on_load_button_pressed"]

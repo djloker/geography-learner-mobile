@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=9 format=3 uid="uid://d2mue41k2aby2"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_jip8q"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_talcn"]
+
+[sub_resource type="Resource" id="Resource_fgvby"]
+script = ExtResource("1_jip8q")
+start_index = 0
+count = 510
+bbox = Vector4(11.1472, 55.3464, 24.1555, 69.0369)
+
+[sub_resource type="Resource" id="Resource_2vuvi"]
+script = ExtResource("1_jip8q")
+start_index = 510
+count = 22
+bbox = Vector4(16.3941, 56.2402, 17.1177, 57.3451)
+
+[sub_resource type="Resource" id="Resource_hyqdw"]
+script = ExtResource("1_jip8q")
+start_index = 532
+count = 35
+bbox = Vector4(18.1051, 56.9205, 19.0765, 57.9155)
+
+[sub_resource type="Resource" id="Resource_i1po5"]
+script = ExtResource("1_jip8q")
+start_index = 567
+count = 8
+bbox = Vector4(19.0393, 57.8603, 19.3314, 57.9813)
+
+[sub_resource type="Resource" id="Resource_g5gwo"]
+script = ExtResource("1_jip8q")
+start_index = 575
+count = 8
+bbox = Vector4(18.3499, 59.0196, 18.4855, 59.1079)
+
+[sub_resource type="Resource" id="Resource_y4aqe"]
+script = ExtResource("1_jip8q")
+start_index = 583
+count = 10
+bbox = Vector4(18.5451, 59.4373, 18.6984, 59.5478)
+
+[resource]
+script = ExtResource("2_talcn")
+name = "Sweden"
+alt_names = Array[String]([])
+code = "SE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Sweden_mesh.tres"
+outline_file = "res://resources/countries/Sweden_outline.tres"
+polygons = Array[ExtResource("1_jip8q")]([SubResource("Resource_fgvby"), SubResource("Resource_2vuvi"), SubResource("Resource_hyqdw"), SubResource("Resource_i1po5"), SubResource("Resource_g5gwo"), SubResource("Resource_y4aqe")])

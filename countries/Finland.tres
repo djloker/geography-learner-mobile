@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=11 format=3 uid="uid://csib0mv08n2gi"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_8qbm0"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_017um"]
+
+[sub_resource type="Resource" id="Resource_vqnad"]
+script = ExtResource("1_8qbm0")
+start_index = 0
+count = 8
+bbox = Vector4(21.486, 60.0979, 21.6481, 60.1723)
+
+[sub_resource type="Resource" id="Resource_nonot"]
+script = ExtResource("1_8qbm0")
+start_index = 8
+count = 7
+bbox = Vector4(21.695, 60.1062, 21.8644, 60.2018)
+
+[sub_resource type="Resource" id="Resource_p4f8q"]
+script = ExtResource("1_8qbm0")
+start_index = 15
+count = 16
+bbox = Vector4(22.0771, 60.1656, 22.4155, 60.3708)
+
+[sub_resource type="Resource" id="Resource_tjrbh"]
+script = ExtResource("1_8qbm0")
+start_index = 31
+count = 12
+bbox = Vector4(21.8057, 60.3323, 21.9942, 60.4699)
+
+[sub_resource type="Resource" id="Resource_wjbsu"]
+script = ExtResource("1_8qbm0")
+start_index = 43
+count = 10
+bbox = Vector4(21.2146, 60.4798, 21.4509, 60.6383)
+
+[sub_resource type="Resource" id="Resource_d5rfa"]
+script = ExtResource("1_8qbm0")
+start_index = 53
+count = 16
+bbox = Vector4(21.0839, 63.152, 21.422, 63.2777)
+
+[sub_resource type="Resource" id="Resource_b8hld"]
+script = ExtResource("1_8qbm0")
+start_index = 69
+count = 10
+bbox = Vector4(24.5766, 64.9578, 24.9976, 65.0864)
+
+[sub_resource type="Resource" id="Resource_h4epk"]
+script = ExtResource("1_8qbm0")
+start_index = 79
+count = 440
+bbox = Vector4(20.6222, 59.816, 31.5365, 70.0648)
+
+[resource]
+script = ExtResource("2_017um")
+name = "Finland"
+alt_names = Array[String]([])
+code = "FI"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Finland_mesh.tres"
+outline_file = "res://resources/countries/Finland_outline.tres"
+polygons = Array[ExtResource("1_8qbm0")]([SubResource("Resource_vqnad"), SubResource("Resource_nonot"), SubResource("Resource_p4f8q"), SubResource("Resource_tjrbh"), SubResource("Resource_wjbsu"), SubResource("Resource_d5rfa"), SubResource("Resource_b8hld"), SubResource("Resource_h4epk")])

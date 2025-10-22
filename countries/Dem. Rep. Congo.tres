@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://qnmc2b0laeb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ptty2"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_l5ddy"]
+
+[sub_resource type="Resource" id="Resource_4bw7q"]
+script = ExtResource("1_ptty2")
+start_index = 0
+count = 609
+bbox = Vector4(12.2137, -13.4538, 31.274, 5.31211)
+
+[resource]
+script = ExtResource("2_l5ddy")
+name = "Dem. Rep. Congo"
+alt_names = Array[String]([])
+code = "CD"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Dem. Rep. Congo_mesh.tres"
+outline_file = "res://resources/countries/Dem. Rep. Congo_outline.tres"
+polygons = Array[ExtResource("1_ptty2")]([SubResource("Resource_4bw7q")])

@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=10 format=3 uid="uid://c0yx4yga8sxve"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_cnqlx"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yv1hu"]
+
+[sub_resource type="Resource" id="Resource_fd1si"]
+script = ExtResource("1_cnqlx")
+start_index = 0
+count = 98
+bbox = Vector4(-16.7118, 10.9401, -13.6735, 12.6799)
+
+[sub_resource type="Resource" id="Resource_fgall"]
+script = ExtResource("1_cnqlx")
+start_index = 98
+count = 10
+bbox = Vector4(-15.964, 11.0547, -15.8959, 11.1928)
+
+[sub_resource type="Resource" id="Resource_bduj7"]
+script = ExtResource("1_cnqlx")
+start_index = 108
+count = 13
+bbox = Vector4(-16.2364, 11.0446, -16.0528, 11.1988)
+
+[sub_resource type="Resource" id="Resource_5xy0c"]
+script = ExtResource("1_cnqlx")
+start_index = 121
+count = 11
+bbox = Vector4(-15.7798, 11.1745, -15.6583, 11.3018)
+
+[sub_resource type="Resource" id="Resource_01y43"]
+script = ExtResource("1_cnqlx")
+start_index = 132
+count = 8
+bbox = Vector4(-16.0232, 11.4344, -15.9018, 11.5983)
+
+[sub_resource type="Resource" id="Resource_6hdbo"]
+script = ExtResource("1_cnqlx")
+start_index = 140
+count = 8
+bbox = Vector4(-15.6196, 11.5138, -15.4825, 11.6323)
+
+[sub_resource type="Resource" id="Resource_ncbbi"]
+script = ExtResource("1_cnqlx")
+start_index = 148
+count = 7
+bbox = Vector4(-16.1524, 11.7597, -15.9864, 11.8867)
+
+[resource]
+script = ExtResource("2_yv1hu")
+name = "Guinea-Bissau"
+alt_names = Array[String]([])
+code = "GW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Guinea-Bissau_mesh.tres"
+outline_file = "res://resources/countries/Guinea-Bissau_outline.tres"
+polygons = Array[ExtResource("1_cnqlx")]([SubResource("Resource_fd1si"), SubResource("Resource_fgall"), SubResource("Resource_bduj7"), SubResource("Resource_5xy0c"), SubResource("Resource_01y43"), SubResource("Resource_6hdbo"), SubResource("Resource_ncbbi")])

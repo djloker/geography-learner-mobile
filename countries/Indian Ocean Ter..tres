@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://ww416ibvov8d"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_wxko7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_h2hoi"]
+
+[sub_resource type="Resource" id="Resource_jtivw"]
+script = ExtResource("1_wxko7")
+start_index = 0
+count = 12
+bbox = Vector4(96.893, -12.1998, 96.9253, -12.1615)
+
+[sub_resource type="Resource" id="Resource_g3dcm"]
+script = ExtResource("1_wxko7")
+start_index = 12
+count = 14
+bbox = Vector4(96.8259, -12.1974, 96.8736, -12.1262)
+
+[sub_resource type="Resource" id="Resource_cfwub"]
+script = ExtResource("1_wxko7")
+start_index = 26
+count = 9
+bbox = Vector4(105.584, -10.5642, 105.725, -10.4307)
+
+[resource]
+script = ExtResource("2_h2hoi")
+name = "Indian Ocean Ter."
+alt_names = Array[String]([])
+code = "-99"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Indian Ocean Ter._mesh.tres"
+outline_file = "res://resources/countries/Indian Ocean Ter._outline.tres"
+polygons = Array[ExtResource("1_wxko7")]([SubResource("Resource_jtivw"), SubResource("Resource_g3dcm"), SubResource("Resource_cfwub")])

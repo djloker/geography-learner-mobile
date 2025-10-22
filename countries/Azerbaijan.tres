@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://cjvsbbsn5v3qa"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_5csp4"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_5gsp6"]
+
+[sub_resource type="Resource" id="Resource_vgb55"]
+script = ExtResource("1_5csp4")
+start_index = 0
+count = 41
+bbox = Vector4(44.7683, 38.8778, 46.1145, 39.7651)
+
+[sub_resource type="Resource" id="Resource_csrhs"]
+script = ExtResource("1_5csp4")
+start_index = 41
+count = 206
+bbox = Vector4(45.0014, 38.3987, 50.3659, 41.891)
+
+[sub_resource type="Resource" id="Resource_i8h2s"]
+script = ExtResource("1_5csp4")
+start_index = 247
+count = 8
+bbox = Vector4(45.4788, 40.5996, 45.5623, 40.6648)
+
+[sub_resource type="Resource" id="Resource_2xep6"]
+script = ExtResource("1_5csp4")
+start_index = 255
+count = 9
+bbox = Vector4(44.9589, 41.0158, 45.0287, 41.0856)
+
+[resource]
+script = ExtResource("2_5gsp6")
+name = "Azerbaijan"
+alt_names = Array[String]([])
+code = "AZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Azerbaijan_mesh.tres"
+outline_file = "res://resources/countries/Azerbaijan_outline.tres"
+polygons = Array[ExtResource("1_5csp4")]([SubResource("Resource_vgb55"), SubResource("Resource_csrhs"), SubResource("Resource_i8h2s"), SubResource("Resource_2xep6")])

@@ -1,0 +1,303 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=51 format=3 uid="uid://y2ja8pixrgjy"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_i814a"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_cmmys"]
+
+[sub_resource type="Resource" id="Resource_ycmke"]
+script = ExtResource("1_i814a")
+start_index = 0
+count = 17
+bbox = Vector4(119.821, 5.0602, 120.25, 5.34009)
+
+[sub_resource type="Resource" id="Resource_jm7c0"]
+script = ExtResource("1_i814a")
+start_index = 17
+count = 15
+bbox = Vector4(120.876, 5.86997, 121.415, 6.096)
+
+[sub_resource type="Resource" id="Resource_bvna7"]
+script = ExtResource("1_i814a")
+start_index = 32
+count = 14
+bbox = Vector4(121.809, 6.41455, 122.324, 6.74072)
+
+[sub_resource type="Resource" id="Resource_yo5ua"]
+script = ExtResource("1_i814a")
+start_index = 46
+count = 7
+bbox = Vector4(125.683, 6.90576, 125.785, 7.18555)
+
+[sub_resource type="Resource" id="Resource_ax2r5"]
+script = ExtResource("1_i814a")
+start_index = 53
+count = 10
+bbox = Vector4(122.797, 7.3146, 122.948, 7.4334)
+
+[sub_resource type="Resource" id="Resource_bxbgp"]
+script = ExtResource("1_i814a")
+start_index = 63
+count = 7
+bbox = Vector4(116.97, 7.80752, 117.08, 8.06914)
+
+[sub_resource type="Resource" id="Resource_uc42u"]
+script = ExtResource("1_i814a")
+start_index = 70
+count = 7
+bbox = Vector4(117.272, 8.19102, 117.355, 8.31499)
+
+[sub_resource type="Resource" id="Resource_l7vl6"]
+script = ExtResource("1_i814a")
+start_index = 77
+count = 9
+bbox = Vector4(124.639, 9.08311, 124.807, 9.24316)
+
+[sub_resource type="Resource" id="Resource_y8bsu"]
+script = ExtResource("1_i814a")
+start_index = 86
+count = 10
+bbox = Vector4(123.493, 9.10332, 123.706, 9.27876)
+
+[sub_resource type="Resource" id="Resource_xchx2"]
+script = ExtResource("1_i814a")
+start_index = 96
+count = 7
+bbox = Vector4(125.922, 9.56797, 125.993, 9.75908)
+
+[sub_resource type="Resource" id="Resource_8g5hg"]
+script = ExtResource("1_i814a")
+start_index = 103
+count = 191
+bbox = Vector4(121.904, 5.59897, 126.593, 9.75913)
+
+[sub_resource type="Resource" id="Resource_bg0w1"]
+script = ExtResource("1_i814a")
+start_index = 294
+count = 11
+bbox = Vector4(125.991, 9.76079, 126.173, 10.0592)
+
+[sub_resource type="Resource" id="Resource_ot0ym"]
+script = ExtResource("1_i814a")
+start_index = 305
+count = 7
+bbox = Vector4(125.133, 9.93271, 125.288, 10.155)
+
+[sub_resource type="Resource" id="Resource_jqqmo"]
+script = ExtResource("1_i814a")
+start_index = 312
+count = 25
+bbox = Vector4(123.817, 9.59932, 124.594, 10.1599)
+
+[sub_resource type="Resource" id="Resource_p61g6"]
+script = ExtResource("1_i814a")
+start_index = 337
+count = 18
+bbox = Vector4(125.495, 9.88647, 125.703, 10.4401)
+
+[sub_resource type="Resource" id="Resource_22uwp"]
+script = ExtResource("1_i814a")
+start_index = 355
+count = 8
+bbox = Vector4(119.764, 10.4553, 120.008, 10.6401)
+
+[sub_resource type="Resource" id="Resource_6fm50"]
+script = ExtResource("1_i814a")
+start_index = 363
+count = 7
+bbox = Vector4(124.288, 10.6015, 124.382, 10.7067)
+
+[sub_resource type="Resource" id="Resource_0np5b"]
+script = ExtResource("1_i814a")
+start_index = 370
+count = 14
+bbox = Vector4(122.517, 10.425, 122.737, 10.7406)
+
+[sub_resource type="Resource" id="Resource_yyd1o"]
+script = ExtResource("1_i814a")
+start_index = 384
+count = 51
+bbox = Vector4(122.4, 9.05337, 123.568, 10.9939)
+
+[sub_resource type="Resource" id="Resource_tpth4"]
+script = ExtResource("1_i814a")
+start_index = 435
+count = 33
+bbox = Vector4(123.316, 9.42295, 124.058, 11.2735)
+
+[sub_resource type="Resource" id="Resource_fuxyd"]
+script = ExtResource("1_i814a")
+start_index = 468
+count = 6
+bbox = Vector4(123.708, 11.1507, 123.816, 11.2833)
+
+[sub_resource type="Resource" id="Resource_tp0sb"]
+script = ExtResource("1_i814a")
+start_index = 474
+count = 71
+bbox = Vector4(117.219, 8.36728, 119.687, 11.3464)
+
+[sub_resource type="Resource" id="Resource_5hix2"]
+script = ExtResource("1_i814a")
+start_index = 545
+count = 10
+bbox = Vector4(119.726, 11.3757, 119.883, 11.5253)
+
+[sub_resource type="Resource" id="Resource_sc3tf"]
+script = ExtResource("1_i814a")
+start_index = 555
+count = 52
+bbox = Vector4(124.308, 10.0331, 125.268, 11.5352)
+
+[sub_resource type="Resource" id="Resource_6kxvh"]
+script = ExtResource("1_i814a")
+start_index = 607
+count = 9
+bbox = Vector4(124.36, 11.4858, 124.622, 11.695)
+
+[sub_resource type="Resource" id="Resource_xcg5n"]
+script = ExtResource("1_i814a")
+start_index = 616
+count = 9
+bbox = Vector4(124.731, 11.5433, 124.854, 11.7153)
+
+[sub_resource type="Resource" id="Resource_631av"]
+script = ExtResource("1_i814a")
+start_index = 625
+count = 48
+bbox = Vector4(121.891, 10.4444, 123.158, 11.8974)
+
+[sub_resource type="Resource" id="Resource_n354c"]
+script = ExtResource("1_i814a")
+start_index = 673
+count = 14
+bbox = Vector4(119.861, 11.6694, 120.073, 11.9813)
+
+[sub_resource type="Resource" id="Resource_sgpwd"]
+script = ExtResource("1_i814a")
+start_index = 687
+count = 23
+bbox = Vector4(119.866, 11.9937, 120.341, 12.3191)
+
+[sub_resource type="Resource" id="Resource_xisrm"]
+script = ExtResource("1_i814a")
+start_index = 710
+count = 10
+bbox = Vector4(122.423, 12.2856, 122.683, 12.4919)
+
+[sub_resource type="Resource" id="Resource_38etx"]
+script = ExtResource("1_i814a")
+start_index = 720
+count = 53
+bbox = Vector4(124.295, 11.0496, 125.749, 12.5726)
+
+[sub_resource type="Resource" id="Resource_io5c0"]
+script = ExtResource("1_i814a")
+start_index = 773
+count = 29
+bbox = Vector4(123.156, 11.7524, 124.056, 12.5835)
+
+[sub_resource type="Resource" id="Resource_ub20n"]
+script = ExtResource("1_i814a")
+start_index = 802
+count = 7
+bbox = Vector4(122.248, 12.4983, 122.311, 12.5929)
+
+[sub_resource type="Resource" id="Resource_rscr6"]
+script = ExtResource("1_i814a")
+start_index = 809
+count = 14
+bbox = Vector4(121.923, 12.1056, 122.145, 12.6526)
+
+[sub_resource type="Resource" id="Resource_yfcn1"]
+script = ExtResource("1_i814a")
+start_index = 823
+count = 8
+bbox = Vector4(123.587, 12.3663, 123.779, 12.6749)
+
+[sub_resource type="Resource" id="Resource_u1lal"]
+script = ExtResource("1_i814a")
+start_index = 831
+count = 12
+bbox = Vector4(122.949, 12.7008, 123.367, 13.1162)
+
+[sub_resource type="Resource" id="Resource_4qdyl"]
+script = ExtResource("1_i814a")
+start_index = 843
+count = 55
+bbox = Vector4(120.338, 12.2188, 121.541, 13.5224)
+
+[sub_resource type="Resource" id="Resource_h52bh"]
+script = ExtResource("1_i814a")
+start_index = 898
+count = 14
+bbox = Vector4(121.815, 13.205, 122.122, 13.5662)
+
+[sub_resource type="Resource" id="Resource_6xoky"]
+script = ExtResource("1_i814a")
+start_index = 912
+count = 8
+bbox = Vector4(120.099, 13.683, 120.273, 13.8581)
+
+[sub_resource type="Resource" id="Resource_dov52"]
+script = ExtResource("1_i814a")
+start_index = 920
+count = 18
+bbox = Vector4(124.039, 13.5315, 124.417, 14.0776)
+
+[sub_resource type="Resource" id="Resource_loqd4"]
+script = ExtResource("1_i814a")
+start_index = 938
+count = 7
+bbox = Vector4(121.946, 14.008, 122.175, 14.2288)
+
+[sub_resource type="Resource" id="Resource_j02u5"]
+script = ExtResource("1_i814a")
+start_index = 945
+count = 18
+bbox = Vector4(121.82, 14.6561, 122.052, 15.0464)
+
+[sub_resource type="Resource" id="Resource_t0kkn"]
+script = ExtResource("1_i814a")
+start_index = 963
+count = 236
+bbox = Vector4(119.762, 12.5671, 124.143, 18.6153)
+
+[sub_resource type="Resource" id="Resource_m1yym"]
+script = ExtResource("1_i814a")
+start_index = 1199
+count = 9
+bbox = Vector4(121.825, 18.8229, 121.988, 19.0104)
+
+[sub_resource type="Resource" id="Resource_xw8v6"]
+script = ExtResource("1_i814a")
+start_index = 1208
+count = 8
+bbox = Vector4(121.185, 19.0152, 121.252, 19.1836)
+
+[sub_resource type="Resource" id="Resource_3fpgi"]
+script = ExtResource("1_i814a")
+start_index = 1216
+count = 8
+bbox = Vector4(121.375, 19.2713, 121.531, 19.3994)
+
+[sub_resource type="Resource" id="Resource_lmerw"]
+script = ExtResource("1_i814a")
+start_index = 1224
+count = 7
+bbox = Vector4(121.914, 20.3537, 122.031, 20.4796)
+
+[sub_resource type="Resource" id="Resource_prita"]
+script = ExtResource("1_i814a")
+start_index = 1231
+count = 7
+bbox = Vector4(121.791, 20.7003, 121.878, 20.8413)
+
+[resource]
+script = ExtResource("2_cmmys")
+name = "Philippines"
+alt_names = Array[String]([])
+code = "PH"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Philippines_mesh.tres"
+outline_file = "res://resources/countries/Philippines_outline.tres"
+polygons = Array[ExtResource("1_i814a")]([SubResource("Resource_ycmke"), SubResource("Resource_jm7c0"), SubResource("Resource_bvna7"), SubResource("Resource_yo5ua"), SubResource("Resource_ax2r5"), SubResource("Resource_bxbgp"), SubResource("Resource_uc42u"), SubResource("Resource_l7vl6"), SubResource("Resource_y8bsu"), SubResource("Resource_xchx2"), SubResource("Resource_8g5hg"), SubResource("Resource_bg0w1"), SubResource("Resource_ot0ym"), SubResource("Resource_jqqmo"), SubResource("Resource_p61g6"), SubResource("Resource_22uwp"), SubResource("Resource_6fm50"), SubResource("Resource_0np5b"), SubResource("Resource_yyd1o"), SubResource("Resource_tpth4"), SubResource("Resource_fuxyd"), SubResource("Resource_tp0sb"), SubResource("Resource_5hix2"), SubResource("Resource_sc3tf"), SubResource("Resource_6kxvh"), SubResource("Resource_xcg5n"), SubResource("Resource_631av"), SubResource("Resource_n354c"), SubResource("Resource_sgpwd"), SubResource("Resource_xisrm"), SubResource("Resource_38etx"), SubResource("Resource_io5c0"), SubResource("Resource_ub20n"), SubResource("Resource_rscr6"), SubResource("Resource_yfcn1"), SubResource("Resource_u1lal"), SubResource("Resource_4qdyl"), SubResource("Resource_h52bh"), SubResource("Resource_6xoky"), SubResource("Resource_dov52"), SubResource("Resource_loqd4"), SubResource("Resource_j02u5"), SubResource("Resource_t0kkn"), SubResource("Resource_m1yym"), SubResource("Resource_xw8v6"), SubResource("Resource_3fpgi"), SubResource("Resource_lmerw"), SubResource("Resource_prita")])

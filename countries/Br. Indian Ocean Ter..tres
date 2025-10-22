@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://qqn7pnq14pmi"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_hr184"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yvdks"]
+
+[sub_resource type="Resource" id="Resource_bt018"]
+script = ExtResource("1_hr184")
+start_index = 0
+count = 17
+bbox = Vector4(72.3497, -7.43535, 72.4985, -7.22041)
+
+[resource]
+script = ExtResource("2_yvdks")
+name = "Br. Indian Ocean Ter."
+alt_names = Array[String]([])
+code = "IO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Br. Indian Ocean Ter._mesh.tres"
+outline_file = "res://resources/countries/Br. Indian Ocean Ter._outline.tres"
+polygons = Array[ExtResource("1_hr184")]([SubResource("Resource_bt018")])

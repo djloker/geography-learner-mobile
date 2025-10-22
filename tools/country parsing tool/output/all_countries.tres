@@ -1,0 +1,1778 @@
+[gd_resource type="Resource" script_class="CountryList" load_steps=244 format=3 uid="uid://ccg7ojk2ndggd"]
+
+[ext_resource type="Script" uid="uid://dsl77omyursof" path="res://scripts/country_resource.gd" id="1_si26h"]
+[ext_resource type="Script" uid="uid://1xtf76hx7y7k" path="res://scripts/country_list.gd" id="2_dsqbp"]
+
+[sub_resource type="Resource" id="Resource_qb2nv"]
+script = ExtResource("1_si26h")
+name = "Aruba"
+code = "AW"
+capital = "Oranjestad"
+centroid = Vector2(12.518555, -69.98091)
+
+[sub_resource type="Resource" id="Resource_smoen"]
+script = ExtResource("1_si26h")
+name = "Afghanistan"
+code = "AF"
+capital = "Kabul"
+centroid = Vector2(33.92417, 67.68852)
+
+[sub_resource type="Resource" id="Resource_65xfi"]
+script = ExtResource("1_si26h")
+name = "Angola"
+code = "AO"
+capital = "Luanda"
+centroid = Vector2(-11.93745, 17.894875)
+
+[sub_resource type="Resource" id="Resource_po0oo"]
+script = ExtResource("1_si26h")
+name = "Anguilla"
+code = "AI"
+capital = "The Valley"
+centroid = Vector2(18.220556, -63.0698)
+
+[sub_resource type="Resource" id="Resource_dkk7j"]
+script = ExtResource("1_si26h")
+name = "Albania"
+code = "AL"
+capital = "Tirana"
+centroid = Vector2(41.150734, 20.15586)
+
+[sub_resource type="Resource" id="Resource_5htsq"]
+script = ExtResource("1_si26h")
+name = "Åland"
+alt_names = Array[String](["Aland"])
+code = "AX"
+capital = "Mariehamn"
+centroid = Vector2(60.243774, 19.965576)
+
+[sub_resource type="Resource" id="Resource_tjnpy"]
+script = ExtResource("1_si26h")
+name = "Andorra"
+code = "AD"
+capital = "Andorra la Vella"
+centroid = Vector2(42.538597, 1.5775391)
+
+[sub_resource type="Resource" id="Resource_8qsa3"]
+script = ExtResource("1_si26h")
+name = "United Arab Emirates"
+alt_names = Array[String](["UAE"])
+code = "AE"
+capital = "Abu Dhabi"
+centroid = Vector2(24.344826, 53.978172)
+
+[sub_resource type="Resource" id="Resource_xirwr"]
+script = ExtResource("1_si26h")
+name = "Argentina"
+code = "AR"
+capital = "Buenos Aires"
+centroid = Vector2(-37.07959, -63.622414)
+
+[sub_resource type="Resource" id="Resource_0r6se"]
+script = ExtResource("1_si26h")
+name = "Armenia"
+code = "AM"
+capital = "Yerevan"
+centroid = Vector2(40.08, 45.012108)
+
+[sub_resource type="Resource" id="Resource_cdyqm"]
+script = ExtResource("1_si26h")
+name = "American Samoa"
+code = "AS"
+capital = "Pago Pago"
+centroid = Vector2(-14.308594, -170.6943)
+
+[sub_resource type="Resource" id="Resource_pura7"]
+script = ExtResource("1_si26h")
+name = "Antarctica"
+code = "AQ"
+centroid = Vector2(-76.612595, 0)
+
+[sub_resource type="Resource" id="Resource_g7bbe"]
+script = ExtResource("1_si26h")
+name = "Ashmore and Cartier Is."
+alt_names = Array[String](["Ashmore and Cartier Islands"])
+code = "-99"
+centroid = Vector2(-12.429932, 123.58384)
+
+[sub_resource type="Resource" id="Resource_x3qpg"]
+script = ExtResource("1_si26h")
+name = "Fr. S. Antarctic Lands"
+alt_names = Array[String](["French Southern and Antarctic Lands"])
+code = "TF"
+capital = "Saint-Pierre"
+centroid = Vector2(-49.18315, 69.6625)
+
+[sub_resource type="Resource" id="Resource_wcb4r"]
+script = ExtResource("1_si26h")
+name = "Antigua and Barb."
+alt_names = Array[String](["Antigua and Barbuda"])
+code = "AG"
+capital = "St. John's"
+centroid = Vector2(17.083057, -61.78657)
+
+[sub_resource type="Resource" id="Resource_se6td"]
+script = ExtResource("1_si26h")
+name = "Australia"
+code = "AU"
+capital = "Canberra"
+centroid = Vector2(-24.926416, 133.40083)
+
+[sub_resource type="Resource" id="Resource_1kg2w"]
+script = ExtResource("1_si26h")
+name = "Austria"
+code = "AT"
+capital = "Vienna"
+centroid = Vector2(47.700417, 13.335693)
+
+[sub_resource type="Resource" id="Resource_qttmh"]
+script = ExtResource("1_si26h")
+name = "Azerbaijan"
+code = "AZ"
+capital = "Baku"
+centroid = Vector2(40.14485, 47.68364)
+
+[sub_resource type="Resource" id="Resource_hf6fo"]
+script = ExtResource("1_si26h")
+name = "Burundi"
+code = "BI"
+capital = "Gitega"
+centroid = Vector2(-3.3844237, 29.912792)
+
+[sub_resource type="Resource" id="Resource_iqnvr"]
+script = ExtResource("1_si26h")
+name = "Belgium"
+code = "BE"
+capital = "Brussels"
+centroid = Vector2(50.501, 4.444678)
+
+[sub_resource type="Resource" id="Resource_ycepw"]
+script = ExtResource("1_si26h")
+name = "Benin"
+code = "BJ"
+capital = "Porto-Novo"
+centroid = Vector2(9.300318, 2.2989259)
+
+[sub_resource type="Resource" id="Resource_g3oml"]
+script = ExtResource("1_si26h")
+name = "Burkina Faso"
+code = "BF"
+capital = "Ouagadougou"
+centroid = Vector2(12.251294, -1.5671875)
+
+[sub_resource type="Resource" id="Resource_uxlub"]
+script = ExtResource("1_si26h")
+name = "Bangladesh"
+code = "BD"
+capital = "Dhaka"
+centroid = Vector2(23.68098, 90.32754)
+
+[sub_resource type="Resource" id="Resource_eqxyx"]
+script = ExtResource("1_si26h")
+name = "Bulgaria"
+code = "BG"
+capital = "Sofia"
+centroid = Vector2(42.740673, 25.464699)
+
+[sub_resource type="Resource" id="Resource_hoouk"]
+script = ExtResource("1_si26h")
+name = "Bahrain"
+code = "BH"
+capital = "Manama"
+centroid = Vector2(26.026611, 50.53496)
+
+[sub_resource type="Resource" id="Resource_ihq0c"]
+script = ExtResource("1_si26h")
+name = "Bahamas"
+alt_names = Array[String](["The Bahamas"])
+code = "BS"
+capital = "Nassau"
+centroid = Vector2(26.417774, -77.49101)
+
+[sub_resource type="Resource" id="Resource_ahfar"]
+script = ExtResource("1_si26h")
+name = "Bosnia and Herz."
+alt_names = Array[String](["Bosnia and Herzegovnia"])
+code = "BA"
+capital = "Sarajevo"
+centroid = Vector2(43.918137, 17.660206)
+
+[sub_resource type="Resource" id="Resource_s0747"]
+script = ExtResource("1_si26h")
+name = "St-Barthélemy"
+alt_names = Array[String](["St-Barthelemy", "St. Barthelemy", "Saint Barthelemy", "St. Barts", "Saint Barts"])
+code = "BL"
+capital = "Gustavia"
+centroid = Vector2(17.898731, -62.83757)
+
+[sub_resource type="Resource" id="Resource_uoli0"]
+script = ExtResource("1_si26h")
+name = "Belarus"
+code = "BY"
+capital = "Minsk"
+centroid = Vector2(53.70542, 27.942677)
+
+[sub_resource type="Resource" id="Resource_w2vul"]
+script = ExtResource("1_si26h")
+name = "Belize"
+code = "BZ"
+capital = "Belmopan"
+centroid = Vector2(17.185497, -88.66138)
+
+[sub_resource type="Resource" id="Resource_vngok"]
+script = ExtResource("1_si26h")
+name = "Bermuda"
+alt_names = Array[String](["Las Bermudas", "Las Islas Bermudas"])
+code = "BM"
+capital = "Hamilton"
+centroid = Vector2(32.323265, -64.76558)
+
+[sub_resource type="Resource" id="Resource_ggclt"]
+script = ExtResource("1_si26h")
+name = "Bolivia"
+code = "BO"
+capital = "Sucre"
+centroid = Vector2(-16.301075, -63.57068)
+
+[sub_resource type="Resource" id="Resource_mky1s"]
+script = ExtResource("1_si26h")
+name = "Brazil"
+code = "BR"
+capital = "Brasilia"
+centroid = Vector2(-14.242114, -54.403763)
+
+[sub_resource type="Resource" id="Resource_jabjn"]
+script = ExtResource("1_si26h")
+name = "Barbados"
+code = "BB"
+capital = "Bridgetown"
+centroid = Vector2(13.189941, -59.537155)
+
+[sub_resource type="Resource" id="Resource_7lm6w"]
+script = ExtResource("1_si26h")
+name = "Brunei"
+code = "BN"
+capital = "Bandar Seri Begawan"
+centroid = Vector2(4.5231686, 114.555756)
+
+[sub_resource type="Resource" id="Resource_wwkwc"]
+script = ExtResource("1_si26h")
+name = "Bhutan"
+code = "BT"
+capital = "Thimphu"
+centroid = Vector2(27.506372, 90.41109)
+
+[sub_resource type="Resource" id="Resource_i38r0"]
+script = ExtResource("1_si26h")
+name = "Botswana"
+code = "BW"
+capital = "Gaborone"
+centroid = Vector2(-22.320898, 24.671093)
+
+[sub_resource type="Resource" id="Resource_ykf7m"]
+script = ExtResource("1_si26h")
+name = "Central African Rep."
+alt_names = Array[String](["Central African Republic"])
+code = "CF"
+capital = "Bangui"
+centroid = Vector2(6.6331544, 20.917236)
+
+[sub_resource type="Resource" id="Resource_mmdlt"]
+script = ExtResource("1_si26h")
+name = "Canada"
+code = "CA"
+capital = "Ottawa"
+centroid = Vector2(56.830856, -98.33748)
+
+[sub_resource type="Resource" id="Resource_r05at"]
+script = ExtResource("1_si26h")
+name = "Switzerland"
+code = "CH"
+capital = "Bern"
+centroid = Vector2(46.802834, 8.212305)
+
+[sub_resource type="Resource" id="Resource_ilwd8"]
+script = ExtResource("1_si26h")
+name = "Chile"
+code = "CL"
+capital = "Santiago"
+centroid = Vector2(-35.694725, -71.358444)
+
+[sub_resource type="Resource" id="Resource_bwniy"]
+script = ExtResource("1_si26h")
+name = "China"
+alt_names = Array[String](["PRC"])
+code = "CN"
+capital = "Beijing"
+centroid = Vector2(36.909668, 104.17984)
+
+[sub_resource type="Resource" id="Resource_famcf"]
+script = ExtResource("1_si26h")
+name = "Côte d'Ivoire"
+alt_names = Array[String](["Cote d'Ivoire", "Ivory Coast"])
+code = "CI"
+capital = "Yamoussoukro"
+centroid = Vector2(7.5376954, -5.554712)
+
+[sub_resource type="Resource" id="Resource_utfs4"]
+script = ExtResource("1_si26h")
+name = "Cameroon"
+code = "CM"
+capital = "Yaounde"
+centroid = Vector2(7.3773685, 12.358106)
+
+[sub_resource type="Resource" id="Resource_dmmpb"]
+script = ExtResource("1_si26h")
+name = "Dem. Rep. Congo"
+alt_names = Array[String](["DRC", "Democratic Republic of the Congo", "DR Congo", "Congo-Kinshasa"])
+code = "CD"
+capital = "Kinshasa"
+centroid = Vector2(-4.0708494, 21.743847)
+
+[sub_resource type="Resource" id="Resource_y4qoa"]
+script = ExtResource("1_si26h")
+name = "Congo"
+alt_names = Array[String](["Congo-Brazzaville", "The Congo"])
+code = "CG"
+capital = "Brazzaville"
+centroid = Vector2(-0.658496, 14.876171)
+
+[sub_resource type="Resource" id="Resource_y42ap"]
+script = ExtResource("1_si26h")
+name = "Cook Is."
+alt_names = Array[String](["Cook Islands"])
+code = "CK"
+capital = "Avarua"
+centroid = Vector2(-21.217968, -159.78967)
+
+[sub_resource type="Resource" id="Resource_wmx1p"]
+script = ExtResource("1_si26h")
+name = "Colombia"
+code = "CO"
+capital = "Bogota"
+centroid = Vector2(4.0992184, -72.95073)
+
+[sub_resource type="Resource" id="Resource_kmiq1"]
+script = ExtResource("1_si26h")
+name = "Comoros"
+code = "KM"
+capital = "Moroni"
+centroid = Vector2(-11.641504, 43.359085)
+
+[sub_resource type="Resource" id="Resource_n3r7s"]
+script = ExtResource("1_si26h")
+name = "Cabo Verde"
+alt_names = Array[String](["Cape Verde"])
+code = "CV"
+capital = "Praia"
+centroid = Vector2(15.122314, -23.614624)
+
+[sub_resource type="Resource" id="Resource_sv4uj"]
+script = ExtResource("1_si26h")
+name = "Costa Rica"
+code = "CR"
+capital = "San Jose"
+centroid = Vector2(9.6300535, -84.235794)
+
+[sub_resource type="Resource" id="Resource_gvp70"]
+script = ExtResource("1_si26h")
+name = "Cuba"
+code = "CU"
+capital = "Havana"
+centroid = Vector2(21.52295, -79.51201)
+
+[sub_resource type="Resource" id="Resource_awrgs"]
+script = ExtResource("1_si26h")
+name = "Curaçao"
+alt_names = Array[String](["Curacao"])
+code = "CW"
+capital = "Willemstad"
+centroid = Vector2(12.212866, -68.95499)
+
+[sub_resource type="Resource" id="Resource_6a3nl"]
+script = ExtResource("1_si26h")
+name = "Cayman Is."
+alt_names = Array[String](["Cayman Islands", "Caymans"])
+code = "KY"
+capital = "George Town"
+centroid = Vector2(19.328394, -81.26311)
+
+[sub_resource type="Resource" id="Resource_3hckc"]
+script = ExtResource("1_si26h")
+name = "N. Cyprus"
+alt_names = Array[String](["Northern Cyprus"])
+code = "-99"
+capital = "Nicosia"
+centroid = Vector2(35.3312, 33.634377)
+
+[sub_resource type="Resource" id="Resource_p6875"]
+script = ExtResource("1_si26h")
+name = "Cyprus"
+code = "CY"
+capital = "Nicosia"
+centroid = Vector2(34.87612, 33.175583)
+
+[sub_resource type="Resource" id="Resource_s04we"]
+script = ExtResource("1_si26h")
+name = "Czechia"
+alt_names = Array[String](["Czech Republic"])
+code = "CZ"
+capital = "Prague"
+centroid = Vector2(49.807007, 15.460986)
+
+[sub_resource type="Resource" id="Resource_lglf1"]
+script = ExtResource("1_si26h")
+name = "Germany"
+code = "DE"
+capital = "Berlin"
+centroid = Vector2(51.091114, 10.43706)
+
+[sub_resource type="Resource" id="Resource_1sq1h"]
+script = ExtResource("1_si26h")
+name = "Djibouti"
+code = "DJ"
+capital = "Djibouti"
+centroid = Vector2(11.824804, 42.587208)
+
+[sub_resource type="Resource" id="Resource_cprxr"]
+script = ExtResource("1_si26h")
+name = "Dominica"
+code = "DM"
+capital = "Roseau"
+centroid = Vector2(15.430201, -61.36611)
+
+[sub_resource type="Resource" id="Resource_kwsju"]
+script = ExtResource("1_si26h")
+name = "Denmark"
+code = "DK"
+capital = "Copenhagen"
+centroid = Vector2(56.271606, 9.5238285)
+
+[sub_resource type="Resource" id="Resource_7kbpe"]
+script = ExtResource("1_si26h")
+name = "Dominican Rep."
+alt_names = Array[String](["Dominican Republic"])
+code = "DO"
+capital = "Santo Domingo"
+centroid = Vector2(18.77478, -70.16977)
+
+[sub_resource type="Resource" id="Resource_254d4"]
+script = ExtResource("1_si26h")
+name = "Algeria"
+code = "DZ"
+capital = "Algiers"
+centroid = Vector2(28.039503, 1.6422606)
+
+[sub_resource type="Resource" id="Resource_mqr08"]
+script = ExtResource("1_si26h")
+name = "Ecuador"
+code = "EC"
+capital = "Quito"
+centroid = Vector2(-1.7676269, -78.1062)
+
+[sub_resource type="Resource" id="Resource_pkdac"]
+script = ExtResource("1_si26h")
+name = "Egypt"
+code = "EG"
+capital = "Cairo"
+centroid = Vector2(26.824926, 30.787304)
+
+[sub_resource type="Resource" id="Resource_gjfcc"]
+script = ExtResource("1_si26h")
+name = "Eritrea"
+code = "ER"
+capital = "Asmara"
+centroid = Vector2(15.19082, 39.77173)
+
+[sub_resource type="Resource" id="Resource_hjd4i"]
+script = ExtResource("1_si26h")
+name = "Spain"
+code = "ES"
+capital = "Madrid"
+centroid = Vector2(39.89524, -2.964453)
+
+[sub_resource type="Resource" id="Resource_sml3u"]
+script = ExtResource("1_si26h")
+name = "Estonia"
+code = "EE"
+capital = "Tallinn"
+centroid = Vector2(58.582253, 25.791553)
+
+[sub_resource type="Resource" id="Resource_14yw2"]
+script = ExtResource("1_si26h")
+name = "Ethiopia"
+code = "ET"
+capital = "Addis Ababa"
+centroid = Vector2(9.1542, 40.48857)
+
+[sub_resource type="Resource" id="Resource_w7tp7"]
+script = ExtResource("1_si26h")
+name = "Finland"
+code = "FI"
+capital = "Helsinki"
+centroid = Vector2(64.94043, 26.079346)
+
+[sub_resource type="Resource" id="Resource_whamo"]
+script = ExtResource("1_si26h")
+name = "Fiji"
+code = "FJ"
+capital = "Suva"
+centroid = Vector2(-17.788525, 177.96127)
+
+[sub_resource type="Resource" id="Resource_vft2o"]
+script = ExtResource("1_si26h")
+name = "Falkland Is."
+alt_names = Array[String](["Falkland Islands", "Falklands"])
+code = "FK"
+capital = "Stanley"
+centroid = Vector2(-51.788963, -58.72048)
+
+[sub_resource type="Resource" id="Resource_odqur"]
+script = ExtResource("1_si26h")
+name = "France"
+code = "FR"
+capital = "Paris"
+centroid = Vector2(46.718796, 1.6889162)
+
+[sub_resource type="Resource" id="Resource_yjhvp"]
+script = ExtResource("1_si26h")
+name = "Faeroe Is."
+alt_names = Array[String](["Faeroe Islands", "Faroe Islands", "Faeroes", "Faroes"])
+code = "FO"
+capital = "Torshavn"
+centroid = Vector2(62.133865, -6.9016113)
+
+[sub_resource type="Resource" id="Resource_xdisq"]
+script = ExtResource("1_si26h")
+name = "Micronesia"
+alt_names = Array[String](["FSM"])
+code = "FM"
+capital = "Palikir"
+centroid = Vector2(6.884375, 158.2313)
+
+[sub_resource type="Resource" id="Resource_wwhod"]
+script = ExtResource("1_si26h")
+name = "Gabon"
+code = "GA"
+capital = "Libreville"
+centroid = Vector2(-0.8070557, 11.5918455)
+
+[sub_resource type="Resource" id="Resource_5rs4u"]
+script = ExtResource("1_si26h")
+name = "United Kingdom"
+alt_names = Array[String](["UK", "Britain"])
+code = "GB"
+capital = "London"
+centroid = Vector2(54.335693, -2.1935546)
+
+[sub_resource type="Resource" id="Resource_kdxdm"]
+script = ExtResource("1_si26h")
+name = "Georgia"
+code = "GE"
+capital = "Tbilisi"
+centroid = Vector2(42.319992, 43.32544)
+
+[sub_resource type="Resource" id="Resource_8eoqh"]
+script = ExtResource("1_si26h")
+name = "Guernsey"
+code = "GG"
+capital = "St. Peter Port"
+centroid = Vector2(49.46765, -2.5792236)
+
+[sub_resource type="Resource" id="Resource_i01y5"]
+script = ExtResource("1_si26h")
+name = "Ghana"
+code = "GH"
+capital = "Accra"
+centroid = Vector2(7.964673, -1.0283448)
+
+[sub_resource type="Resource" id="Resource_ip5da"]
+script = ExtResource("1_si26h")
+name = "Guinea"
+code = "GN"
+capital = "Conakry"
+centroid = Vector2(9.9449215, -11.366211)
+
+[sub_resource type="Resource" id="Resource_bmbek"]
+script = ExtResource("1_si26h")
+name = "Gambia"
+alt_names = Array[String](["The Gambia"])
+code = "GM"
+capital = "Banjul"
+centroid = Vector2(13.438135, -15.325756)
+
+[sub_resource type="Resource" id="Resource_mwp6p"]
+script = ExtResource("1_si26h")
+name = "Guinea-Bissau"
+code = "GW"
+capital = "Bissau"
+centroid = Vector2(11.810034, -15.192677)
+
+[sub_resource type="Resource" id="Resource_ku08e"]
+script = ExtResource("1_si26h")
+name = "Eq. Guinea"
+alt_names = Array[String](["Equatorial Guinea"])
+code = "GQ"
+capital = "Malabo"
+centroid = Vector2(1.6322753, 10.360645)
+
+[sub_resource type="Resource" id="Resource_r2bpk"]
+script = ExtResource("1_si26h")
+name = "Greece"
+code = "GR"
+capital = "Athens"
+centroid = Vector2(39.09536, 23.313087)
+
+[sub_resource type="Resource" id="Resource_sihrr"]
+script = ExtResource("1_si26h")
+name = "Grenada"
+code = "GD"
+capital = "St. George's"
+centroid = Vector2(12.12273, -61.694603)
+
+[sub_resource type="Resource" id="Resource_8ym4r"]
+script = ExtResource("1_si26h")
+name = "Greenland"
+code = "GL"
+capital = "Nuuk"
+centroid = Vector2(71.70754, -42.121803)
+
+[sub_resource type="Resource" id="Resource_visuf"]
+script = ExtResource("1_si26h")
+name = "Guatemala"
+code = "GT"
+capital = "Guatemala City"
+centroid = Vector2(15.776464, -90.231735)
+
+[sub_resource type="Resource" id="Resource_h022n"]
+script = ExtResource("1_si26h")
+name = "Guam"
+code = "GU"
+capital = "Hagatna"
+centroid = Vector2(13.439941, 144.79507)
+
+[sub_resource type="Resource" id="Resource_8e4r8"]
+script = ExtResource("1_si26h")
+name = "Guyana"
+code = "GY"
+capital = "Georgetown"
+centroid = Vector2(4.8752685, -58.936813)
+
+[sub_resource type="Resource" id="Resource_boohb"]
+script = ExtResource("1_si26h")
+name = "Hong Kong"
+code = "HK"
+centroid = Vector2(22.430275, 114.11587)
+
+[sub_resource type="Resource" id="Resource_echmf"]
+script = ExtResource("1_si26h")
+name = "Heard I. and McDonald Is."
+alt_names = Array[String](["Heard Island and McDonald Islands"])
+code = "HM"
+centroid = Vector2(-53.07544, 73.54448)
+
+[sub_resource type="Resource" id="Resource_731jy"]
+script = ExtResource("1_si26h")
+name = "Honduras"
+code = "HN"
+capital = "Tegucigalpa"
+centroid = Vector2(14.501709, -86.260056)
+
+[sub_resource type="Resource" id="Resource_m2284"]
+script = ExtResource("1_si26h")
+name = "Croatia"
+code = "HR"
+capital = "Zagreb"
+centroid = Vector2(44.736496, 16.459082)
+
+[sub_resource type="Resource" id="Resource_0kky0"]
+script = ExtResource("1_si26h")
+name = "Haiti"
+code = "HT"
+capital = "Port-au-Prince"
+centroid = Vector2(18.983618, -73.06172)
+
+[sub_resource type="Resource" id="Resource_1em0p"]
+script = ExtResource("1_si26h")
+name = "Hungary"
+code = "HU"
+capital = "Budapest"
+centroid = Vector2(47.153248, 19.484863)
+
+[sub_resource type="Resource" id="Resource_t1ea5"]
+script = ExtResource("1_si26h")
+name = "Indonesia"
+code = "ID"
+capital = "Jakarta"
+centroid = Vector2(-0.13955092, 100.63252)
+
+[sub_resource type="Resource" id="Resource_y6vve"]
+script = ExtResource("1_si26h")
+name = "Isle of Man"
+alt_names = Array[String](["Is. of Man", "Maan"])
+code = "IM"
+capital = "Douglas"
+centroid = Vector2(54.232933, -4.5616703)
+
+[sub_resource type="Resource" id="Resource_dv7j4"]
+script = ExtResource("1_si26h")
+name = "India"
+code = "IN"
+capital = "New Delhi"
+centroid = Vector2(21.78711, 82.754295)
+
+[sub_resource type="Resource" id="Resource_f2atm"]
+script = ExtResource("1_si26h")
+name = "Indian Ocean Ter."
+alt_names = Array[String](["Indian Ocean Territories", "Australian Indian Ocean Territories", "AIOT"])
+code = "-99"
+centroid = Vector2(-10.497412, 105.65474)
+
+[sub_resource type="Resource" id="Resource_nv0xh"]
+script = ExtResource("1_si26h")
+name = "Br. Indian Ocean Ter."
+alt_names = Array[String](["British Indian Ocean Territories", "BIOT"])
+code = "IO"
+capital = "Diego Garcia"
+centroid = Vector2(-7.327881, 72.42412)
+
+[sub_resource type="Resource" id="Resource_dhpuc"]
+script = ExtResource("1_si26h")
+name = "Ireland"
+code = "IE"
+capital = "Dublin"
+centroid = Vector2(53.419777, -8.208813)
+
+[sub_resource type="Resource" id="Resource_u0c4i"]
+script = ExtResource("1_si26h")
+name = "Iran"
+alt_names = Array[String](["Persia"])
+code = "IR"
+capital = "Tehran"
+centroid = Vector2(32.435326, 53.664207)
+
+[sub_resource type="Resource" id="Resource_ebgnh"]
+script = ExtResource("1_si26h")
+name = "Iraq"
+code = "IQ"
+capital = "Baghdad"
+centroid = Vector2(33.217773, 43.66001)
+
+[sub_resource type="Resource" id="Resource_cn3fq"]
+script = ExtResource("1_si26h")
+name = "Iceland"
+code = "IS"
+capital = "Reykjavik"
+centroid = Vector2(64.966385, -19.015894)
+
+[sub_resource type="Resource" id="Resource_di3lu"]
+script = ExtResource("1_si26h")
+name = "Israel"
+code = "IL"
+capital = "Jerusalem"
+centroid = Vector2(31.454542, 35.07939)
+
+[sub_resource type="Resource" id="Resource_nqiuj"]
+script = ExtResource("1_si26h")
+name = "Italy"
+alt_names = Array[String](["Italia"])
+code = "IT"
+capital = "Rome"
+centroid = Vector2(42.51062, 12.5567875)
+
+[sub_resource type="Resource" id="Resource_63jth"]
+script = ExtResource("1_si26h")
+name = "Jamaica"
+code = "JM"
+capital = "Kingston"
+centroid = Vector2(18.11858, -77.27515)
+
+[sub_resource type="Resource" id="Resource_ijjg7"]
+script = ExtResource("1_si26h")
+name = "Jersey"
+alt_names = Array[String](["Bailiwick of Jersey"])
+code = "JE"
+capital = "St Helier"
+centroid = Vector2(49.21809, -2.122876)
+
+[sub_resource type="Resource" id="Resource_y1bs8"]
+script = ExtResource("1_si26h")
+name = "Jordan"
+code = "JO"
+capital = "Amman"
+centroid = Vector2(31.281347, 37.12178)
+
+[sub_resource type="Resource" id="Resource_j1kl5"]
+script = ExtResource("1_si26h")
+name = "Japan"
+alt_names = Array[String](["Nippon", "Nihon"])
+code = "JP"
+capital = "Tokyo"
+centroid = Vector2(37.49626, 136.44121)
+
+[sub_resource type="Resource" id="Resource_mt734"]
+script = ExtResource("1_si26h")
+name = "Siachen Glacier"
+alt_names = Array[String](["Siachen"])
+code = "-99"
+centroid = Vector2(35.38582, 77.28316)
+
+[sub_resource type="Resource" id="Resource_6t64m"]
+script = ExtResource("1_si26h")
+name = "Kazakhstan"
+alt_names = Array[String](["Qazaqstan"])
+code = "KZ"
+capital = "Astana"
+centroid = Vector2(47.999123, 66.96602)
+
+[sub_resource type="Resource" id="Resource_lpfoj"]
+script = ExtResource("1_si26h")
+name = "Kenya"
+code = "KE"
+capital = "Nairobi"
+centroid = Vector2(0.39995122, 37.89199)
+
+[sub_resource type="Resource" id="Resource_mmkbe"]
+script = ExtResource("1_si26h")
+name = "Kyrgyzstan"
+alt_names = Array[String](["Kirghizia"])
+code = "KG"
+capital = "Bishkek"
+centroid = Vector2(41.22395, 74.73765)
+
+[sub_resource type="Resource" id="Resource_7qb54"]
+script = ExtResource("1_si26h")
+name = "Cambodia"
+alt_names = Array[String](["Kampuchea"])
+code = "KH"
+capital = "Phnom Penh"
+centroid = Vector2(12.558154, 104.9626)
+
+[sub_resource type="Resource" id="Resource_3qs10"]
+script = ExtResource("1_si26h")
+name = "Kiribati"
+code = "KI"
+capital = "South Tarawa"
+centroid = Vector2(1.8805176, -157.37737)
+
+[sub_resource type="Resource" id="Resource_ilbkx"]
+script = ExtResource("1_si26h")
+name = "St. Kitts and Nevis"
+alt_names = Array[String](["Saint Kitts and Nevis"])
+code = "KN"
+capital = "Basseterre"
+centroid = Vector2(17.313501, -62.735573)
+
+[sub_resource type="Resource" id="Resource_jehxo"]
+script = ExtResource("1_si26h")
+name = "South Korea"
+alt_names = Array[String](["S. Korea", "ROK"])
+code = "KR"
+capital = "Seoul"
+centroid = Vector2(36.46885, 127.8667)
+
+[sub_resource type="Resource" id="Resource_d0sqm"]
+script = ExtResource("1_si26h")
+name = "Kosovo"
+code = "XK"
+capital = "Pristina"
+centroid = Vector2(42.55745, 20.89121)
+
+[sub_resource type="Resource" id="Resource_5mlws"]
+script = ExtResource("1_si26h")
+name = "Kuwait"
+code = "KW"
+capital = "Kuwait City"
+centroid = Vector2(29.315235, 47.48696)
+
+[sub_resource type="Resource" id="Resource_uavjv"]
+script = ExtResource("1_si26h")
+name = "Laos"
+alt_names = Array[String](["LPDR", "Lao PDR"])
+code = "LA"
+capital = "Vientiane"
+centroid = Vector2(18.208227, 103.88403)
+
+[sub_resource type="Resource" id="Resource_nb2as"]
+script = ExtResource("1_si26h")
+name = "Lebanon"
+alt_names = Array[String](["Liban", "Libnan", "Lubnan"])
+code = "LB"
+capital = "Beirut"
+centroid = Vector2(33.877197, 35.84678)
+
+[sub_resource type="Resource" id="Resource_0bx0m"]
+script = ExtResource("1_si26h")
+name = "Liberia"
+code = "LR"
+capital = "Monrovia"
+centroid = Vector2(6.4445066, -9.453711)
+
+[sub_resource type="Resource" id="Resource_ymuc4"]
+script = ExtResource("1_si26h")
+name = "Libya"
+code = "LY"
+capital = "Tripoli"
+centroid = Vector2(26.339283, 17.230371)
+
+[sub_resource type="Resource" id="Resource_dhnhv"]
+script = ExtResource("1_si26h")
+name = "Saint Lucia"
+alt_names = Array[String](["Iouanalao", "Hewanorra"])
+code = "LC"
+capital = "Castries"
+centroid = Vector2(13.905468, -60.979958)
+
+[sub_resource type="Resource" id="Resource_jmq6j"]
+script = ExtResource("1_si26h")
+name = "Liechtenstein"
+alt_names = Array[String](["Lichtenstein"])
+code = "LI"
+capital = "Vaduz"
+centroid = Vector2(47.164063, 9.545019)
+
+[sub_resource type="Resource" id="Resource_xk7ub"]
+script = ExtResource("1_si26h")
+name = "Sri Lanka"
+alt_names = Array[String](["Ceylon"])
+code = "LK"
+capital = "Sri Jayawardenepura Kotte"
+centroid = Vector2(7.88103, 80.79238)
+
+[sub_resource type="Resource" id="Resource_pdshk"]
+script = ExtResource("1_si26h")
+name = "Lesotho"
+code = "LS"
+capital = "Maseru"
+centroid = Vector2(-29.612011, 28.221241)
+
+[sub_resource type="Resource" id="Resource_6ne3h"]
+script = ExtResource("1_si26h")
+name = "Lithuania"
+alt_names = Array[String](["Litwa"])
+code = "LT"
+capital = "Vilnius"
+centroid = Vector2(55.152077, 23.910889)
+
+[sub_resource type="Resource" id="Resource_q0o6a"]
+script = ExtResource("1_si26h")
+name = "Luxembourg"
+alt_names = Array[String](["Luxemburg"])
+code = "LU"
+capital = "Luxembourg City"
+centroid = Vector2(49.80632, 6.109375)
+
+[sub_resource type="Resource" id="Resource_qahmj"]
+script = ExtResource("1_si26h")
+name = "Latvia"
+code = "LV"
+capital = "Riga"
+centroid = Vector2(56.86548, 24.608498)
+
+[sub_resource type="Resource" id="Resource_jkew6"]
+script = ExtResource("1_si26h")
+name = "Macao"
+alt_names = Array[String](["Macau"])
+code = "MO"
+centroid = Vector2(22.220753, 113.51352)
+
+[sub_resource type="Resource" id="Resource_0tknp"]
+script = ExtResource("1_si26h")
+name = "St-Martin"
+alt_names = Array[String](["Collectivity of Saint Martin", "St. Martin", "Saint Martin"])
+code = "MF"
+capital = "Marigot"
+centroid = Vector2(18.092138, -63.066235)
+
+[sub_resource type="Resource" id="Resource_6xty4"]
+script = ExtResource("1_si26h")
+name = "Morocco"
+code = "MA"
+capital = "Rabat"
+centroid = Vector2(28.675293, -9.034302)
+
+[sub_resource type="Resource" id="Resource_pcbmg"]
+script = ExtResource("1_si26h")
+name = "Monaco"
+code = "MC"
+centroid = Vector2(43.75132, 7.408203)
+
+[sub_resource type="Resource" id="Resource_cgofy"]
+script = ExtResource("1_si26h")
+name = "Moldova"
+alt_names = Array[String](["Moldovia"])
+code = "MD"
+capital = "Chisinau"
+centroid = Vector2(46.96409, 28.375)
+
+[sub_resource type="Resource" id="Resource_m4h3i"]
+script = ExtResource("1_si26h")
+name = "Madagascar"
+code = "MG"
+capital = "Antananarivo"
+centroid = Vector2(-18.825048, 46.869923)
+
+[sub_resource type="Resource" id="Resource_i114l"]
+script = ExtResource("1_si26h")
+name = "Maldives"
+code = "MV"
+capital = "Male"
+centroid = Vector2(4.201416, 73.50069)
+
+[sub_resource type="Resource" id="Resource_ww8r6"]
+script = ExtResource("1_si26h")
+name = "Mexico"
+code = "MX"
+capital = "Mexico City"
+centroid = Vector2(23.630371, -101.95003)
+
+[sub_resource type="Resource" id="Resource_3ychx"]
+script = ExtResource("1_si26h")
+name = "Marshall Is."
+alt_names = Array[String](["Marshall Islands"])
+code = "MH"
+capital = "Delap-Uliga-Djarrit"
+centroid = Vector2(7.1202636, 171.21475)
+
+[sub_resource type="Resource" id="Resource_xnwnv"]
+script = ExtResource("1_si26h")
+name = "Macedonia"
+alt_names = Array[String](["North Macedonia"])
+code = "MK"
+capital = "Skopje"
+centroid = Vector2(41.604027, 21.72715)
+
+[sub_resource type="Resource" id="Resource_tgkne"]
+script = ExtResource("1_si26h")
+name = "Mali"
+code = "ML"
+capital = "Bamako"
+centroid = Vector2(17.569433, -4.0229735)
+
+[sub_resource type="Resource" id="Resource_my4li"]
+script = ExtResource("1_si26h")
+name = "Malta"
+code = "MT"
+capital = "Valletta"
+centroid = Vector2(35.899315, 14.45874)
+
+[sub_resource type="Resource" id="Resource_rod7m"]
+script = ExtResource("1_si26h")
+name = "Myanmar"
+alt_names = Array[String](["Burma"])
+code = "MM"
+capital = "Naypyidaw"
+centroid = Vector2(19.276001, 96.66342)
+
+[sub_resource type="Resource" id="Resource_nmyai"]
+script = ExtResource("1_si26h")
+name = "Montenegro"
+alt_names = Array[String](["Crna Gora"])
+code = "ME"
+capital = "Podgorica"
+centroid = Vector2(42.70571, 19.391993)
+
+[sub_resource type="Resource" id="Resource_yh63b"]
+script = ExtResource("1_si26h")
+name = "Mongolia"
+code = "MN"
+capital = "Ulaanbaatar"
+centroid = Vector2(46.8564, 103.82051)
+
+[sub_resource type="Resource" id="Resource_mhcgy"]
+script = ExtResource("1_si26h")
+name = "N. Mariana Is."
+alt_names = Array[String](["Northern Mariana Islands"])
+code = "MP"
+capital = "Saipan"
+centroid = Vector2(15.186304, 145.75308)
+
+[sub_resource type="Resource" id="Resource_6n6qr"]
+script = ExtResource("1_si26h")
+name = "Mozambique"
+code = "MZ"
+capital = "Maputo"
+centroid = Vector2(-18.662989, 35.533154)
+
+[sub_resource type="Resource" id="Resource_lxegn"]
+script = ExtResource("1_si26h")
+name = "Mauritania"
+alt_names = Array[String](["Mauretania"])
+code = "MR"
+capital = "Nouakchott"
+centroid = Vector2(21.01565, -10.943286)
+
+[sub_resource type="Resource" id="Resource_ww5bx"]
+script = ExtResource("1_si26h")
+name = "Montserrat"
+code = "MS"
+capital = "Plymouth"
+centroid = Vector2(16.745386, -62.18574)
+
+[sub_resource type="Resource" id="Resource_hhmca"]
+script = ExtResource("1_si26h")
+name = "Mauritius"
+code = "MU"
+capital = "Port Louis"
+centroid = Vector2(-20.251562, 57.554832)
+
+[sub_resource type="Resource" id="Resource_0atxf"]
+script = ExtResource("1_si26h")
+name = "Malawi"
+alt_names = Array[String](["Nyasaland"])
+code = "MW"
+capital = "Lilongwe"
+centroid = Vector2(-13.263037, 34.281593)
+
+[sub_resource type="Resource" id="Resource_g78oe"]
+script = ExtResource("1_si26h")
+name = "Malaysia"
+code = "MY"
+capital = "Kuala Lumpur"
+centroid = Vector2(3.9260986, 114.40263)
+
+[sub_resource type="Resource" id="Resource_8j4ik"]
+script = ExtResource("1_si26h")
+name = "Namibia"
+code = "NA"
+capital = "Windhoek"
+centroid = Vector2(-22.953224, 18.490234)
+
+[sub_resource type="Resource" id="Resource_ecxds"]
+script = ExtResource("1_si26h")
+name = "New Caledonia"
+code = "NC"
+capital = "Noumea"
+centroid = Vector2(-21.258839, 165.52081)
+
+[sub_resource type="Resource" id="Resource_ctjh5"]
+script = ExtResource("1_si26h")
+name = "Niger"
+alt_names = Array[String](["The Niger"])
+code = "NE"
+capital = "Niamey"
+centroid = Vector2(17.60708, 8.063525)
+
+[sub_resource type="Resource" id="Resource_rntn5"]
+script = ExtResource("1_si26h")
+name = "Norfolk Island"
+code = "NF"
+capital = "Kingston"
+centroid = Vector2(-29.055126, 167.9483)
+
+[sub_resource type="Resource" id="Resource_5toau"]
+script = ExtResource("1_si26h")
+name = "Nigeria"
+code = "NG"
+capital = "Abuja"
+centroid = Vector2(9.075122, 8.656591)
+
+[sub_resource type="Resource" id="Resource_rutp2"]
+script = ExtResource("1_si26h")
+name = "Nicaragua"
+code = "NI"
+capital = "Managua"
+centroid = Vector2(12.871704, -85.41384)
+
+[sub_resource type="Resource" id="Resource_lb4nl"]
+script = ExtResource("1_si26h")
+name = "Niue"
+code = "NU"
+capital = "Alofi"
+centroid = Vector2(-19.051952, -169.87088)
+
+[sub_resource type="Resource" id="Resource_pwhd4"]
+script = ExtResource("1_si26h")
+name = "Netherlands"
+alt_names = Array[String](["Holland", "The Netherlands"])
+code = "NL"
+capital = "Amsterdam"
+centroid = Vector2(52.095802, 5.323096)
+
+[sub_resource type="Resource" id="Resource_1geq3"]
+script = ExtResource("1_si26h")
+name = "Norway"
+code = "NO"
+capital = "Oslo"
+centroid = Vector2(64.55613, 17.935497)
+
+[sub_resource type="Resource" id="Resource_o0jvc"]
+script = ExtResource("1_si26h")
+name = "Nepal"
+code = "NP"
+capital = "Kathmandu"
+centroid = Vector2(28.373901, 84.10659)
+
+[sub_resource type="Resource" id="Resource_tqs62"]
+script = ExtResource("1_si26h")
+name = "Nauru"
+alt_names = Array[String](["Pleasant Island"])
+code = "NR"
+capital = "Yaren"
+centroid = Vector2(-0.52006835, 166.93271)
+
+[sub_resource type="Resource" id="Resource_cwbpb"]
+script = ExtResource("1_si26h")
+name = "New Zealand"
+code = "NZ"
+capital = "Wellington"
+centroid = Vector2(-43.560352, 170.42387)
+
+[sub_resource type="Resource" id="Resource_wnday"]
+script = ExtResource("1_si26h")
+name = "Oman"
+code = "OM"
+capital = "Muscat"
+centroid = Vector2(20.813793, 55.90757)
+
+[sub_resource type="Resource" id="Resource_oby6v"]
+script = ExtResource("1_si26h")
+name = "Pakistan"
+code = "PK"
+capital = "Islamabad"
+centroid = Vector2(30.39502, 68.946)
+
+[sub_resource type="Resource" id="Resource_842f0"]
+script = ExtResource("1_si26h")
+name = "Panama"
+code = "PA"
+capital = "Panama City"
+centroid = Vector2(8.40896, -80.11167)
+
+[sub_resource type="Resource" id="Resource_uje51"]
+script = ExtResource("1_si26h")
+name = "Pitcairn Is."
+alt_names = Array[String](["Pitcairn Islands"])
+code = "PN"
+capital = "Adamstown"
+centroid = Vector2(-24.36792, -128.32013)
+
+[sub_resource type="Resource" id="Resource_hg6ek"]
+script = ExtResource("1_si26h")
+name = "Peru"
+code = "PE"
+capital = "Lima"
+centroid = Vector2(-9.193677, -75.01094)
+
+[sub_resource type="Resource" id="Resource_37tgs"]
+script = ExtResource("1_si26h")
+name = "Philippines"
+alt_names = Array[String](["The Philippines"])
+code = "PH"
+capital = "Manila"
+centroid = Vector2(15.591187, 121.9523)
+
+[sub_resource type="Resource" id="Resource_wxb7d"]
+script = ExtResource("1_si26h")
+name = "Palau"
+code = "PW"
+capital = "Ngerulmud"
+centroid = Vector2(7.536377, 134.58292)
+
+[sub_resource type="Resource" id="Resource_mqqj7"]
+script = ExtResource("1_si26h")
+name = "Papua New Guinea"
+alt_names = Array[String](["PNG"])
+code = "PG"
+capital = "Port Moresby"
+centroid = Vector2(-6.632324, 145.85591)
+
+[sub_resource type="Resource" id="Resource_6talx"]
+script = ExtResource("1_si26h")
+name = "Poland"
+alt_names = Array[String](["Polska"])
+code = "PL"
+capital = "Warsaw"
+centroid = Vector2(51.929466, 19.117188)
+
+[sub_resource type="Resource" id="Resource_pv7hn"]
+script = ExtResource("1_si26h")
+name = "Puerto Rico"
+alt_names = Array[String](["PR"])
+code = "PR"
+capital = "San Juan"
+centroid = Vector2(18.234716, -66.44246)
+
+[sub_resource type="Resource" id="Resource_36mge"]
+script = ExtResource("1_si26h")
+name = "North Korea"
+alt_names = Array[String](["N. Korea", "DPRK"])
+code = "KP"
+capital = "Pyongyang"
+centroid = Vector2(40.358597, 127.51797)
+
+[sub_resource type="Resource" id="Resource_f2l82"]
+script = ExtResource("1_si26h")
+name = "Portugal"
+code = "PT"
+capital = "Lisbon"
+centroid = Vector2(39.57141, -7.846118)
+
+[sub_resource type="Resource" id="Resource_nnnwl"]
+script = ExtResource("1_si26h")
+name = "Paraguay"
+code = "PY"
+capital = "Asuncion"
+centroid = Vector2(-23.42002, -58.44639)
+
+[sub_resource type="Resource" id="Resource_hesdc"]
+script = ExtResource("1_si26h")
+name = "Palestine"
+alt_names = Array[String](["Filastin"])
+code = "PS"
+capital = "Jerusalem"
+centroid = Vector2(31.942871, 35.222412)
+
+[sub_resource type="Resource" id="Resource_ndoh6"]
+script = ExtResource("1_si26h")
+name = "Fr. Polynesia"
+alt_names = Array[String](["French Polynesia"])
+code = "PF"
+capital = "Papeete"
+centroid = Vector2(-17.679346, -149.39294)
+
+[sub_resource type="Resource" id="Resource_ua7o7"]
+script = ExtResource("1_si26h")
+name = "Qatar"
+code = "QA"
+capital = "Doha"
+centroid = Vector2(25.35896, 51.18174)
+
+[sub_resource type="Resource" id="Resource_axkwj"]
+script = ExtResource("1_si26h")
+name = "Romania"
+code = "RO"
+capital = "Bucharest"
+centroid = Vector2(45.96714, 24.973827)
+
+[sub_resource type="Resource" id="Resource_yguef"]
+script = ExtResource("1_si26h")
+name = "Russia"
+code = "RU"
+capital = "Moscow"
+centroid = Vector2(59.464867, 103.67598)
+
+[sub_resource type="Resource" id="Resource_0fdac"]
+script = ExtResource("1_si26h")
+name = "Rwanda"
+alt_names = Array[String](["Ruanda"])
+code = "RW"
+capital = "Kigali"
+centroid = Vector2(-1.9358399, 29.867088)
+
+[sub_resource type="Resource" id="Resource_aq40n"]
+script = ExtResource("1_si26h")
+name = "W. Sahara"
+alt_names = Array[String](["Western Sahara", "SADR"])
+code = "EH"
+capital = "El Aaiun"
+centroid = Vector2(24.231298, -12.890454)
+
+[sub_resource type="Resource" id="Resource_8g8j5"]
+script = ExtResource("1_si26h")
+name = "Saudi Arabia"
+alt_names = Array[String](["KSA"])
+code = "SA"
+capital = "Riyadh"
+centroid = Vector2(24.248144, 45.128613)
+
+[sub_resource type="Resource" id="Resource_fc80p"]
+script = ExtResource("1_si26h")
+name = "Sudan"
+code = "SD"
+capital = "Khartoum"
+centroid = Vector2(15.434033, 30.217384)
+
+[sub_resource type="Resource" id="Resource_tylo4"]
+script = ExtResource("1_si26h")
+name = "S. Sudan"
+alt_names = Array[String](["South Sudan"])
+code = "SS"
+capital = "Juba"
+centroid = Vector2(7.8569093, 29.707863)
+
+[sub_resource type="Resource" id="Resource_8nn2i"]
+script = ExtResource("1_si26h")
+name = "Senegal"
+code = "SN"
+capital = "Dakar"
+centroid = Vector2(14.503467, -14.459033)
+
+[sub_resource type="Resource" id="Resource_5fpau"]
+script = ExtResource("1_si26h")
+name = "Singapore"
+code = "SG"
+centroid = Vector2(1.3562256, 103.82329)
+
+[sub_resource type="Resource" id="Resource_286vx"]
+script = ExtResource("1_si26h")
+name = "S. Geo. and the Is."
+alt_names = Array[String](["South Georgia and the South Sandwich Islands", "South Georgia and the Islands"])
+code = "GS"
+capital = "King Edward Point"
+centroid = Vector2(-54.425438, -36.90801)
+
+[sub_resource type="Resource" id="Resource_nkjvy"]
+script = ExtResource("1_si26h")
+name = "Saint Helena"
+code = "SH"
+capital = "Jamestown"
+centroid = Vector2(-15.955078, -5.721118)
+
+[sub_resource type="Resource" id="Resource_ru0o3"]
+script = ExtResource("1_si26h")
+name = "Solomon Is."
+alt_names = Array[String](["Solomon Islands", "Solomons"])
+code = "SB"
+capital = "Honiara"
+centroid = Vector2(-8.051074, 159.16914)
+
+[sub_resource type="Resource" id="Resource_hafxa"]
+script = ExtResource("1_si26h")
+name = "Sierra Leone"
+code = "SL"
+capital = "Freetown"
+centroid = Vector2(8.451538, -11.787939)
+
+[sub_resource type="Resource" id="Resource_eg0m0"]
+script = ExtResource("1_si26h")
+name = "El Salvador"
+code = "SV"
+capital = "San Salvador"
+centroid = Vector2(13.797559, -88.91062)
+
+[sub_resource type="Resource" id="Resource_4bsrf"]
+script = ExtResource("1_si26h")
+name = "San Marino"
+code = "SM"
+capital = "San Marino"
+centroid = Vector2(43.941917, 12.455762)
+
+[sub_resource type="Resource" id="Resource_s2wel"]
+script = ExtResource("1_si26h")
+name = "Somaliland"
+code = "-99"
+capital = "Hargeisa"
+centroid = Vector2(9.748438, 45.79751)
+
+[sub_resource type="Resource" id="Resource_233wb"]
+script = ExtResource("1_si26h")
+name = "Somalia"
+code = "SO"
+capital = "Mogadishu"
+centroid = Vector2(5.1441894, 46.177345)
+
+[sub_resource type="Resource" id="Resource_8dknv"]
+script = ExtResource("1_si26h")
+name = "St. Pierre and Miquelon"
+alt_names = Array[String](["Saint Pierre and Miquelon"])
+code = "PM"
+capital = "Saint-Pierre"
+centroid = Vector2(46.947144, -56.32119)
+
+[sub_resource type="Resource" id="Resource_gcoq6"]
+script = ExtResource("1_si26h")
+name = "Serbia"
+alt_names = Array[String](["Srbija"])
+code = "RS"
+capital = "Belgrade"
+centroid = Vector2(44.205666, 20.907959)
+
+[sub_resource type="Resource" id="Resource_x1agl"]
+script = ExtResource("1_si26h")
+name = "São Tomé and Principe"
+alt_names = Array[String](["Sao Tome and Principe"])
+code = "ST"
+capital = "Sao Tome"
+centroid = Vector2(0.22587891, 6.609082)
+
+[sub_resource type="Resource" id="Resource_ffhue"]
+script = ExtResource("1_si26h")
+name = "Suriname"
+code = "SR"
+capital = "Paramaribo"
+centroid = Vector2(3.9178467, -56.022484)
+
+[sub_resource type="Resource" id="Resource_56i02"]
+script = ExtResource("1_si26h")
+name = "Slovakia"
+code = "SK"
+capital = "Bratislava"
+centroid = Vector2(48.680565, 19.700684)
+
+[sub_resource type="Resource" id="Resource_rrp6u"]
+script = ExtResource("1_si26h")
+name = "Slovenia"
+code = "SI"
+capital = "Ljubljana"
+centroid = Vector2(46.145824, 14.947216)
+
+[sub_resource type="Resource" id="Resource_4ft0k"]
+script = ExtResource("1_si26h")
+name = "Sweden"
+code = "SE"
+capital = "Stockholm"
+centroid = Vector2(62.191628, 17.651318)
+
+[sub_resource type="Resource" id="Resource_uolp4"]
+script = ExtResource("1_si26h")
+name = "Eswatini"
+code = "SZ"
+capital = "Mbabane"
+centroid = Vector2(-26.526466, 31.450195)
+
+[sub_resource type="Resource" id="Resource_fnn1r"]
+script = ExtResource("1_si26h")
+name = "Sint Maarten"
+code = "SX"
+capital = "Philipsburg"
+centroid = Vector2(18.044067, -63.067944)
+
+[sub_resource type="Resource" id="Resource_7s6wn"]
+script = ExtResource("1_si26h")
+name = "Seychelles"
+code = "SC"
+capital = "Victoria"
+centroid = Vector2(-4.672168, 55.463184)
+
+[sub_resource type="Resource" id="Resource_llgmk"]
+script = ExtResource("1_si26h")
+name = "Syria"
+code = "SY"
+capital = "Damascus"
+centroid = Vector2(34.807274, 39.061768)
+
+[sub_resource type="Resource" id="Resource_cntt4"]
+script = ExtResource("1_si26h")
+name = "Turks and Caicos Is."
+alt_names = Array[String](["Turks and Caicos Islands"])
+code = "TC"
+capital = "Cockburn Town"
+centroid = Vector2(21.801905, -71.74229)
+
+[sub_resource type="Resource" id="Resource_vjsgo"]
+script = ExtResource("1_si26h")
+name = "Chad"
+code = "TD"
+capital = "N'Djamena"
+centroid = Vector2(15.460255, 18.71582)
+
+[sub_resource type="Resource" id="Resource_tggk4"]
+script = ExtResource("1_si26h")
+name = "Togo"
+code = "TG"
+capital = "Lome"
+centroid = Vector2(8.602514, 0.8438721)
+
+[sub_resource type="Resource" id="Resource_jxc7u"]
+script = ExtResource("1_si26h")
+name = "Thailand"
+alt_names = Array[String](["Siam"])
+code = "TH"
+capital = "Bangkok"
+centroid = Vector2(13.03059, 101.50747)
+
+[sub_resource type="Resource" id="Resource_7357c"]
+script = ExtResource("1_si26h")
+name = "Tajikistan"
+code = "TJ"
+capital = "Dushanbe"
+centroid = Vector2(38.85957, 71.23418)
+
+[sub_resource type="Resource" id="Resource_cqp51"]
+script = ExtResource("1_si26h")
+name = "Turkmenistan"
+alt_names = Array[String](["Turkomania"])
+code = "TM"
+capital = "Ashgabat"
+centroid = Vector2(38.974632, 59.56157)
+
+[sub_resource type="Resource" id="Resource_u6vg8"]
+script = ExtResource("1_si26h")
+name = "Timor-Leste"
+alt_names = Array[String](["East Timor"])
+code = "TL"
+capital = "Dili"
+centroid = Vector2(-8.913818, 126.10557)
+
+[sub_resource type="Resource" id="Resource_e0s3g"]
+script = ExtResource("1_si26h")
+name = "Tonga"
+code = "TO"
+capital = "Nukuʻalofa"
+centroid = Vector2(-21.165966, -175.22026)
+
+[sub_resource type="Resource" id="Resource_21uk3"]
+script = ExtResource("1_si26h")
+name = "Trinidad and Tobago"
+code = "TT"
+capital = "Port of Spain"
+centroid = Vector2(10.452442, -61.411865)
+
+[sub_resource type="Resource" id="Resource_nupwb"]
+script = ExtResource("1_si26h")
+name = "Tunisia"
+code = "TN"
+capital = "Tunis"
+centroid = Vector2(33.78489, 9.515772)
+
+[sub_resource type="Resource" id="Resource_hu4fq"]
+script = ExtResource("1_si26h")
+name = "Turkey"
+alt_names = Array[String](["Turkiye"])
+code = "TR"
+capital = "Ankara"
+centroid = Vector2(38.947365, 35.456593)
+
+[sub_resource type="Resource" id="Resource_dtxeu"]
+script = ExtResource("1_si26h")
+name = "Taiwan"
+alt_names = Array[String](["Republic of China", "ROC"])
+code = "TW"
+capital = "Taipei"
+centroid = Vector2(23.600952, 121.00073)
+
+[sub_resource type="Resource" id="Resource_bki3r"]
+script = ExtResource("1_si26h")
+name = "Tanzania"
+code = "TZ"
+capital = "Dodoma"
+centroid = Vector2(-6.3555665, 34.893505)
+
+[sub_resource type="Resource" id="Resource_letlm"]
+script = ExtResource("1_si26h")
+name = "Uganda"
+code = "UG"
+capital = "Kampala"
+centroid = Vector2(1.3751465, 32.27007)
+
+[sub_resource type="Resource" id="Resource_lftbo"]
+script = ExtResource("1_si26h")
+name = "Ukraine"
+alt_names = Array[String](["Ukraina"])
+code = "UA"
+capital = "Kyiv"
+centroid = Vector2(48.370583, 31.130077)
+
+[sub_resource type="Resource" id="Resource_y2cv2"]
+script = ExtResource("1_si26h")
+name = "Uruguay"
+code = "UY"
+capital = "Montevideo"
+centroid = Vector2(-32.516945, -55.78186)
+
+[sub_resource type="Resource" id="Resource_w5wgv"]
+script = ExtResource("1_si26h")
+name = "United States of America"
+alt_names = Array[String](["USA", "United States", "America"])
+code = "US"
+capital = "Washington, D.C."
+centroid = Vector2(37.251465, -95.84849)
+
+[sub_resource type="Resource" id="Resource_d8qft"]
+script = ExtResource("1_si26h")
+name = "Uzbekistan"
+code = "UZ"
+capital = "Tashkent"
+centroid = Vector2(41.363792, 64.556305)
+
+[sub_resource type="Resource" id="Resource_o5ntp"]
+script = ExtResource("1_si26h")
+name = "Vatican"
+alt_names = Array[String](["Vatican City"])
+code = "VA"
+centroid = Vector2(41.90188, 12.43335)
+
+[sub_resource type="Resource" id="Resource_m2hap"]
+script = ExtResource("1_si26h")
+name = "St. Vin. and Gren."
+alt_names = Array[String](["Saint Vincent and the Grenadines"])
+code = "VC"
+capital = "Kingstown"
+centroid = Vector2(13.250513, -61.20066)
+
+[sub_resource type="Resource" id="Resource_i8ahx"]
+script = ExtResource("1_si26h")
+name = "Venezuela"
+code = "VE"
+capital = "Caracas"
+centroid = Vector2(6.4329348, -66.59756)
+
+[sub_resource type="Resource" id="Resource_shv5b"]
+script = ExtResource("1_si26h")
+name = "British Virgin Is."
+alt_names = Array[String](["British Virgin Islands", "Virgin Islands", "BVI"])
+code = "VG"
+capital = "Road Town"
+centroid = Vector2(18.487452, -64.3842)
+
+[sub_resource type="Resource" id="Resource_xkmx1"]
+script = ExtResource("1_si26h")
+name = "U.S. Virgin Is."
+alt_names = Array[String](["United States Virgin Islands", "USVI"])
+code = "VI"
+capital = "Charlotte Amalie"
+centroid = Vector2(17.748024, -64.73479)
+
+[sub_resource type="Resource" id="Resource_xyklf"]
+script = ExtResource("1_si26h")
+name = "Vietnam"
+alt_names = Array[String](["SRV"])
+code = "VN"
+capital = "Hanoi"
+centroid = Vector2(15.964233, 105.78618)
+
+[sub_resource type="Resource" id="Resource_ci4td"]
+script = ExtResource("1_si26h")
+name = "Vanuatu"
+code = "VU"
+capital = "Port Vila"
+centroid = Vector2(-15.135693, 166.86343)
+
+[sub_resource type="Resource" id="Resource_0tvdu"]
+script = ExtResource("1_si26h")
+name = "Wallis and Futuna Is."
+alt_names = Array[String](["Wallis and Futuna", "Wallis and Futuna Islands"])
+code = "WF"
+capital = "Mata Utu"
+centroid = Vector2(-14.278272, -178.11902)
+
+[sub_resource type="Resource" id="Resource_q7bwi"]
+script = ExtResource("1_si26h")
+name = "Samoa"
+alt_names = Array[String](["Western Samoa"])
+code = "WS"
+capital = "Apia"
+centroid = Vector2(-13.634766, -172.47769)
+
+[sub_resource type="Resource" id="Resource_8tpls"]
+script = ExtResource("1_si26h")
+name = "Yemen"
+code = "YE"
+capital = "Sanaa"
+centroid = Vector2(15.801905, 47.871727)
+
+[sub_resource type="Resource" id="Resource_l7rda"]
+script = ExtResource("1_si26h")
+name = "South Africa"
+code = "ZA"
+capital = "Cape Town"
+centroid = Vector2(-28.466017, 24.666845)
+
+[sub_resource type="Resource" id="Resource_b4yga"]
+script = ExtResource("1_si26h")
+name = "Zambia"
+code = "ZM"
+capital = "Lusaka"
+centroid = Vector2(-13.1175785, 27.820213)
+
+[sub_resource type="Resource" id="Resource_v724w"]
+script = ExtResource("1_si26h")
+name = "Zimbabwe"
+code = "ZW"
+capital = "Harare"
+centroid = Vector2(-19.022558, 29.11538)
+
+[resource]
+script = ExtResource("2_dsqbp")
+countries = Array[ExtResource("1_si26h")]([SubResource("Resource_qb2nv"), SubResource("Resource_smoen"), SubResource("Resource_65xfi"), SubResource("Resource_po0oo"), SubResource("Resource_dkk7j"), SubResource("Resource_5htsq"), SubResource("Resource_tjnpy"), SubResource("Resource_8qsa3"), SubResource("Resource_xirwr"), SubResource("Resource_0r6se"), SubResource("Resource_cdyqm"), SubResource("Resource_pura7"), SubResource("Resource_g7bbe"), SubResource("Resource_x3qpg"), SubResource("Resource_wcb4r"), SubResource("Resource_se6td"), SubResource("Resource_1kg2w"), SubResource("Resource_qttmh"), SubResource("Resource_hf6fo"), SubResource("Resource_iqnvr"), SubResource("Resource_ycepw"), SubResource("Resource_g3oml"), SubResource("Resource_uxlub"), SubResource("Resource_eqxyx"), SubResource("Resource_hoouk"), SubResource("Resource_ihq0c"), SubResource("Resource_ahfar"), SubResource("Resource_s0747"), SubResource("Resource_uoli0"), SubResource("Resource_w2vul"), SubResource("Resource_vngok"), SubResource("Resource_ggclt"), SubResource("Resource_mky1s"), SubResource("Resource_jabjn"), SubResource("Resource_7lm6w"), SubResource("Resource_wwkwc"), SubResource("Resource_i38r0"), SubResource("Resource_ykf7m"), SubResource("Resource_mmdlt"), SubResource("Resource_r05at"), SubResource("Resource_ilwd8"), SubResource("Resource_bwniy"), SubResource("Resource_famcf"), SubResource("Resource_utfs4"), SubResource("Resource_dmmpb"), SubResource("Resource_y4qoa"), SubResource("Resource_y42ap"), SubResource("Resource_wmx1p"), SubResource("Resource_kmiq1"), SubResource("Resource_n3r7s"), SubResource("Resource_sv4uj"), SubResource("Resource_gvp70"), SubResource("Resource_awrgs"), SubResource("Resource_6a3nl"), SubResource("Resource_3hckc"), SubResource("Resource_p6875"), SubResource("Resource_s04we"), SubResource("Resource_lglf1"), SubResource("Resource_1sq1h"), SubResource("Resource_cprxr"), SubResource("Resource_kwsju"), SubResource("Resource_7kbpe"), SubResource("Resource_254d4"), SubResource("Resource_mqr08"), SubResource("Resource_pkdac"), SubResource("Resource_gjfcc"), SubResource("Resource_hjd4i"), SubResource("Resource_sml3u"), SubResource("Resource_14yw2"), SubResource("Resource_w7tp7"), SubResource("Resource_whamo"), SubResource("Resource_vft2o"), SubResource("Resource_odqur"), SubResource("Resource_yjhvp"), SubResource("Resource_xdisq"), SubResource("Resource_wwhod"), SubResource("Resource_5rs4u"), SubResource("Resource_kdxdm"), SubResource("Resource_8eoqh"), SubResource("Resource_i01y5"), SubResource("Resource_ip5da"), SubResource("Resource_bmbek"), SubResource("Resource_mwp6p"), SubResource("Resource_ku08e"), SubResource("Resource_r2bpk"), SubResource("Resource_sihrr"), SubResource("Resource_8ym4r"), SubResource("Resource_visuf"), SubResource("Resource_h022n"), SubResource("Resource_8e4r8"), SubResource("Resource_boohb"), SubResource("Resource_echmf"), SubResource("Resource_731jy"), SubResource("Resource_m2284"), SubResource("Resource_0kky0"), SubResource("Resource_1em0p"), SubResource("Resource_t1ea5"), SubResource("Resource_y6vve"), SubResource("Resource_dv7j4"), SubResource("Resource_f2atm"), SubResource("Resource_nv0xh"), SubResource("Resource_dhpuc"), SubResource("Resource_u0c4i"), SubResource("Resource_ebgnh"), SubResource("Resource_cn3fq"), SubResource("Resource_di3lu"), SubResource("Resource_nqiuj"), SubResource("Resource_63jth"), SubResource("Resource_ijjg7"), SubResource("Resource_y1bs8"), SubResource("Resource_j1kl5"), SubResource("Resource_mt734"), SubResource("Resource_6t64m"), SubResource("Resource_lpfoj"), SubResource("Resource_mmkbe"), SubResource("Resource_7qb54"), SubResource("Resource_3qs10"), SubResource("Resource_ilbkx"), SubResource("Resource_jehxo"), SubResource("Resource_d0sqm"), SubResource("Resource_5mlws"), SubResource("Resource_uavjv"), SubResource("Resource_nb2as"), SubResource("Resource_0bx0m"), SubResource("Resource_ymuc4"), SubResource("Resource_dhnhv"), SubResource("Resource_jmq6j"), SubResource("Resource_xk7ub"), SubResource("Resource_pdshk"), SubResource("Resource_6ne3h"), SubResource("Resource_q0o6a"), SubResource("Resource_qahmj"), SubResource("Resource_jkew6"), SubResource("Resource_0tknp"), SubResource("Resource_6xty4"), SubResource("Resource_pcbmg"), SubResource("Resource_cgofy"), SubResource("Resource_m4h3i"), SubResource("Resource_i114l"), SubResource("Resource_ww8r6"), SubResource("Resource_3ychx"), SubResource("Resource_xnwnv"), SubResource("Resource_tgkne"), SubResource("Resource_my4li"), SubResource("Resource_rod7m"), SubResource("Resource_nmyai"), SubResource("Resource_yh63b"), SubResource("Resource_mhcgy"), SubResource("Resource_6n6qr"), SubResource("Resource_lxegn"), SubResource("Resource_ww5bx"), SubResource("Resource_hhmca"), SubResource("Resource_0atxf"), SubResource("Resource_g78oe"), SubResource("Resource_8j4ik"), SubResource("Resource_ecxds"), SubResource("Resource_ctjh5"), SubResource("Resource_rntn5"), SubResource("Resource_5toau"), SubResource("Resource_rutp2"), SubResource("Resource_lb4nl"), SubResource("Resource_pwhd4"), SubResource("Resource_1geq3"), SubResource("Resource_o0jvc"), SubResource("Resource_tqs62"), SubResource("Resource_cwbpb"), SubResource("Resource_wnday"), SubResource("Resource_oby6v"), SubResource("Resource_842f0"), SubResource("Resource_uje51"), SubResource("Resource_hg6ek"), SubResource("Resource_37tgs"), SubResource("Resource_wxb7d"), SubResource("Resource_mqqj7"), SubResource("Resource_6talx"), SubResource("Resource_pv7hn"), SubResource("Resource_36mge"), SubResource("Resource_f2l82"), SubResource("Resource_nnnwl"), SubResource("Resource_hesdc"), SubResource("Resource_ndoh6"), SubResource("Resource_ua7o7"), SubResource("Resource_axkwj"), SubResource("Resource_yguef"), SubResource("Resource_0fdac"), SubResource("Resource_aq40n"), SubResource("Resource_8g8j5"), SubResource("Resource_fc80p"), SubResource("Resource_tylo4"), SubResource("Resource_8nn2i"), SubResource("Resource_5fpau"), SubResource("Resource_286vx"), SubResource("Resource_nkjvy"), SubResource("Resource_ru0o3"), SubResource("Resource_hafxa"), SubResource("Resource_eg0m0"), SubResource("Resource_4bsrf"), SubResource("Resource_s2wel"), SubResource("Resource_233wb"), SubResource("Resource_8dknv"), SubResource("Resource_gcoq6"), SubResource("Resource_x1agl"), SubResource("Resource_ffhue"), SubResource("Resource_56i02"), SubResource("Resource_rrp6u"), SubResource("Resource_4ft0k"), SubResource("Resource_uolp4"), SubResource("Resource_fnn1r"), SubResource("Resource_7s6wn"), SubResource("Resource_llgmk"), SubResource("Resource_cntt4"), SubResource("Resource_vjsgo"), SubResource("Resource_tggk4"), SubResource("Resource_jxc7u"), SubResource("Resource_7357c"), SubResource("Resource_cqp51"), SubResource("Resource_u6vg8"), SubResource("Resource_e0s3g"), SubResource("Resource_21uk3"), SubResource("Resource_nupwb"), SubResource("Resource_hu4fq"), SubResource("Resource_dtxeu"), SubResource("Resource_bki3r"), SubResource("Resource_letlm"), SubResource("Resource_lftbo"), SubResource("Resource_y2cv2"), SubResource("Resource_w5wgv"), SubResource("Resource_d8qft"), SubResource("Resource_o5ntp"), SubResource("Resource_m2hap"), SubResource("Resource_i8ahx"), SubResource("Resource_shv5b"), SubResource("Resource_xkmx1"), SubResource("Resource_xyklf"), SubResource("Resource_ci4td"), SubResource("Resource_0tvdu"), SubResource("Resource_q7bwi"), SubResource("Resource_8tpls"), SubResource("Resource_l7rda"), SubResource("Resource_b4yga"), SubResource("Resource_v724w")])

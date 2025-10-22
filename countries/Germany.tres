@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=9 format=3 uid="uid://bwxjnwbm7kmrd"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_pj1x1"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xdpi8"]
+
+[sub_resource type="Resource" id="Resource_80oi6"]
+script = ExtResource("1_pj1x1")
+start_index = 0
+count = 492
+bbox = Vector4(5.85752, 47.2788, 15.0166, 54.9034)
+
+[sub_resource type="Resource" id="Resource_3se3y"]
+script = ExtResource("1_pj1x1")
+start_index = 492
+count = 14
+bbox = Vector4(13.8204, 53.8631, 14.2137, 54.1272)
+
+[sub_resource type="Resource" id="Resource_s1ujn"]
+script = ExtResource("1_pj1x1")
+start_index = 506
+count = 9
+bbox = Vector4(11.0117, 54.416, 11.2828, 54.5334)
+
+[sub_resource type="Resource" id="Resource_j5c0s"]
+script = ExtResource("1_pj1x1")
+start_index = 515
+count = 25
+bbox = Vector4(13.1563, 54.2458, 13.7342, 54.6993)
+
+[sub_resource type="Resource" id="Resource_j50n6"]
+script = ExtResource("1_pj1x1")
+start_index = 540
+count = 9
+bbox = Vector4(8.40039, 54.6882, 8.58789, 54.7603)
+
+[sub_resource type="Resource" id="Resource_o5neu"]
+script = ExtResource("1_pj1x1")
+start_index = 549
+count = 13
+bbox = Vector4(8.28467, 54.7671, 8.62959, 55.0587)
+
+[resource]
+script = ExtResource("2_xdpi8")
+name = "Germany"
+alt_names = Array[String]([])
+code = "DE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Germany_mesh.tres"
+outline_file = "res://resources/countries/Germany_outline.tres"
+polygons = Array[ExtResource("1_pj1x1")]([SubResource("Resource_80oi6"), SubResource("Resource_3se3y"), SubResource("Resource_s1ujn"), SubResource("Resource_j5c0s"), SubResource("Resource_j50n6"), SubResource("Resource_o5neu")])

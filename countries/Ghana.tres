@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://tcwehjuhm03e"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_spfj7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_8l8ho"]
+
+[sub_resource type="Resource" id="Resource_ofig8"]
+script = ExtResource("1_spfj7")
+start_index = 0
+count = 213
+bbox = Vector4(-3.2439, 4.76245, 1.18721, 11.1669)
+
+[resource]
+script = ExtResource("2_8l8ho")
+name = "Ghana"
+alt_names = Array[String]([])
+code = "GH"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ghana_mesh.tres"
+outline_file = "res://resources/countries/Ghana_outline.tres"
+polygons = Array[ExtResource("1_spfj7")]([SubResource("Resource_ofig8")])

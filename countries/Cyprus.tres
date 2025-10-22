@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cjgh2taxypqvo"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_s60ho"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_u7dw2"]
+
+[sub_resource type="Resource" id="Resource_xq0xt"]
+script = ExtResource("1_s60ho")
+start_index = 0
+count = 56
+bbox = Vector4(32.301, 34.5696, 34.0502, 35.1827)
+
+[resource]
+script = ExtResource("2_u7dw2")
+name = "Cyprus"
+alt_names = Array[String]([])
+code = "CY"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Cyprus_mesh.tres"
+outline_file = "res://resources/countries/Cyprus_outline.tres"
+polygons = Array[ExtResource("1_s60ho")]([SubResource("Resource_xq0xt")])

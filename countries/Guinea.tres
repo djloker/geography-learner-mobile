@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cq4k3hcvrxdyb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_5tga2"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_7dmm1"]
+
+[sub_resource type="Resource" id="Resource_1iyod"]
+script = ExtResource("1_5tga2")
+start_index = 0
+count = 348
+bbox = Vector4(-15.0512, 7.21592, -7.6812, 12.6739)
+
+[resource]
+script = ExtResource("2_7dmm1")
+name = "Guinea"
+alt_names = Array[String]([])
+code = "GN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Guinea_mesh.tres"
+outline_file = "res://resources/countries/Guinea_outline.tres"
+polygons = Array[ExtResource("1_5tga2")]([SubResource("Resource_1iyod")])

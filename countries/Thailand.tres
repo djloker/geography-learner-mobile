@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=13 format=3 uid="uid://bhuvjns0uskan"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_a68b3"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_k11bc"]
+
+[sub_resource type="Resource" id="Resource_2l4km"]
+script = ExtResource("1_a68b3")
+start_index = 0
+count = 507
+bbox = Vector4(97.3739, 5.63677, 105.641, 20.4244)
+
+[sub_resource type="Resource" id="Resource_1rncf"]
+script = ExtResource("1_a68b3")
+start_index = 507
+count = 6
+bbox = Vector4(99.6066, 6.51611, 99.7014, 6.71411)
+
+[sub_resource type="Resource" id="Resource_n534f"]
+script = ExtResource("1_a68b3")
+start_index = 513
+count = 7
+bbox = Vector4(99.0377, 7.47129, 99.1044, 7.63652)
+
+[sub_resource type="Resource" id="Resource_q62g6"]
+script = ExtResource("1_a68b3")
+start_index = 520
+count = 5
+bbox = Vector4(98.5294, 7.91704, 98.6043, 8.10855)
+
+[sub_resource type="Resource" id="Resource_5e3d7"]
+script = ExtResource("1_a68b3")
+start_index = 525
+count = 12
+bbox = Vector4(98.2623, 7.77607, 98.435, 8.16631)
+
+[sub_resource type="Resource" id="Resource_3bng8"]
+script = ExtResource("1_a68b3")
+start_index = 537
+count = 7
+bbox = Vector4(98.2508, 9.04082, 98.3125, 9.13911)
+
+[sub_resource type="Resource" id="Resource_ntnji"]
+script = ExtResource("1_a68b3")
+start_index = 544
+count = 9
+bbox = Vector4(99.9313, 9.42163, 100.075, 9.58603)
+
+[sub_resource type="Resource" id="Resource_dhihn"]
+script = ExtResource("1_a68b3")
+start_index = 553
+count = 8
+bbox = Vector4(99.9834, 9.67998, 100.074, 9.79355)
+
+[sub_resource type="Resource" id="Resource_iuqqx"]
+script = ExtResource("1_a68b3")
+start_index = 561
+count = 6
+bbox = Vector4(102.533, 11.5722, 102.606, 11.6917)
+
+[sub_resource type="Resource" id="Resource_86vdn"]
+script = ExtResource("1_a68b3")
+start_index = 567
+count = 11
+bbox = Vector4(102.273, 11.9647, 102.43, 12.1519)
+
+[resource]
+script = ExtResource("2_k11bc")
+name = "Thailand"
+alt_names = Array[String]([])
+code = "TH"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Thailand_mesh.tres"
+outline_file = "res://resources/countries/Thailand_outline.tres"
+polygons = Array[ExtResource("1_a68b3")]([SubResource("Resource_2l4km"), SubResource("Resource_1rncf"), SubResource("Resource_n534f"), SubResource("Resource_q62g6"), SubResource("Resource_5e3d7"), SubResource("Resource_3bng8"), SubResource("Resource_ntnji"), SubResource("Resource_dhihn"), SubResource("Resource_iuqqx"), SubResource("Resource_86vdn")])

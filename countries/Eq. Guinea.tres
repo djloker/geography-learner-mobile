@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://d4lspw47os53l"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_f4vdm"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_amuvj"]
+
+[sub_resource type="Resource" id="Resource_swa3f"]
+script = ExtResource("1_f4vdm")
+start_index = 0
+count = 47
+bbox = Vector4(9.38594, 0.960107, 11.3354, 2.30444)
+
+[sub_resource type="Resource" id="Resource_rchgp"]
+script = ExtResource("1_f4vdm")
+start_index = 47
+count = 20
+bbox = Vector4(8.43428, 3.21709, 8.95068, 3.7583)
+
+[resource]
+script = ExtResource("2_amuvj")
+name = "Eq. Guinea"
+alt_names = Array[String]([])
+code = "GQ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Eq. Guinea_mesh.tres"
+outline_file = "res://resources/countries/Eq. Guinea_outline.tres"
+polygons = Array[ExtResource("1_f4vdm")]([SubResource("Resource_swa3f"), SubResource("Resource_rchgp")])

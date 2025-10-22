@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://fqoi3r221sq7"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_q0x7q"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xcgn5"]
+
+[sub_resource type="Resource" id="Resource_0yx2v"]
+script = ExtResource("1_q0x7q")
+start_index = 0
+count = 377
+bbox = Vector4(21.9789, -18.0415, 33.6615, -8.19365)
+
+[resource]
+script = ExtResource("2_xcgn5")
+name = "Zambia"
+alt_names = Array[String]([])
+code = "ZM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Zambia_mesh.tres"
+outline_file = "res://resources/countries/Zambia_outline.tres"
+polygons = Array[ExtResource("1_q0x7q")]([SubResource("Resource_0yx2v")])

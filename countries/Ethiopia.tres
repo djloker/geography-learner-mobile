@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bmayigrbdask0"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_p6bfq"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_40lw0"]
+
+[sub_resource type="Resource" id="Resource_h857p"]
+script = ExtResource("1_p6bfq")
+start_index = 0
+count = 302
+bbox = Vector4(32.9989, 3.4561, 47.9782, 14.8523)
+
+[resource]
+script = ExtResource("2_40lw0")
+name = "Ethiopia"
+alt_names = Array[String]([])
+code = "ET"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ethiopia_mesh.tres"
+outline_file = "res://resources/countries/Ethiopia_outline.tres"
+polygons = Array[ExtResource("1_p6bfq")]([SubResource("Resource_h857p")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://c6c3p6r42ffi"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_idc44"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ou3ow"]
+
+[sub_resource type="Resource" id="Resource_7j614"]
+script = ExtResource("1_idc44")
+start_index = 0
+count = 14
+bbox = Vector4(-172.046, -14.0473, -171.45, -13.8071)
+
+[sub_resource type="Resource" id="Resource_o7xib"]
+script = ExtResource("1_idc44")
+start_index = 14
+count = 13
+bbox = Vector4(-172.779, -13.8043, -172.177, -13.4652)
+
+[resource]
+script = ExtResource("2_ou3ow")
+name = "Samoa"
+alt_names = Array[String]([])
+code = "WS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Samoa_mesh.tres"
+outline_file = "res://resources/countries/Samoa_outline.tres"
+polygons = Array[ExtResource("1_idc44")]([SubResource("Resource_7j614"), SubResource("Resource_o7xib")])

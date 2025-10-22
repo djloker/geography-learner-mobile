@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=12 format=3 uid="uid://cf7ax6ttcga3x"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_jryat"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_qwa47"]
+
+[sub_resource type="Resource" id="Resource_jcmmv"]
+script = ExtResource("1_jryat")
+start_index = 0
+count = 326
+bbox = Vector4(109.539, 0.861963, 119.266, 6.99023)
+
+[sub_resource type="Resource" id="Resource_2xnjd"]
+script = ExtResource("1_jryat")
+start_index = 326
+count = 8
+bbox = Vector4(117.649, 4.16694, 117.885, 4.2624)
+
+[sub_resource type="Resource" id="Resource_y7775"]
+script = ExtResource("1_jryat")
+start_index = 334
+count = 10
+bbox = Vector4(111.3, 2.4022, 111.389, 2.76831)
+
+[sub_resource type="Resource" id="Resource_6uljm"]
+script = ExtResource("1_jryat")
+start_index = 344
+count = 8
+bbox = Vector4(104.129, 2.72134, 104.223, 2.87173)
+
+[sub_resource type="Resource" id="Resource_nq88m"]
+script = ExtResource("1_jryat")
+start_index = 352
+count = 7
+bbox = Vector4(101.265, 2.97041, 101.328, 3.06738)
+
+[sub_resource type="Resource" id="Resource_yx1vi"]
+script = ExtResource("1_jryat")
+start_index = 359
+count = 8
+bbox = Vector4(100.191, 5.26699, 100.339, 5.46777)
+
+[sub_resource type="Resource" id="Resource_0flhu"]
+script = ExtResource("1_jryat")
+start_index = 367
+count = 14
+bbox = Vector4(99.6463, 6.26328, 99.9187, 6.46572)
+
+[sub_resource type="Resource" id="Resource_lvosv"]
+script = ExtResource("1_jryat")
+start_index = 381
+count = 118
+bbox = Vector4(100.119, 1.32949, 104.288, 6.68662)
+
+[sub_resource type="Resource" id="Resource_hxuod"]
+script = ExtResource("1_jryat")
+start_index = 499
+count = 10
+bbox = Vector4(117.06, 7.11528, 117.281, 7.35166)
+
+[resource]
+script = ExtResource("2_qwa47")
+name = "Malaysia"
+alt_names = Array[String]([])
+code = "MY"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Malaysia_mesh.tres"
+outline_file = "res://resources/countries/Malaysia_outline.tres"
+polygons = Array[ExtResource("1_jryat")]([SubResource("Resource_jcmmv"), SubResource("Resource_2xnjd"), SubResource("Resource_y7775"), SubResource("Resource_6uljm"), SubResource("Resource_nq88m"), SubResource("Resource_yx1vi"), SubResource("Resource_0flhu"), SubResource("Resource_lvosv"), SubResource("Resource_hxuod")])

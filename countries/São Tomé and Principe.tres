@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://05mbcq2d2xcr"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_7epjq"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_qvd10"]
+
+[sub_resource type="Resource" id="Resource_7ohnp"]
+script = ExtResource("1_7epjq")
+start_index = 0
+count = 12
+bbox = Vector4(6.46816, 0.0473633, 6.75, 0.404395)
+
+[sub_resource type="Resource" id="Resource_fc2pf"]
+script = ExtResource("1_7epjq")
+start_index = 12
+count = 10
+bbox = Vector4(7.33066, 1.54155, 7.45234, 1.69912)
+
+[resource]
+script = ExtResource("2_qvd10")
+name = "São Tomé and Principe"
+alt_names = Array[String]([])
+code = "ST"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/São Tomé and Principe_mesh.tres"
+outline_file = "res://resources/countries/São Tomé and Principe_outline.tres"
+polygons = Array[ExtResource("1_7epjq")]([SubResource("Resource_7ohnp"), SubResource("Resource_fc2pf")])

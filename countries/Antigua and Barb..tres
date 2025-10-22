@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://dnngdqen4qvkb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_vdqfk"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_kqo23"]
+
+[sub_resource type="Resource" id="Resource_14csa"]
+script = ExtResource("1_vdqfk")
+start_index = 0
+count = 12
+bbox = Vector4(-61.8871, 16.9972, -61.686, 17.1689)
+
+[sub_resource type="Resource" id="Resource_f8ujq"]
+script = ExtResource("1_vdqfk")
+start_index = 12
+count = 10
+bbox = Vector4(-61.8688, 17.5487, -61.7471, 17.7141)
+
+[resource]
+script = ExtResource("2_kqo23")
+name = "Antigua and Barb."
+alt_names = Array[String]([])
+code = "AG"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Antigua and Barb._mesh.tres"
+outline_file = "res://resources/countries/Antigua and Barb._outline.tres"
+polygons = Array[ExtResource("1_vdqfk")]([SubResource("Resource_14csa"), SubResource("Resource_f8ujq")])

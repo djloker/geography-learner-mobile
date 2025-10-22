@@ -1,0 +1,267 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=45 format=3 uid="uid://p22h5hml6ihr"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_mm6bl"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_17a40"]
+
+[sub_resource type="Resource" id="Resource_60n6r"]
+script = ExtResource("1_mm6bl")
+start_index = 0
+count = 7
+bbox = Vector4(158.836, -54.7492, 158.959, -54.4724)
+
+[sub_resource type="Resource" id="Resource_emvj6"]
+script = ExtResource("1_mm6bl")
+start_index = 7
+count = 15
+bbox = Vector4(147.105, -43.5008, 147.356, -43.2789)
+
+[sub_resource type="Resource" id="Resource_lxv3v"]
+script = ExtResource("1_mm6bl")
+start_index = 22
+count = 10
+bbox = Vector4(147.296, -43.2408, 147.435, -43.0803)
+
+[sub_resource type="Resource" id="Resource_mhh38"]
+script = ExtResource("1_mm6bl")
+start_index = 32
+count = 10
+bbox = Vector4(148.023, -42.7192, 148.17, -42.5932)
+
+[sub_resource type="Resource" id="Resource_dv37o"]
+script = ExtResource("1_mm6bl")
+start_index = 42
+count = 162
+bbox = Vector4(144.646, -43.6193, 148.343, -40.6723)
+
+[sub_resource type="Resource" id="Resource_0x36p"]
+script = ExtResource("1_mm6bl")
+start_index = 204
+count = 7
+bbox = Vector4(148.117, -40.5926, 148.237, -40.5031)
+
+[sub_resource type="Resource" id="Resource_jgyrx"]
+script = ExtResource("1_mm6bl")
+start_index = 211
+count = 7
+bbox = Vector4(144.71, -40.5895, 144.791, -40.4349)
+
+[sub_resource type="Resource" id="Resource_mwjx8"]
+script = ExtResource("1_mm6bl")
+start_index = 218
+count = 13
+bbox = Vector4(148.01, -40.4973, 148.474, -40.3069)
+
+[sub_resource type="Resource" id="Resource_wjbg5"]
+script = ExtResource("1_mm6bl")
+start_index = 231
+count = 22
+bbox = Vector4(147.767, -40.2621, 148.323, -39.726)
+
+[sub_resource type="Resource" id="Resource_yprg7"]
+script = ExtResource("1_mm6bl")
+start_index = 253
+count = 18
+bbox = Vector4(143.839, -40.1202, 144.141, -39.5802)
+
+[sub_resource type="Resource" id="Resource_rv862"]
+script = ExtResource("1_mm6bl")
+start_index = 271
+count = 8
+bbox = Vector4(145.128, -38.557, 145.355, -38.4586)
+
+[sub_resource type="Resource" id="Resource_pitxw"]
+script = ExtResource("1_mm6bl")
+start_index = 279
+count = 7
+bbox = Vector4(145.28, -38.421, 145.487, -38.3142)
+
+[sub_resource type="Resource" id="Resource_wam50"]
+script = ExtResource("1_mm6bl")
+start_index = 286
+count = 29
+bbox = Vector4(136.541, -36.0748, 138.123, -35.5925)
+
+[sub_resource type="Resource" id="Resource_5bkry"]
+script = ExtResource("1_mm6bl")
+start_index = 315
+count = 8
+bbox = Vector4(153.396, -27.7117, 153.539, -27.4054)
+
+[sub_resource type="Resource" id="Resource_uu6uv"]
+script = ExtResource("1_mm6bl")
+start_index = 323
+count = 9
+bbox = Vector4(153.365, -27.331, 153.467, -27.0299)
+
+[sub_resource type="Resource" id="Resource_hludi"]
+script = ExtResource("1_mm6bl")
+start_index = 332
+count = 11
+bbox = Vector4(112.908, -26.0945, 113.183, -25.5202)
+
+[sub_resource type="Resource" id="Resource_xgean"]
+script = ExtResource("1_mm6bl")
+start_index = 343
+count = 23
+bbox = Vector4(152.977, -25.7783, 153.359, -24.7289)
+
+[sub_resource type="Resource" id="Resource_ytj2s"]
+script = ExtResource("1_mm6bl")
+start_index = 366
+count = 13
+bbox = Vector4(151.033, -23.7758, 151.296, -23.4605)
+
+[sub_resource type="Resource" id="Resource_l12ec"]
+script = ExtResource("1_mm6bl")
+start_index = 379
+count = 8
+bbox = Vector4(150.462, -22.3247, 150.549, -22.2107)
+
+[sub_resource type="Resource" id="Resource_uvviw"]
+script = ExtResource("1_mm6bl")
+start_index = 387
+count = 7
+bbox = Vector4(149.87, -22.2232, 149.928, -22.0487)
+
+[sub_resource type="Resource" id="Resource_pvx5k"]
+script = ExtResource("1_mm6bl")
+start_index = 394
+count = 8
+bbox = Vector4(115.309, -20.866, 115.458, -20.668)
+
+[sub_resource type="Resource" id="Resource_lrxqq"]
+script = ExtResource("1_mm6bl")
+start_index = 402
+count = 8
+bbox = Vector4(148.939, -20.3025, 149.045, -20.1535)
+
+[sub_resource type="Resource" id="Resource_paxrg"]
+script = ExtResource("1_mm6bl")
+start_index = 410
+count = 8
+bbox = Vector4(148.887, -20.1543, 148.968, -20.0443)
+
+[sub_resource type="Resource" id="Resource_sbc26"]
+script = ExtResource("1_mm6bl")
+start_index = 418
+count = 13
+bbox = Vector4(146.099, -18.4848, 146.342, -18.2259)
+
+[sub_resource type="Resource" id="Resource_sdd1n"]
+script = ExtResource("1_mm6bl")
+start_index = 431
+count = 8
+bbox = Vector4(139.408, -17.1316, 139.571, -16.9904)
+
+[sub_resource type="Resource" id="Resource_130mv"]
+script = ExtResource("1_mm6bl")
+start_index = 439
+count = 17
+bbox = Vector4(139.148, -16.7417, 139.698, -16.3952)
+
+[sub_resource type="Resource" id="Resource_04c0j"]
+script = ExtResource("1_mm6bl")
+start_index = 456
+count = 11
+bbox = Vector4(136.943, -15.8244, 137.094, -15.5948)
+
+[sub_resource type="Resource" id="Resource_qkh86"]
+script = ExtResource("1_mm6bl")
+start_index = 467
+count = 8
+bbox = Vector4(136.503, -15.6324, 136.612, -15.5337)
+
+[sub_resource type="Resource" id="Resource_tgm8a"]
+script = ExtResource("1_mm6bl")
+start_index = 475
+count = 6
+bbox = Vector4(136.846, -15.6273, 136.89, -15.5025)
+
+[sub_resource type="Resource" id="Resource_gyguu"]
+script = ExtResource("1_mm6bl")
+start_index = 481
+count = 11
+bbox = Vector4(124.483, -15.4302, 124.605, -15.2675)
+
+[sub_resource type="Resource" id="Resource_22m0f"]
+script = ExtResource("1_mm6bl")
+start_index = 492
+count = 8
+bbox = Vector4(125.091, -14.6417, 125.199, -14.4561)
+
+[sub_resource type="Resource" id="Resource_qy8x6"]
+script = ExtResource("1_mm6bl")
+start_index = 500
+count = 33
+bbox = Vector4(136.335, -14.2931, 136.951, -13.6759)
+
+[sub_resource type="Resource" id="Resource_jj5no"]
+script = ExtResource("1_mm6bl")
+start_index = 533
+count = 10
+bbox = Vector4(136.122, -13.8359, 136.275, -13.6647)
+
+[sub_resource type="Resource" id="Resource_c3021"]
+script = ExtResource("1_mm6bl")
+start_index = 543
+count = 8
+bbox = Vector4(136.18, -11.6768, 136.479, -11.4659)
+
+[sub_resource type="Resource" id="Resource_ckudw"]
+script = ExtResource("1_mm6bl")
+start_index = 551
+count = 22
+bbox = Vector4(130.043, -11.8356, 130.606, -11.3368)
+
+[sub_resource type="Resource" id="Resource_va1nt"]
+script = ExtResource("1_mm6bl")
+start_index = 573
+count = 29
+bbox = Vector4(130.369, -11.9265, 131.539, -11.1805)
+
+[sub_resource type="Resource" id="Resource_5p0tg"]
+script = ExtResource("1_mm6bl")
+start_index = 602
+count = 12
+bbox = Vector4(136.522, -11.4389, 136.78, -11.0125)
+
+[sub_resource type="Resource" id="Resource_4kc1o"]
+script = ExtResource("1_mm6bl")
+start_index = 614
+count = 11
+bbox = Vector4(132.484, -11.3184, 132.629, -10.9688)
+
+[sub_resource type="Resource" id="Resource_bjj8h"]
+script = ExtResource("1_mm6bl")
+start_index = 625
+count = 1154
+bbox = Vector4(113.185, -39.1455, 153.617, -10.7073)
+
+[sub_resource type="Resource" id="Resource_jracc"]
+script = ExtResource("1_mm6bl")
+start_index = 1779
+count = 7
+bbox = Vector4(142.125, -10.762, 142.275, -10.592)
+
+[sub_resource type="Resource" id="Resource_juevj"]
+script = ExtResource("1_mm6bl")
+start_index = 1786
+count = 7
+bbox = Vector4(142.195, -10.2542, 142.339, -10.1404)
+
+[sub_resource type="Resource" id="Resource_md0af"]
+script = ExtResource("1_mm6bl")
+start_index = 1793
+count = 6
+bbox = Vector4(142.098, -10.1812, 142.192, -10.0518)
+
+[resource]
+script = ExtResource("2_17a40")
+name = "Australia"
+alt_names = Array[String]([])
+code = "AU"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Australia_mesh.tres"
+outline_file = "res://resources/countries/Australia_outline.tres"
+polygons = Array[ExtResource("1_mm6bl")]([SubResource("Resource_60n6r"), SubResource("Resource_emvj6"), SubResource("Resource_lxv3v"), SubResource("Resource_mhh38"), SubResource("Resource_dv37o"), SubResource("Resource_0x36p"), SubResource("Resource_jgyrx"), SubResource("Resource_mwjx8"), SubResource("Resource_wjbg5"), SubResource("Resource_yprg7"), SubResource("Resource_rv862"), SubResource("Resource_pitxw"), SubResource("Resource_wam50"), SubResource("Resource_5bkry"), SubResource("Resource_uu6uv"), SubResource("Resource_hludi"), SubResource("Resource_xgean"), SubResource("Resource_ytj2s"), SubResource("Resource_l12ec"), SubResource("Resource_uvviw"), SubResource("Resource_pvx5k"), SubResource("Resource_lrxqq"), SubResource("Resource_paxrg"), SubResource("Resource_sbc26"), SubResource("Resource_sdd1n"), SubResource("Resource_130mv"), SubResource("Resource_04c0j"), SubResource("Resource_qkh86"), SubResource("Resource_tgm8a"), SubResource("Resource_gyguu"), SubResource("Resource_22m0f"), SubResource("Resource_qy8x6"), SubResource("Resource_jj5no"), SubResource("Resource_c3021"), SubResource("Resource_ckudw"), SubResource("Resource_va1nt"), SubResource("Resource_5p0tg"), SubResource("Resource_4kc1o"), SubResource("Resource_bjj8h"), SubResource("Resource_jracc"), SubResource("Resource_juevj"), SubResource("Resource_md0af")])

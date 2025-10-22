@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bofofucli3qx1"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_dgxvi"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_osh81"]
+
+[sub_resource type="Resource" id="Resource_5057h"]
+script = ExtResource("1_dgxvi")
+start_index = 0
+count = 324
+bbox = Vector4(14.4312, 2.27007, 27.4033, 10.9962)
+
+[resource]
+script = ExtResource("2_osh81")
+name = "Central African Rep."
+alt_names = Array[String]([])
+code = "CF"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Central African Rep._mesh.tres"
+outline_file = "res://resources/countries/Central African Rep._outline.tres"
+polygons = Array[ExtResource("1_dgxvi")]([SubResource("Resource_5057h")])

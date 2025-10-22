@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=16 format=3 uid="uid://cu4dupqhqi6j4"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_48v18"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_8uiw3"]
+
+[sub_resource type="Resource" id="Resource_fjqwn"]
+script = ExtResource("1_48v18")
+start_index = 0
+count = 9
+bbox = Vector4(169.022, -52.5703, 169.233, -52.4852)
+
+[sub_resource type="Resource" id="Resource_y5q2a"]
+script = ExtResource("1_48v18")
+start_index = 9
+count = 23
+bbox = Vector4(165.889, -50.8461, 166.267, -50.531)
+
+[sub_resource type="Resource" id="Resource_0wncc"]
+script = ExtResource("1_48v18")
+start_index = 32
+count = 28
+bbox = Vector4(167.522, -47.2637, 168.261, -46.6944)
+
+[sub_resource type="Resource" id="Resource_67hyc"]
+script = ExtResource("1_48v18")
+start_index = 60
+count = 12
+bbox = Vector4(166.532, -45.7299, 166.746, -45.615)
+
+[sub_resource type="Resource" id="Resource_0jbdo"]
+script = ExtResource("1_48v18")
+start_index = 72
+count = 6
+bbox = Vector4(166.893, -45.2998, 167.023, -45.1797)
+
+[sub_resource type="Resource" id="Resource_0emfh"]
+script = ExtResource("1_48v18")
+start_index = 78
+count = 7
+bbox = Vector4(-176.229, -44.3306, -176.123, -44.2245)
+
+[sub_resource type="Resource" id="Resource_eet8c"]
+script = ExtResource("1_48v18")
+start_index = 85
+count = 31
+bbox = Vector4(-176.848, -44.1166, -176.178, -43.7176)
+
+[sub_resource type="Resource" id="Resource_trbst"]
+script = ExtResource("1_48v18")
+start_index = 116
+count = 9
+bbox = Vector4(173.781, -40.9218, 173.964, -40.713)
+
+[sub_resource type="Resource" id="Resource_thuvm"]
+script = ExtResource("1_48v18")
+start_index = 125
+count = 324
+bbox = Vector4(166.478, -46.6307, 174.37, -40.49)
+
+[sub_resource type="Resource" id="Resource_jf6vn"]
+script = ExtResource("1_48v18")
+start_index = 449
+count = 13
+bbox = Vector4(175.337, -36.3339, 175.551, -36.0709)
+
+[sub_resource type="Resource" id="Resource_0bt82"]
+script = ExtResource("1_48v18")
+start_index = 462
+count = 295
+bbox = Vector4(172.706, -41.6106, 178.536, -34.4291)
+
+[sub_resource type="Resource" id="Resource_5x5o5"]
+script = ExtResource("1_48v18")
+start_index = 757
+count = 9
+bbox = Vector4(-171.204, -9.3583, -171.186, -9.33262)
+
+[sub_resource type="Resource" id="Resource_hcr54"]
+script = ExtResource("1_48v18")
+start_index = 766
+count = 9
+bbox = Vector4(-172.499, -8.58291, -172.479, -8.54648)
+
+[resource]
+script = ExtResource("2_8uiw3")
+name = "New Zealand"
+alt_names = Array[String]([])
+code = "NZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/New Zealand_mesh.tres"
+outline_file = "res://resources/countries/New Zealand_outline.tres"
+polygons = Array[ExtResource("1_48v18")]([SubResource("Resource_fjqwn"), SubResource("Resource_y5q2a"), SubResource("Resource_0wncc"), SubResource("Resource_67hyc"), SubResource("Resource_0jbdo"), SubResource("Resource_0emfh"), SubResource("Resource_eet8c"), SubResource("Resource_trbst"), SubResource("Resource_thuvm"), SubResource("Resource_jf6vn"), SubResource("Resource_0bt82"), SubResource("Resource_5x5o5"), SubResource("Resource_hcr54")])

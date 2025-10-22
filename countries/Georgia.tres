@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://c2emty74p5lky"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_eayjn"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_nx5y6"]
+
+[sub_resource type="Resource" id="Resource_0b045"]
+script = ExtResource("1_eayjn")
+start_index = 0
+count = 164
+bbox = Vector4(39.9783, 41.0702, 46.6726, 43.5698)
+
+[resource]
+script = ExtResource("2_nx5y6")
+name = "Georgia"
+alt_names = Array[String]([])
+code = "GE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Georgia_mesh.tres"
+outline_file = "res://resources/countries/Georgia_outline.tres"
+polygons = Array[ExtResource("1_eayjn")]([SubResource("Resource_0b045")])

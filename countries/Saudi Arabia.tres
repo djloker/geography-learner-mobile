@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://btnxhy6k5oc7g"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_loklg"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_jlgys"]
+
+[sub_resource type="Resource" id="Resource_623ra"]
+script = ExtResource("1_loklg")
+start_index = 0
+count = 388
+bbox = Vector4(34.6162, 16.3718, 55.641, 32.1245)
+
+[sub_resource type="Resource" id="Resource_0f2gt"]
+script = ExtResource("1_loklg")
+start_index = 388
+count = 26
+bbox = Vector4(41.7761, 16.5707, 42.1704, 17.0025)
+
+[sub_resource type="Resource" id="Resource_o72af"]
+script = ExtResource("1_loklg")
+start_index = 414
+count = 14
+bbox = Vector4(36.5043, 25.3831, 36.9548, 25.6887)
+
+[sub_resource type="Resource" id="Resource_1ppbr"]
+script = ExtResource("1_loklg")
+start_index = 428
+count = 8
+bbox = Vector4(36.5439, 25.6992, 36.5956, 25.8555)
+
+[resource]
+script = ExtResource("2_jlgys")
+name = "Saudi Arabia"
+alt_names = Array[String]([])
+code = "SA"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Saudi Arabia_mesh.tres"
+outline_file = "res://resources/countries/Saudi Arabia_outline.tres"
+polygons = Array[ExtResource("1_loklg")]([SubResource("Resource_623ra"), SubResource("Resource_0f2gt"), SubResource("Resource_o72af"), SubResource("Resource_1ppbr")])

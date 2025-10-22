@@ -1,0 +1,10 @@
+[gd_resource type="Sky" load_steps=3 format=3 uid="uid://due7s1w3msunj"]
+
+[ext_resource type="Texture2D" uid="uid://bbglwtbsg4uqm" path="res://textures/starmap_2020_2k.jpg" id="1_1jtvj"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_55fm2"]
+panorama = ExtResource("1_1jtvj")
+
+[resource]
+sky_material = SubResource("PanoramaSkyMaterial_55fm2")
+radiance_size = 0

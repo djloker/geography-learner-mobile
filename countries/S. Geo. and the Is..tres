@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://dqy0pt06gq21n"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_v7b5a"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yv380"]
+
+[sub_resource type="Resource" id="Resource_djugo"]
+script = ExtResource("1_v7b5a")
+start_index = 0
+count = 8
+bbox = Vector4(-26.451, -58.4923, -26.2599, -58.3822)
+
+[sub_resource type="Resource" id="Resource_bltqb"]
+script = ExtResource("1_v7b5a")
+start_index = 8
+count = 55
+bbox = Vector4(-38.0174, -54.8668, -35.7986, -53.9841)
+
+[resource]
+script = ExtResource("2_yv380")
+name = "S. Geo. and the Is."
+alt_names = Array[String]([])
+code = "GS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/S. Geo. and the Is._mesh.tres"
+outline_file = "res://resources/countries/S. Geo. and the Is._outline.tres"
+polygons = Array[ExtResource("1_v7b5a")]([SubResource("Resource_djugo"), SubResource("Resource_bltqb")])

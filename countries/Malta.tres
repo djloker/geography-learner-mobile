@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://cfe0klmogmw76"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_57ypx"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ngcej"]
+
+[sub_resource type="Resource" id="Resource_0mw67"]
+script = ExtResource("1_57ypx")
+start_index = 0
+count = 8
+bbox = Vector4(14.3513, 35.8202, 14.5662, 35.9784)
+
+[sub_resource type="Resource" id="Resource_jorbx"]
+script = ExtResource("1_57ypx")
+start_index = 8
+count = 8
+bbox = Vector4(14.1804, 36.0122, 14.3209, 36.0758)
+
+[resource]
+script = ExtResource("2_ngcej")
+name = "Malta"
+alt_names = Array[String]([])
+code = "MT"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Malta_mesh.tres"
+outline_file = "res://resources/countries/Malta_outline.tres"
+polygons = Array[ExtResource("1_57ypx")]([SubResource("Resource_0mw67"), SubResource("Resource_jorbx")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://ldrk4q30hi5t"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_4qm1u"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_q3ocp"]
+
+[sub_resource type="Resource" id="Resource_mnn8m"]
+script = ExtResource("1_4qm1u")
+start_index = 0
+count = 9
+bbox = Vector4(103.65, 1.26538, 103.996, 1.44707)
+
+[resource]
+script = ExtResource("2_q3ocp")
+name = "Singapore"
+alt_names = Array[String]([])
+code = "SG"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Singapore_mesh.tres"
+outline_file = "res://resources/countries/Singapore_outline.tres"
+polygons = Array[ExtResource("1_4qm1u")]([SubResource("Resource_mnn8m")])

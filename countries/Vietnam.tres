@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=11 format=3 uid="uid://ccp5j1fx8ml1v"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_8384l"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_alpes"]
+
+[sub_resource type="Resource" id="Resource_ph8q8"]
+script = ExtResource("1_8384l")
+start_index = 0
+count = 555
+bbox = Vector4(102.127, 8.58325, 109.445, 23.3452)
+
+[sub_resource type="Resource" id="Resource_q4by7"]
+script = ExtResource("1_8384l")
+start_index = 555
+count = 7
+bbox = Vector4(106.568, 8.68052, 106.659, 8.76636)
+
+[sub_resource type="Resource" id="Resource_wc1jb"]
+script = ExtResource("1_8384l")
+start_index = 562
+count = 13
+bbox = Vector4(103.85, 10.0292, 104.083, 10.4284)
+
+[sub_resource type="Resource" id="Resource_c48i7"]
+script = ExtResource("1_8384l")
+start_index = 575
+count = 7
+bbox = Vector4(107.078, 10.3366, 107.195, 10.4462)
+
+[sub_resource type="Resource" id="Resource_628fq"]
+script = ExtResource("1_8384l")
+start_index = 582
+count = 9
+bbox = Vector4(106.911, 20.7431, 107.064, 20.867)
+
+[sub_resource type="Resource" id="Resource_ym7qh"]
+script = ExtResource("1_8384l")
+start_index = 591
+count = 7
+bbox = Vector4(106.769, 20.7964, 106.866, 20.9279)
+
+[sub_resource type="Resource" id="Resource_toipt"]
+script = ExtResource("1_8384l")
+start_index = 598
+count = 8
+bbox = Vector4(107.399, 20.9005, 107.551, 21.034)
+
+[sub_resource type="Resource" id="Resource_47cyd"]
+script = ExtResource("1_8384l")
+start_index = 606
+count = 7
+bbox = Vector4(107.404, 21.0917, 107.603, 21.2689)
+
+[resource]
+script = ExtResource("2_alpes")
+name = "Vietnam"
+alt_names = Array[String]([])
+code = "VN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Vietnam_mesh.tres"
+outline_file = "res://resources/countries/Vietnam_outline.tres"
+polygons = Array[ExtResource("1_8384l")]([SubResource("Resource_ph8q8"), SubResource("Resource_q4by7"), SubResource("Resource_wc1jb"), SubResource("Resource_c48i7"), SubResource("Resource_628fq"), SubResource("Resource_ym7qh"), SubResource("Resource_toipt"), SubResource("Resource_47cyd")])

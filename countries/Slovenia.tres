@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cttq4gbijd74o"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_2n27b"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_vosd0"]
+
+[sub_resource type="Resource" id="Resource_8e845"]
+script = ExtResource("1_2n27b")
+start_index = 0
+count = 132
+bbox = Vector4(13.3782, 45.4284, 16.5162, 46.8633)
+
+[resource]
+script = ExtResource("2_vosd0")
+name = "Slovenia"
+alt_names = Array[String]([])
+code = "SI"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Slovenia_mesh.tres"
+outline_file = "res://resources/countries/Slovenia_outline.tres"
+polygons = Array[ExtResource("1_2n27b")]([SubResource("Resource_8e845")])

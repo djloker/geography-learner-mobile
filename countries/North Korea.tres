@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://dk288pdjcrbyb"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_is24v"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yoyu7"]
+
+[sub_resource type="Resource" id="Resource_tp1ep"]
+script = ExtResource("1_is24v")
+start_index = 0
+count = 251
+bbox = Vector4(124.349, 37.719, 130.687, 42.9981)
+
+[sub_resource type="Resource" id="Resource_ecpkf"]
+script = ExtResource("1_is24v")
+start_index = 251
+count = 6
+bbox = Vector4(124.846, 39.5076, 124.935, 39.6078)
+
+[resource]
+script = ExtResource("2_yoyu7")
+name = "North Korea"
+alt_names = Array[String]([])
+code = "KP"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/North Korea_mesh.tres"
+outline_file = "res://resources/countries/North Korea_outline.tres"
+polygons = Array[ExtResource("1_is24v")]([SubResource("Resource_tp1ep"), SubResource("Resource_ecpkf")])

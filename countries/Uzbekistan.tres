@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://r2n8yyeueqte"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_jr4om"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_iqbic"]
+
+[sub_resource type="Resource" id="Resource_pym2m"]
+script = ExtResource("1_jr4om")
+start_index = 0
+count = 548
+bbox = Vector4(55.9757, 37.1722, 73.1369, 45.5554)
+
+[sub_resource type="Resource" id="Resource_e1d3k"]
+script = ExtResource("1_jr4om")
+start_index = 548
+count = 8
+bbox = Vector4(70.55, 40.9344, 70.6525, 41.0248)
+
+[sub_resource type="Resource" id="Resource_j26ux"]
+script = ExtResource("1_jr4om")
+start_index = 556
+count = 9
+bbox = Vector4(71.6689, 39.9071, 71.7899, 39.9953)
+
+[sub_resource type="Resource" id="Resource_n7xtc"]
+script = ExtResource("1_jr4om")
+start_index = 565
+count = 19
+bbox = Vector4(70.9606, 39.8834, 71.2287, 40.1523)
+
+[resource]
+script = ExtResource("2_iqbic")
+name = "Uzbekistan"
+alt_names = Array[String]([])
+code = "UZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Uzbekistan_mesh.tres"
+outline_file = "res://resources/countries/Uzbekistan_outline.tres"
+polygons = Array[ExtResource("1_jr4om")]([SubResource("Resource_pym2m"), SubResource("Resource_e1d3k"), SubResource("Resource_j26ux"), SubResource("Resource_n7xtc")])

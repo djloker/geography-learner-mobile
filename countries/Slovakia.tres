@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://db7hs6awnyj8l"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_s3iyc"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_1nlla"]
+
+[sub_resource type="Resource" id="Resource_xt62q"]
+script = ExtResource("1_s3iyc")
+start_index = 0
+count = 145
+bbox = Vector4(16.8627, 47.7634, 22.5387, 49.5977)
+
+[resource]
+script = ExtResource("2_1nlla")
+name = "Slovakia"
+alt_names = Array[String]([])
+code = "SK"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Slovakia_mesh.tres"
+outline_file = "res://resources/countries/Slovakia_outline.tres"
+polygons = Array[ExtResource("1_s3iyc")]([SubResource("Resource_xt62q")])

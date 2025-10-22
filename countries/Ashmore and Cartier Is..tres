@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://7ukmxjg8pv7g"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_0gajr"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_dq81i"]
+
+[sub_resource type="Resource" id="Resource_0vbkw"]
+script = ExtResource("1_0gajr")
+start_index = 0
+count = 5
+bbox = Vector4(123.572, -12.4359, 123.595, -12.4239)
+
+[resource]
+script = ExtResource("2_dq81i")
+name = "Ashmore and Cartier Is."
+alt_names = Array[String]([])
+code = "-99"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ashmore and Cartier Is._mesh.tres"
+outline_file = "res://resources/countries/Ashmore and Cartier Is._outline.tres"
+polygons = Array[ExtResource("1_0gajr")]([SubResource("Resource_0vbkw")])

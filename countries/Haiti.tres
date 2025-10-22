@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://8hs2vgnku0sg"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ejkrr"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_camum"]
+
+[sub_resource type="Resource" id="Resource_yk6oj"]
+script = ExtResource("1_ejkrr")
+start_index = 0
+count = 91
+bbox = Vector4(-74.4781, 18.0392, -71.6453, 19.9281)
+
+[sub_resource type="Resource" id="Resource_fgca7"]
+script = ExtResource("1_ejkrr")
+start_index = 91
+count = 9
+bbox = Vector4(-73.2853, 18.7071, -72.8046, 18.9673)
+
+[sub_resource type="Resource" id="Resource_hhhsk"]
+script = ExtResource("1_ejkrr")
+start_index = 100
+count = 12
+bbox = Vector4(-72.9604, 19.9858, -72.6235, 20.0937)
+
+[resource]
+script = ExtResource("2_camum")
+name = "Haiti"
+alt_names = Array[String]([])
+code = "HT"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Haiti_mesh.tres"
+outline_file = "res://resources/countries/Haiti_outline.tres"
+polygons = Array[ExtResource("1_ejkrr")]([SubResource("Resource_yk6oj"), SubResource("Resource_fgca7"), SubResource("Resource_hhhsk")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://c1d72h1d5p5ki"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_chnnl"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ru6je"]
+
+[sub_resource type="Resource" id="Resource_e35m7"]
+script = ExtResource("1_chnnl")
+start_index = 0
+count = 357
+bbox = Vector4(2.68604, 4.27739, 14.6271, 13.8729)
+
+[sub_resource type="Resource" id="Resource_6wmn0"]
+script = ExtResource("1_chnnl")
+start_index = 357
+count = 7
+bbox = Vector4(7.14043, 4.38765, 7.32793, 4.52734)
+
+[resource]
+script = ExtResource("2_ru6je")
+name = "Nigeria"
+alt_names = Array[String]([])
+code = "NG"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Nigeria_mesh.tres"
+outline_file = "res://resources/countries/Nigeria_outline.tres"
+polygons = Array[ExtResource("1_chnnl")]([SubResource("Resource_e35m7"), SubResource("Resource_6wmn0")])

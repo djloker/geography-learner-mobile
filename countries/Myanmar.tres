@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=22 format=3 uid="uid://htd417cy78li"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_5wx68"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ak677"]
+
+[sub_resource type="Resource" id="Resource_87we1"]
+script = ExtResource("1_5wx68")
+start_index = 0
+count = 674
+bbox = Vector4(92.1796, 10.035, 101.147, 28.517)
+
+[sub_resource type="Resource" id="Resource_ie0xr"]
+script = ExtResource("1_5wx68")
+start_index = 674
+count = 9
+bbox = Vector4(98.1181, 9.87539, 98.2917, 10.0513)
+
+[sub_resource type="Resource" id="Resource_viiuc"]
+script = ExtResource("1_5wx68")
+start_index = 683
+count = 11
+bbox = Vector4(98.0805, 10.7399, 98.2935, 10.9803)
+
+[sub_resource type="Resource" id="Resource_8o05w"]
+script = ExtResource("1_5wx68")
+start_index = 694
+count = 6
+bbox = Vector4(98.4774, 10.9594, 98.5417, 11.087)
+
+[sub_resource type="Resource" id="Resource_l0va1"]
+script = ExtResource("1_5wx68")
+start_index = 700
+count = 12
+bbox = Vector4(98.1873, 11.4558, 98.3075, 11.783)
+
+[sub_resource type="Resource" id="Resource_a4hxp"]
+script = ExtResource("1_5wx68")
+start_index = 712
+count = 9
+bbox = Vector4(98.3765, 11.5387, 98.5538, 11.8049)
+
+[sub_resource type="Resource" id="Resource_tfway"]
+script = ExtResource("1_5wx68")
+start_index = 721
+count = 7
+bbox = Vector4(98.0104, 11.6368, 98.0836, 11.8603)
+
+[sub_resource type="Resource" id="Resource_vfil4"]
+script = ExtResource("1_5wx68")
+start_index = 728
+count = 8
+bbox = Vector4(98.4545, 11.8994, 98.6096, 12.0843)
+
+[sub_resource type="Resource" id="Resource_dn288"]
+script = ExtResource("1_5wx68")
+start_index = 736
+count = 13
+bbox = Vector4(98.0373, 12.1449, 98.1367, 12.2918)
+
+[sub_resource type="Resource" id="Resource_en56s"]
+script = ExtResource("1_5wx68")
+start_index = 749
+count = 9
+bbox = Vector4(97.9387, 12.279, 98.0661, 12.3979)
+
+[sub_resource type="Resource" id="Resource_i8g3w"]
+script = ExtResource("1_5wx68")
+start_index = 758
+count = 12
+bbox = Vector4(98.3025, 12.336, 98.4683, 12.6782)
+
+[sub_resource type="Resource" id="Resource_lkrx3"]
+script = ExtResource("1_5wx68")
+start_index = 770
+count = 9
+bbox = Vector4(98.2508, 12.9347, 98.3154, 13.2022)
+
+[sub_resource type="Resource" id="Resource_s70mt"]
+script = ExtResource("1_5wx68")
+start_index = 779
+count = 7
+bbox = Vector4(94.7335, 15.7938, 94.8382, 15.933)
+
+[sub_resource type="Resource" id="Resource_3eeow"]
+script = ExtResource("1_5wx68")
+start_index = 786
+count = 9
+bbox = Vector4(94.3879, 15.8484, 94.6187, 16.2055)
+
+[sub_resource type="Resource" id="Resource_o4d87"]
+script = ExtResource("1_5wx68")
+start_index = 795
+count = 11
+bbox = Vector4(97.4691, 16.2401, 97.5996, 16.5051)
+
+[sub_resource type="Resource" id="Resource_txkas"]
+script = ExtResource("1_5wx68")
+start_index = 806
+count = 9
+bbox = Vector4(93.4875, 18.6757, 93.7455, 18.8888)
+
+[sub_resource type="Resource" id="Resource_tqfbo"]
+script = ExtResource("1_5wx68")
+start_index = 815
+count = 14
+bbox = Vector4(93.644, 19.2987, 93.9475, 19.5583)
+
+[sub_resource type="Resource" id="Resource_5pb2o"]
+script = ExtResource("1_5wx68")
+start_index = 829
+count = 6
+bbox = Vector4(93.4129, 19.7548, 93.5133, 19.9503)
+
+[sub_resource type="Resource" id="Resource_81dch"]
+script = ExtResource("1_5wx68")
+start_index = 835
+count = 7
+bbox = Vector4(92.9127, 19.8289, 93.0232, 20.0865)
+
+[resource]
+script = ExtResource("2_ak677")
+name = "Myanmar"
+alt_names = Array[String]([])
+code = "MM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Myanmar_mesh.tres"
+outline_file = "res://resources/countries/Myanmar_outline.tres"
+polygons = Array[ExtResource("1_5wx68")]([SubResource("Resource_87we1"), SubResource("Resource_ie0xr"), SubResource("Resource_viiuc"), SubResource("Resource_8o05w"), SubResource("Resource_l0va1"), SubResource("Resource_a4hxp"), SubResource("Resource_tfway"), SubResource("Resource_vfil4"), SubResource("Resource_dn288"), SubResource("Resource_en56s"), SubResource("Resource_i8g3w"), SubResource("Resource_lkrx3"), SubResource("Resource_s70mt"), SubResource("Resource_3eeow"), SubResource("Resource_o4d87"), SubResource("Resource_txkas"), SubResource("Resource_tqfbo"), SubResource("Resource_5pb2o"), SubResource("Resource_81dch")])

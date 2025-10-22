@@ -1,0 +1,55 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://xf3txcnn1n8d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x74p1"]
+content_margin_left = 12.0
+content_margin_top = 6.0
+content_margin_right = 12.0
+content_margin_bottom = 6.0
+bg_color = Color(0.22451639, 0.664177, 0.74745804, 1)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_432vs"]
+content_margin_left = 12.0
+content_margin_top = 6.0
+content_margin_right = 12.0
+content_margin_bottom = 6.0
+bg_color = Color(0.30350608, 0.7025686, 0.26662084, 1)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+corner_detail = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_432vs"]
+color = Color(0.26404998, 0.44963938, 0.26421362, 1)
+thickness = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynw2n"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[resource]
+BlueButton/base_type = &"Button"
+BlueButton/styles/normal = SubResource("StyleBoxFlat_x74p1")
+CheckButton/colors/button_checked_color = Color(0.13188702, 0.44563818, 0.31917718, 1)
+Control/font_sizes/font_size = 32
+FlowContainer/constants/h_separation = 16
+GreenButton/base_type = &"Button"
+GreenButton/styles/normal = SubResource("StyleBoxFlat_432vs")
+PopupMenu/font_sizes/font_size = 28
+WordBankGrabber/base_type = &"HSeparator"
+WordBankGrabber/styles/separator = SubResource("StyleBoxLine_432vs")
+WordBankLabel/base_type = &"Label"
+WordBankLabel/styles/normal = SubResource("StyleBoxFlat_ynw2n")

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://sfgj2yd8e12h"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_jp22l"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xi7mj"]
+
+[sub_resource type="Resource" id="Resource_28foe"]
+script = ExtResource("1_jp22l")
+start_index = 0
+count = 9
+bbox = Vector4(-178.194, -14.3249, -178.044, -14.2316)
+
+[sub_resource type="Resource" id="Resource_h01hk"]
+script = ExtResource("1_jp22l")
+start_index = 9
+count = 7
+bbox = Vector4(-176.195, -13.3409, -176.128, -13.2217)
+
+[resource]
+script = ExtResource("2_xi7mj")
+name = "Wallis and Futuna Is."
+alt_names = Array[String]([])
+code = "WF"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Wallis and Futuna Is._mesh.tres"
+outline_file = "res://resources/countries/Wallis and Futuna Is._outline.tres"
+polygons = Array[ExtResource("1_jp22l")]([SubResource("Resource_28foe"), SubResource("Resource_h01hk")])

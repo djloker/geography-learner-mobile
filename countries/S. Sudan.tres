@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bxyajh3ea5rgq"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_yw2bc"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_nowi8"]
+
+[sub_resource type="Resource" id="Resource_c80qj"]
+script = ExtResource("1_yw2bc")
+start_index = 0
+count = 326
+bbox = Vector4(24.1474, 3.49072, 35.2684, 12.2231)
+
+[resource]
+script = ExtResource("2_nowi8")
+name = "S. Sudan"
+alt_names = Array[String]([])
+code = "SS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/S. Sudan_mesh.tres"
+outline_file = "res://resources/countries/S. Sudan_outline.tres"
+polygons = Array[ExtResource("1_yw2bc")]([SubResource("Resource_c80qj")])

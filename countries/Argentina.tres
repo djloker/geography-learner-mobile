@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://bov5svsloju60"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_n6ybm"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_87tl4"]
+
+[sub_resource type="Resource" id="Resource_0gyh4"]
+script = ExtResource("1_n6ybm")
+count = 21
+bbox = Vector4(-64.7573, -54.9025, -63.8154, -54.7162)
+
+[sub_resource type="Resource" id="Resource_j5b33"]
+script = ExtResource("1_n6ybm")
+start_index = 21
+count = 60
+bbox = Vector4(-68.6532, -55.0321, -65.179, -52.6526)
+
+[sub_resource type="Resource" id="Resource_kcwo1"]
+script = ExtResource("1_n6ybm")
+start_index = 81
+count = 9
+bbox = Vector4(-62.093, -39.2349, -61.866, -39.0862)
+
+[sub_resource type="Resource" id="Resource_djcgx"]
+script = ExtResource("1_n6ybm")
+start_index = 90
+count = 949
+bbox = Vector4(-73.5763, -52.3566, -53.6686, -21.8025)
+
+[resource]
+script = ExtResource("2_87tl4")
+name = "Argentina"
+code = "AR"
+mesh_file = "res://resources/countries/Argentina_mesh.tres"
+outline_file = "res://resources/countries/Argentina_outline.tres"
+polygons = Array[ExtResource("1_n6ybm")]([SubResource("Resource_0gyh4"), SubResource("Resource_j5b33"), SubResource("Resource_kcwo1"), SubResource("Resource_djcgx")])

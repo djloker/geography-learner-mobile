@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=9 format=3 uid="uid://bldbnkhtp5jwd"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_u1fhx"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_wuqsx"]
+
+[sub_resource type="Resource" id="Resource_xd6eg"]
+script = ExtResource("1_u1fhx")
+start_index = 0
+count = 8
+bbox = Vector4(167.422, -22.6611, 167.544, -22.5414)
+
+[sub_resource type="Resource" id="Resource_kbtj1"]
+script = ExtResource("1_u1fhx")
+start_index = 8
+count = 15
+bbox = Vector4(167.815, -21.6432, 168.139, -21.3379)
+
+[sub_resource type="Resource" id="Resource_wk7by"]
+script = ExtResource("1_u1fhx")
+start_index = 23
+count = 19
+bbox = Vector4(167.033, -21.1688, 167.431, -20.6735)
+
+[sub_resource type="Resource" id="Resource_uf6fk"]
+script = ExtResource("1_u1fhx")
+start_index = 42
+count = 14
+bbox = Vector4(166.494, -20.7086, 166.671, -20.4134)
+
+[sub_resource type="Resource" id="Resource_2sk67"]
+script = ExtResource("1_u1fhx")
+start_index = 56
+count = 65
+bbox = Vector4(164.037, -22.3762, 167.004, -20.1415)
+
+[sub_resource type="Resource" id="Resource_680f4"]
+script = ExtResource("1_u1fhx")
+start_index = 121
+count = 6
+bbox = Vector4(159.928, -19.3331, 159.975, -19.1146)
+
+[resource]
+script = ExtResource("2_wuqsx")
+name = "New Caledonia"
+alt_names = Array[String]([])
+code = "NC"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/New Caledonia_mesh.tres"
+outline_file = "res://resources/countries/New Caledonia_outline.tres"
+polygons = Array[ExtResource("1_u1fhx")]([SubResource("Resource_xd6eg"), SubResource("Resource_kbtj1"), SubResource("Resource_wk7by"), SubResource("Resource_uf6fk"), SubResource("Resource_2sk67"), SubResource("Resource_680f4")])

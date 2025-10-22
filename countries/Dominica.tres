@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bjmuqgg1oqf24"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_25ya5"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ps7en"]
+
+[sub_resource type="Resource" id="Resource_3020t"]
+script = ExtResource("1_25ya5")
+start_index = 0
+count = 10
+bbox = Vector4(-61.4812, 15.2273, -61.2511, 15.6331)
+
+[resource]
+script = ExtResource("2_ps7en")
+name = "Dominica"
+alt_names = Array[String]([])
+code = "DM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Dominica_mesh.tres"
+outline_file = "res://resources/countries/Dominica_outline.tres"
+polygons = Array[ExtResource("1_25ya5")]([SubResource("Resource_3020t")])

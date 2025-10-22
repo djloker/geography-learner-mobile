@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://633nabexecxm"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_wnmpi"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ltn85"]
+
+[sub_resource type="Resource" id="Resource_27kfm"]
+script = ExtResource("1_wnmpi")
+start_index = 0
+count = 9
+bbox = Vector4(131.135, 3.02187, 131.188, 3.0606)
+
+[sub_resource type="Resource" id="Resource_p17sb"]
+script = ExtResource("1_wnmpi")
+start_index = 9
+count = 12
+bbox = Vector4(134.506, 7.36064, 134.66, 7.71211)
+
+[resource]
+script = ExtResource("2_ltn85")
+name = "Palau"
+alt_names = Array[String]([])
+code = "PW"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Palau_mesh.tres"
+outline_file = "res://resources/countries/Palau_outline.tres"
+polygons = Array[ExtResource("1_wnmpi")]([SubResource("Resource_27kfm"), SubResource("Resource_p17sb")])

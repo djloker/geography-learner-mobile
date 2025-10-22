@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://cs1f75of4ei2p"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_fnagp"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_j4grf"]
+
+[sub_resource type="Resource" id="Resource_q3utp"]
+script = ExtResource("1_fnagp")
+start_index = 0
+count = 13
+bbox = Vector4(-81.4191, 19.2719, -81.1071, 19.3849)
+
+[sub_resource type="Resource" id="Resource_ukhft"]
+script = ExtResource("1_fnagp")
+start_index = 13
+count = 13
+bbox = Vector4(-80.1259, 19.6659, -79.9751, 19.7193)
+
+[sub_resource type="Resource" id="Resource_43h2l"]
+script = ExtResource("1_fnagp")
+start_index = 26
+count = 10
+bbox = Vector4(-79.9062, 19.6967, -79.7423, 19.7657)
+
+[resource]
+script = ExtResource("2_j4grf")
+name = "Cayman Is."
+alt_names = Array[String]([])
+code = "KY"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Cayman Is._mesh.tres"
+outline_file = "res://resources/countries/Cayman Is._outline.tres"
+polygons = Array[ExtResource("1_fnagp")]([SubResource("Resource_q3utp"), SubResource("Resource_ukhft"), SubResource("Resource_43h2l")])

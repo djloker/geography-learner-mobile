@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://cnxtvhuo7u375"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_jdh2p"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_1gnw8"]
+
+[sub_resource type="Resource" id="Resource_n7a6s"]
+script = ExtResource("1_jdh2p")
+start_index = 0
+count = 15
+bbox = Vector4(-4.78535, 54.0587, -4.33799, 54.4072)
+
+[resource]
+script = ExtResource("2_1gnw8")
+name = "Isle of Man"
+alt_names = Array[String]([])
+code = "IM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Isle of Man_mesh.tres"
+outline_file = "res://resources/countries/Isle of Man_outline.tres"
+polygons = Array[ExtResource("1_jdh2p")]([SubResource("Resource_n7a6s")])

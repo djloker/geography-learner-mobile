@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://2wwxmknlm1mn"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_gall6"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yvf4k"]
+
+[sub_resource type="Resource" id="Resource_eb646"]
+script = ExtResource("1_gall6")
+start_index = 0
+count = 15
+bbox = Vector4(73.2512, -53.1846, 73.8378, -52.9663)
+
+[resource]
+script = ExtResource("2_yvf4k")
+name = "Heard I. and McDonald Is."
+alt_names = Array[String]([])
+code = "HM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Heard I. and McDonald Is._mesh.tres"
+outline_file = "res://resources/countries/Heard I. and McDonald Is._outline.tres"
+polygons = Array[ExtResource("1_gall6")]([SubResource("Resource_eb646")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bg0n255w4m81a"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_vbyfj"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_l4srv"]
+
+[sub_resource type="Resource" id="Resource_ohier"]
+script = ExtResource("1_vbyfj")
+start_index = 0
+count = 105
+bbox = Vector4(34.2453, 29.4773, 35.9135, 33.4317)
+
+[resource]
+script = ExtResource("2_l4srv")
+name = "Israel"
+alt_names = Array[String]([])
+code = "IL"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Israel_mesh.tres"
+outline_file = "res://resources/countries/Israel_outline.tres"
+polygons = Array[ExtResource("1_vbyfj")]([SubResource("Resource_ohier")])

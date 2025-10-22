@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://bwbxd1mxto53s"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_mravi"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ncvht"]
+
+[sub_resource type="Resource" id="Resource_7gw5o"]
+script = ExtResource("1_mravi")
+start_index = 0
+count = 8
+bbox = Vector4(-170.821, -14.3598, -170.568, -14.2574)
+
+[resource]
+script = ExtResource("2_ncvht")
+name = "American Samoa"
+alt_names = Array[String]([])
+code = "AS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/American Samoa_mesh.tres"
+outline_file = "res://resources/countries/American Samoa_outline.tres"
+polygons = Array[ExtResource("1_mravi")]([SubResource("Resource_7gw5o")])

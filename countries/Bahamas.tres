@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=18 format=3 uid="uid://cnr7f0luhto0v"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_5v11h"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_fdko3"]
+
+[sub_resource type="Resource" id="Resource_a0vno"]
+script = ExtResource("1_5v11h")
+start_index = 0
+count = 19
+bbox = Vector4(-73.6868, 20.9374, -73.0117, 21.3134)
+
+[sub_resource type="Resource" id="Resource_led83"]
+script = ExtResource("1_5v11h")
+start_index = 19
+count = 5
+bbox = Vector4(-73.0627, 21.4576, -72.9161, 21.5616)
+
+[sub_resource type="Resource" id="Resource_4h23l"]
+script = ExtResource("1_5v11h")
+start_index = 24
+count = 13
+bbox = Vector4(-73.1619, 22.2906, -72.7473, 22.4553)
+
+[sub_resource type="Resource" id="Resource_rvpkf"]
+script = ExtResource("1_5v11h")
+start_index = 37
+count = 19
+bbox = Vector4(-74.2769, 22.1837, -73.8365, 22.7311)
+
+[sub_resource type="Resource" id="Resource_khmmo"]
+script = ExtResource("1_5v11h")
+start_index = 56
+count = 11
+bbox = Vector4(-74.314, 22.6654, -74.0348, 22.8396)
+
+[sub_resource type="Resource" id="Resource_mt6td"]
+script = ExtResource("1_5v11h")
+start_index = 67
+count = 20
+bbox = Vector4(-75.316, 22.8687, -74.8405, 23.6684)
+
+[sub_resource type="Resource" id="Resource_4if7o"]
+script = ExtResource("1_5v11h")
+start_index = 87
+count = 10
+bbox = Vector4(-76.0371, 23.4442, -75.6646, 23.6714)
+
+[sub_resource type="Resource" id="Resource_bwlfy"]
+script = ExtResource("1_5v11h")
+start_index = 97
+count = 7
+bbox = Vector4(-74.5509, 23.9597, -74.4294, 24.1267)
+
+[sub_resource type="Resource" id="Resource_emq8g"]
+script = ExtResource("1_5v11h")
+start_index = 104
+count = 24
+bbox = Vector4(-77.9999, 23.7392, -77.5188, 24.2875)
+
+[sub_resource type="Resource" id="Resource_dm4jh"]
+script = ExtResource("1_5v11h")
+start_index = 128
+count = 19
+bbox = Vector4(-75.744, 24.1391, -75.3018, 24.6975)
+
+[sub_resource type="Resource" id="Resource_n464c"]
+script = ExtResource("1_5v11h")
+start_index = 147
+count = 10
+bbox = Vector4(-77.5619, 24.9931, -77.2691, 25.083)
+
+[sub_resource type="Resource" id="Resource_v6j61"]
+script = ExtResource("1_5v11h")
+start_index = 157
+count = 31
+bbox = Vector4(-78.4353, 24.2875, -77.7351, 25.2023)
+
+[sub_resource type="Resource" id="Resource_dwlgy"]
+script = ExtResource("1_5v11h")
+start_index = 188
+count = 27
+bbox = Vector4(-76.7807, 24.6494, -76.1149, 25.5649)
+
+[sub_resource type="Resource" id="Resource_5sn0e"]
+script = ExtResource("1_5v11h")
+start_index = 215
+count = 22
+bbox = Vector4(-78.9856, 26.5007, -77.9225, 26.7979)
+
+[sub_resource type="Resource" id="Resource_r0qx1"]
+script = ExtResource("1_5v11h")
+start_index = 237
+count = 31
+bbox = Vector4(-77.9437, 25.8955, -77.0383, 26.9401)
+
+[resource]
+script = ExtResource("2_fdko3")
+name = "Bahamas"
+alt_names = Array[String]([])
+code = "BS"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Bahamas_mesh.tres"
+outline_file = "res://resources/countries/Bahamas_outline.tres"
+polygons = Array[ExtResource("1_5v11h")]([SubResource("Resource_a0vno"), SubResource("Resource_led83"), SubResource("Resource_4h23l"), SubResource("Resource_rvpkf"), SubResource("Resource_khmmo"), SubResource("Resource_mt6td"), SubResource("Resource_4if7o"), SubResource("Resource_bwlfy"), SubResource("Resource_emq8g"), SubResource("Resource_dm4jh"), SubResource("Resource_n464c"), SubResource("Resource_v6j61"), SubResource("Resource_dwlgy"), SubResource("Resource_5sn0e"), SubResource("Resource_r0qx1")])

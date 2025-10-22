@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://e0f68arkpqm5"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_qkbvy"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ti854"]
+
+[sub_resource type="Resource" id="Resource_s1brv"]
+script = ExtResource("1_qkbvy")
+start_index = 0
+count = 9
+bbox = Vector4(113.479, 22.1956, 113.548, 22.2459)
+
+[resource]
+script = ExtResource("2_ti854")
+name = "Macao"
+alt_names = Array[String]([])
+code = "MO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Macao_mesh.tres"
+outline_file = "res://resources/countries/Macao_outline.tres"
+polygons = Array[ExtResource("1_qkbvy")]([SubResource("Resource_s1brv")])

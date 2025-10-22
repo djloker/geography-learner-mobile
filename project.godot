@@ -1,0 +1,62 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Geography Learner Mobile"
+run/main_scene="uid://cfpxbgdrvs8n1"
+config/features=PackedStringArray("4.5", "Mobile")
+boot_splash/fullsize=false
+boot_splash/image="uid://frjqxsbw7ywe"
+config/icon="uid://ci4yeoyhxtsvh"
+
+[autoload]
+
+Utilities="*res://scripts/utilities.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=400
+window/size/window_height_override=800
+window/handheld/orientation=6
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/MaxSizeContainer/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://SFX/": "green",
+"res://addons/": "orange",
+"res://build/": "gray",
+"res://countries/": "green",
+"res://environment/": "purple",
+"res://icons/": "green",
+"res://scripts/": "blue",
+"res://shaders/": "blue",
+"res://textures/": "green",
+"res://theming/": "pink",
+"res://tools/": "red",
+"res://tools/country parsing tool/base data/": "green",
+"res://tools/country parsing tool/output/": "gray"
+}
+
+[input_devices]
+
+pointing/android/enable_pan_and_scale_gestures=true
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+textures/default_filters/use_nearest_mipmap_filter=true

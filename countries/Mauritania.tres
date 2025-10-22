@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://btg7ggj3mv5nv"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_cqopn"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_cq3mj"]
+
+[sub_resource type="Resource" id="Resource_d0wdj"]
+script = ExtResource("1_cqopn")
+start_index = 0
+count = 313
+bbox = Vector4(-17.064, 14.7454, -4.82261, 27.2859)
+
+[sub_resource type="Resource" id="Resource_g3hya"]
+script = ExtResource("1_cqopn")
+start_index = 313
+count = 8
+bbox = Vector4(-16.477, 19.6093, -16.3437, 19.8662)
+
+[resource]
+script = ExtResource("2_cq3mj")
+name = "Mauritania"
+alt_names = Array[String]([])
+code = "MR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Mauritania_mesh.tres"
+outline_file = "res://resources/countries/Mauritania_outline.tres"
+polygons = Array[ExtResource("1_cqopn")]([SubResource("Resource_d0wdj"), SubResource("Resource_g3hya")])

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://c7w8p2eu018be"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_dntar"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_6a4y6"]
+
+[sub_resource type="Resource" id="Resource_a6n4k"]
+script = ExtResource("1_dntar")
+start_index = 0
+count = 44
+bbox = Vector4(21.8545, 57.9313, 23.3232, 58.6274)
+
+[sub_resource type="Resource" id="Resource_r8hk1"]
+script = ExtResource("1_dntar")
+start_index = 44
+count = 8
+bbox = Vector4(23.0635, 58.54, 23.3564, 58.6781)
+
+[sub_resource type="Resource" id="Resource_ky3bs"]
+script = ExtResource("1_dntar")
+start_index = 52
+count = 23
+bbox = Vector4(22.0562, 58.69, 23.0087, 59.0871)
+
+[sub_resource type="Resource" id="Resource_3ic2o"]
+script = ExtResource("1_dntar")
+start_index = 75
+count = 120
+bbox = Vector4(23.432, 57.5255, 28.1511, 59.639)
+
+[resource]
+script = ExtResource("2_6a4y6")
+name = "Estonia"
+alt_names = Array[String]([])
+code = "EE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Estonia_mesh.tres"
+outline_file = "res://resources/countries/Estonia_outline.tres"
+polygons = Array[ExtResource("1_dntar")]([SubResource("Resource_a6n4k"), SubResource("Resource_r8hk1"), SubResource("Resource_ky3bs"), SubResource("Resource_3ic2o")])

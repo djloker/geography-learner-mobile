@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://c426jxods8fxx"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_4emij"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_rm4iw"]
+
+[sub_resource type="Resource" id="Resource_xo40t"]
+script = ExtResource("1_4emij")
+start_index = 0
+count = 321
+bbox = Vector4(23.1751, 51.265, 32.7103, 56.1458)
+
+[resource]
+script = ExtResource("2_rm4iw")
+name = "Belarus"
+alt_names = Array[String]([])
+code = "BY"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Belarus_mesh.tres"
+outline_file = "res://resources/countries/Belarus_outline.tres"
+polygons = Array[ExtResource("1_4emij")]([SubResource("Resource_xo40t")])

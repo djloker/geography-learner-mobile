@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=13 format=3 uid="uid://cfqb4t0fnv7hn"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_yo54p"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xlaun"]
+
+[sub_resource type="Resource" id="Resource_75q36"]
+script = ExtResource("1_yo54p")
+start_index = 0
+count = 534
+bbox = Vector4(-4.7625, 42.3405, 8.14033, 51.0971)
+
+[sub_resource type="Resource" id="Resource_7p8hh"]
+script = ExtResource("1_yo54p")
+start_index = 534
+count = 127
+bbox = Vector4(-54.6163, 2.12104, -51.6525, 5.78223)
+
+[sub_resource type="Resource" id="Resource_6rmj1"]
+script = ExtResource("1_yo54p")
+start_index = 661
+count = 15
+bbox = Vector4(55.2328, -21.369, 55.8391, -20.8651)
+
+[sub_resource type="Resource" id="Resource_s11ap"]
+script = ExtResource("1_yo54p")
+start_index = 676
+count = 15
+bbox = Vector4(45.0426, -12.985, 45.2231, -12.653)
+
+[sub_resource type="Resource" id="Resource_2rcdo"]
+script = ExtResource("1_yo54p")
+start_index = 691
+count = 22
+bbox = Vector4(-61.2197, 14.4263, -60.8263, 14.8753)
+
+[sub_resource type="Resource" id="Resource_frgsv"]
+script = ExtResource("1_yo54p")
+start_index = 713
+count = 9
+bbox = Vector4(-61.3184, 15.886, -61.2034, 16.0063)
+
+[sub_resource type="Resource" id="Resource_41j13"]
+script = ExtResource("1_yo54p")
+start_index = 722
+count = 13
+bbox = Vector4(-61.7941, 15.9621, -61.5523, 16.3553)
+
+[sub_resource type="Resource" id="Resource_p0biw"]
+script = ExtResource("1_yo54p")
+start_index = 735
+count = 13
+bbox = Vector4(-61.54, 16.2193, -61.1726, 16.5066)
+
+[sub_resource type="Resource" id="Resource_srlkd"]
+script = ExtResource("1_yo54p")
+start_index = 748
+count = 61
+bbox = Vector4(8.56563, 41.3849, 9.55645, 43.0215)
+
+[sub_resource type="Resource" id="Resource_fgygt"]
+script = ExtResource("1_yo54p")
+start_index = 809
+count = 8
+bbox = Vector4(-1.38887, 45.8166, -1.17832, 46.0504)
+
+[resource]
+script = ExtResource("2_xlaun")
+name = "France"
+alt_names = Array[String]([])
+code = "FR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/France_mesh.tres"
+outline_file = "res://resources/countries/France_outline.tres"
+polygons = Array[ExtResource("1_yo54p")]([SubResource("Resource_75q36"), SubResource("Resource_7p8hh"), SubResource("Resource_6rmj1"), SubResource("Resource_s11ap"), SubResource("Resource_2rcdo"), SubResource("Resource_frgsv"), SubResource("Resource_41j13"), SubResource("Resource_p0biw"), SubResource("Resource_srlkd"), SubResource("Resource_fgygt")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://157fig41dpg4"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_m46x8"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_47rlr"]
+
+[sub_resource type="Resource" id="Resource_bag3k"]
+script = ExtResource("1_m46x8")
+start_index = 0
+count = 145
+bbox = Vector4(21.0461, 53.893, 26.7757, 56.4112)
+
+[sub_resource type="Resource" id="Resource_dmgvt"]
+script = ExtResource("1_m46x8")
+start_index = 145
+count = 10
+bbox = Vector4(20.8998, 55.2789, 21.1157, 55.6165)
+
+[resource]
+script = ExtResource("2_47rlr")
+name = "Lithuania"
+alt_names = Array[String]([])
+code = "LT"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Lithuania_mesh.tres"
+outline_file = "res://resources/countries/Lithuania_outline.tres"
+polygons = Array[ExtResource("1_m46x8")]([SubResource("Resource_bag3k"), SubResource("Resource_dmgvt")])

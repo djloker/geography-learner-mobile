@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://76yvmfee8hgg"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_g3kky"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_th1ja"]
+
+[sub_resource type="Resource" id="Resource_a5xr7"]
+script = ExtResource("1_g3kky")
+start_index = 0
+count = 670
+bbox = Vector4(22.1318, 44.3876, 40.1283, 52.3536)
+
+[sub_resource type="Resource" id="Resource_hyhmy"]
+script = ExtResource("1_g3kky")
+start_index = 670
+count = 10
+bbox = Vector4(31.5088, 46.1547, 32.1501, 46.3731)
+
+[resource]
+script = ExtResource("2_th1ja")
+name = "Ukraine"
+alt_names = Array[String]([])
+code = "UA"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ukraine_mesh.tres"
+outline_file = "res://resources/countries/Ukraine_outline.tres"
+polygons = Array[ExtResource("1_g3kky")]([SubResource("Resource_a5xr7"), SubResource("Resource_hyhmy")])

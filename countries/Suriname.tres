@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://clkuvbe81ka16"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_q2kni"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_afk0x"]
+
+[sub_resource type="Resource" id="Resource_xed22"]
+script = ExtResource("1_q2kni")
+start_index = 0
+count = 184
+bbox = Vector4(-58.0545, 1.84224, -53.9905, 5.99346)
+
+[resource]
+script = ExtResource("2_afk0x")
+name = "Suriname"
+alt_names = Array[String]([])
+code = "SR"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Suriname_mesh.tres"
+outline_file = "res://resources/countries/Suriname_outline.tres"
+polygons = Array[ExtResource("1_q2kni")]([SubResource("Resource_xed22")])

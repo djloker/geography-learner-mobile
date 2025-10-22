@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://7rs73v3h5hqh"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_21ig0"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_l2m7u"]
+
+[sub_resource type="Resource" id="Resource_nm86p"]
+script = ExtResource("1_21ig0")
+start_index = 0
+count = 7
+bbox = Vector4(79.7477, 8.975, 79.9037, 9.10459)
+
+[sub_resource type="Resource" id="Resource_rexlx"]
+script = ExtResource("1_21ig0")
+start_index = 7
+count = 9
+bbox = Vector4(79.8457, 9.61982, 79.9695, 9.74434)
+
+[sub_resource type="Resource" id="Resource_gnpun"]
+script = ExtResource("1_21ig0")
+start_index = 16
+count = 76
+bbox = Vector4(79.7078, 5.94937, 81.877, 9.8127)
+
+[resource]
+script = ExtResource("2_l2m7u")
+name = "Sri Lanka"
+alt_names = Array[String]([])
+code = "LK"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Sri Lanka_mesh.tres"
+outline_file = "res://resources/countries/Sri Lanka_outline.tres"
+polygons = Array[ExtResource("1_21ig0")]([SubResource("Resource_nm86p"), SubResource("Resource_rexlx"), SubResource("Resource_gnpun")])

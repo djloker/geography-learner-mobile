@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://o5hed4x65vdj"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_rbmiw"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_6um2x"]
+
+[sub_resource type="Resource" id="Resource_xjym5"]
+script = ExtResource("1_rbmiw")
+start_index = 0
+count = 30
+bbox = Vector4(-61.9061, 10.0646, -60.9176, 10.8402)
+
+[sub_resource type="Resource" id="Resource_xpqxv"]
+script = ExtResource("1_rbmiw")
+start_index = 30
+count = 8
+bbox = Vector4(-60.8106, 11.1686, -60.5255, 11.3254)
+
+[resource]
+script = ExtResource("2_6um2x")
+name = "Trinidad and Tobago"
+alt_names = Array[String]([])
+code = "TT"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Trinidad and Tobago_mesh.tres"
+outline_file = "res://resources/countries/Trinidad and Tobago_outline.tres"
+polygons = Array[ExtResource("1_rbmiw")]([SubResource("Resource_xjym5"), SubResource("Resource_xpqxv")])

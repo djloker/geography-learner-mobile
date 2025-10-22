@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://c0edrrk0slcgq"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_7m2u7"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_hlxsb"]
+
+[sub_resource type="Resource" id="Resource_tiano"]
+script = ExtResource("1_7m2u7")
+start_index = 0
+count = 38
+bbox = Vector4(30.7875, -27.31, 32.1129, -25.743)
+
+[resource]
+script = ExtResource("2_hlxsb")
+name = "Eswatini"
+alt_names = Array[String]([])
+code = "SZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Eswatini_mesh.tres"
+outline_file = "res://resources/countries/Eswatini_outline.tres"
+polygons = Array[ExtResource("1_7m2u7")]([SubResource("Resource_tiano")])

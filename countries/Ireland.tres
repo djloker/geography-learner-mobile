@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://dbabmscnhtyuu"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_muk5j"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_3rq8y"]
+
+[sub_resource type="Resource" id="Resource_0nanf"]
+script = ExtResource("1_muk5j")
+start_index = 0
+count = 305
+bbox = Vector4(-10.3902, 51.4737, -6.02739, 55.3658)
+
+[sub_resource type="Resource" id="Resource_q3m3o"]
+script = ExtResource("1_muk5j")
+start_index = 305
+count = 10
+bbox = Vector4(-10.2657, 53.8846, -9.94819, 54.0168)
+
+[resource]
+script = ExtResource("2_3rq8y")
+name = "Ireland"
+alt_names = Array[String]([])
+code = "IE"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Ireland_mesh.tres"
+outline_file = "res://resources/countries/Ireland_outline.tres"
+polygons = Array[ExtResource("1_muk5j")]([SubResource("Resource_0nanf"), SubResource("Resource_q3m3o")])

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://b6xmoox7vbsc6"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_nrdea"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_vi2wj"]
+
+[sub_resource type="Resource" id="Resource_ckmpd"]
+script = ExtResource("1_nrdea")
+start_index = 0
+count = 355
+bbox = Vector4(16.4476, -34.7857, 32.8861, -22.1463)
+
+[sub_resource type="Resource" id="Resource_0f4gn"]
+script = ExtResource("1_nrdea")
+start_index = 355
+count = 77
+bbox = Vector4(27.0518, -30.6423, 29.3907, -28.5817)
+
+[sub_resource type="Resource" id="Resource_u4gnr"]
+script = ExtResource("1_nrdea")
+start_index = 432
+count = 10
+bbox = Vector4(37.59, -46.9629, 37.8877, -46.824)
+
+[resource]
+script = ExtResource("2_vi2wj")
+name = "South Africa"
+alt_names = Array[String]([])
+code = "ZA"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/South Africa_mesh.tres"
+outline_file = "res://resources/countries/South Africa_outline.tres"
+polygons = Array[ExtResource("1_nrdea")]([SubResource("Resource_ckmpd"), SubResource("Resource_0f4gn"), SubResource("Resource_u4gnr")])

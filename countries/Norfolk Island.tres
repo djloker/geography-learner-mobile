@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://31sktovw2jxe"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_y777r"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_8hit4"]
+
+[sub_resource type="Resource" id="Resource_asa0k"]
+script = ExtResource("1_y777r")
+start_index = 0
+count = 26
+bbox = Vector4(167.906, -29.0963, 167.99, -29.014)
+
+[resource]
+script = ExtResource("2_8hit4")
+name = "Norfolk Island"
+alt_names = Array[String]([])
+code = "NF"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Norfolk Island_mesh.tres"
+outline_file = "res://resources/countries/Norfolk Island_outline.tres"
+polygons = Array[ExtResource("1_y777r")]([SubResource("Resource_asa0k")])

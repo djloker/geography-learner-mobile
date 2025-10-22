@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=6 format=3 uid="uid://dxkwvrr8ry64i"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_ly5i8"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_pdmy0"]
+
+[sub_resource type="Resource" id="Resource_kw7w8"]
+script = ExtResource("1_ly5i8")
+start_index = 0
+count = 13
+bbox = Vector4(124.036, -9.42793, 124.444, -9.19033)
+
+[sub_resource type="Resource" id="Resource_78r51"]
+script = ExtResource("1_ly5i8")
+start_index = 13
+count = 51
+bbox = Vector4(124.915, -9.51191, 127.296, -8.31572)
+
+[sub_resource type="Resource" id="Resource_6urbr"]
+script = ExtResource("1_ly5i8")
+start_index = 64
+count = 6
+bbox = Vector4(125.507, -8.31182, 125.646, -8.13994)
+
+[resource]
+script = ExtResource("2_pdmy0")
+name = "Timor-Leste"
+alt_names = Array[String]([])
+code = "TL"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Timor-Leste_mesh.tres"
+outline_file = "res://resources/countries/Timor-Leste_outline.tres"
+polygons = Array[ExtResource("1_ly5i8")]([SubResource("Resource_kw7w8"), SubResource("Resource_78r51"), SubResource("Resource_6urbr")])

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=7 format=3 uid="uid://cnlknitfedean"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_8je47"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_2idce"]
+
+[sub_resource type="Resource" id="Resource_shqht"]
+script = ExtResource("1_8je47")
+start_index = 0
+count = 329
+bbox = Vector4(29.3234, -11.7162, 40.4636, -0.994922)
+
+[sub_resource type="Resource" id="Resource_8788q"]
+script = ExtResource("1_8je47")
+start_index = 329
+count = 13
+bbox = Vector4(39.6029, -7.99053, 39.9071, -7.64922)
+
+[sub_resource type="Resource" id="Resource_kvxjd"]
+script = ExtResource("1_8je47")
+start_index = 342
+count = 20
+bbox = Vector4(39.1823, -6.45371, 39.573, -5.72197)
+
+[sub_resource type="Resource" id="Resource_qbtfk"]
+script = ExtResource("1_8je47")
+start_index = 362
+count = 14
+bbox = Vector4(39.6468, -5.44385, 39.871, -4.90615)
+
+[resource]
+script = ExtResource("2_2idce")
+name = "Tanzania"
+alt_names = Array[String]([])
+code = "TZ"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Tanzania_mesh.tres"
+outline_file = "res://resources/countries/Tanzania_outline.tres"
+polygons = Array[ExtResource("1_8je47")]([SubResource("Resource_shqht"), SubResource("Resource_8788q"), SubResource("Resource_kvxjd"), SubResource("Resource_qbtfk")])

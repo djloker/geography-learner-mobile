@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=8 format=3 uid="uid://jbbljxvq7v07"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_fb4mp"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_ygn0o"]
+
+[sub_resource type="Resource" id="Resource_25fde"]
+script = ExtResource("1_fb4mp")
+start_index = 0
+count = 11
+bbox = Vector4(169.591, 5.7998, 169.735, 6.01416)
+
+[sub_resource type="Resource" id="Resource_wvn61"]
+script = ExtResource("1_fb4mp")
+start_index = 11
+count = 10
+bbox = Vector4(171.577, 6.97314, 171.757, 7.04824)
+
+[sub_resource type="Resource" id="Resource_g3jd0"]
+script = ExtResource("1_fb4mp")
+start_index = 21
+count = 12
+bbox = Vector4(171.036, 7.06875, 171.394, 7.17178)
+
+[sub_resource type="Resource" id="Resource_vpcv1"]
+script = ExtResource("1_fb4mp")
+start_index = 33
+count = 7
+bbox = Vector4(168.675, 7.29355, 168.83, 7.33623)
+
+[sub_resource type="Resource" id="Resource_i51lf"]
+script = ExtResource("1_fb4mp")
+start_index = 40
+count = 7
+bbox = Vector4(166.845, 11.1462, 166.899, 11.1687)
+
+[resource]
+script = ExtResource("2_ygn0o")
+name = "Marshall Is."
+alt_names = Array[String]([])
+code = "MH"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Marshall Is._mesh.tres"
+outline_file = "res://resources/countries/Marshall Is._outline.tres"
+polygons = Array[ExtResource("1_fb4mp")]([SubResource("Resource_25fde"), SubResource("Resource_wvn61"), SubResource("Resource_g3jd0"), SubResource("Resource_vpcv1"), SubResource("Resource_i51lf")])

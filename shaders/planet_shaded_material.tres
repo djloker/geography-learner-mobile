@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://bpqc6o7rd4iv5"]
+
+[ext_resource type="Shader" uid="uid://c58flawkuj0to" path="res://shaders/planet_shaded.gdshader" id="1_rm86x"]
+[ext_resource type="Texture2D" uid="uid://bm6dbanl6gipp" path="res://textures/world.200408.3x5400x2700.jpg" id="2_g5m4h"]
+[ext_resource type="Texture2D" uid="uid://dackv1p74tonb" path="res://textures/countries_identities.png" id="3_173dg"]
+[ext_resource type="Texture2D" uid="uid://cku601loatth5" path="res://textures/earth_lights.png" id="4_6n6kp"]
+[ext_resource type="Texture2D" uid="uid://w5vn3w87j5bk" path="res://textures/normalmap_lowres.png" id="5_ac0r5"]
+
+[resource]
+render_priority = 1
+shader = ExtResource("1_rm86x")
+shader_parameter/albedo = ExtResource("2_g5m4h")
+shader_parameter/normalmap = ExtResource("5_ac0r5")
+shader_parameter/lightsColor = Color(0.96102375, 0.68251467, 3.85046e-07, 1)
+shader_parameter/lightDir = Vector3(-0.96692455, 0, 0.2550625)
+shader_parameter/emission = ExtResource("4_6n6kp")
+shader_parameter/emissionPower = 6.0
+shader_parameter/emissionBoost = 2.0
+shader_parameter/countryIDs = ExtResource("3_173dg")
+shader_parameter/colors = PackedColorArray(0.6979041, 0.32148045, 1, 1, 0.92156863, 0.42352942, 0, 1, 0.76862746, 0, 0.68235296, 1, 0.72156864, 0.7411765, 0.49411765, 1, 0.91764706, 0.5686275, 0.43529412, 1, 0, 0.6431373, 0.7764706, 1)
+shader_parameter/colorizeStrength = 0.0
+shader_parameter/borderSolvedColor = Color(0, 1, 0, 1)
+shader_parameter/borderUnsolvedColor = Color(1, 0, 0, 1)
+shader_parameter/borderSelectedColor = Color(0, 0, 1, 1)
+shader_parameter/bordersStrength = 1.0
+shader_parameter/outlineStrength = 0.850000040375
+shader_parameter/outlineWidth = 0.0019999999494
+shader_parameter/numCountries = 241
+shader_parameter/selectedID = 0
+shader_parameter/countriesSolved = PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

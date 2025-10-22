@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://bxoa67fvkacdc"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_vfxgm"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_mm82n"]
+
+[sub_resource type="Resource" id="Resource_n4nog"]
+script = ExtResource("1_vfxgm")
+start_index = 0
+count = 9
+bbox = Vector4(-56.2433, 46.7528, -56.1374, 46.8111)
+
+[sub_resource type="Resource" id="Resource_hkmx3"]
+script = ExtResource("1_vfxgm")
+start_index = 9
+count = 15
+bbox = Vector4(-56.3869, 46.7953, -56.2555, 47.099)
+
+[resource]
+script = ExtResource("2_mm82n")
+name = "St. Pierre and Miquelon"
+alt_names = Array[String]([])
+code = "PM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/St. Pierre and Miquelon_mesh.tres"
+outline_file = "res://resources/countries/St. Pierre and Miquelon_outline.tres"
+polygons = Array[ExtResource("1_vfxgm")]([SubResource("Resource_n4nog"), SubResource("Resource_hkmx3")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://du501ypclitvp"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_drshw"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_xwlbn"]
+
+[sub_resource type="Resource" id="Resource_rdhju"]
+script = ExtResource("1_drshw")
+start_index = 0
+count = 350
+bbox = Vector4(8.53281, 1.67622, 16.1834, 13.0785)
+
+[resource]
+script = ExtResource("2_xwlbn")
+name = "Cameroon"
+alt_names = Array[String]([])
+code = "CM"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Cameroon_mesh.tres"
+outline_file = "res://resources/countries/Cameroon_outline.tres"
+polygons = Array[ExtResource("1_drshw")]([SubResource("Resource_rdhju")])

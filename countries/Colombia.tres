@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://63fm3xa2ws1"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_d13qq"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_bdytd"]
+
+[sub_resource type="Resource" id="Resource_xobj8"]
+script = ExtResource("1_d13qq")
+start_index = 0
+count = 615
+bbox = Vector4(-79.0254, -4.23594, -66.876, 12.4344)
+
+[sub_resource type="Resource" id="Resource_h8280"]
+script = ExtResource("1_d13qq")
+start_index = 615
+count = 8
+bbox = Vector4(-78.2101, 2.51968, -78.1137, 2.64634)
+
+[resource]
+script = ExtResource("2_bdytd")
+name = "Colombia"
+alt_names = Array[String]([])
+code = "CO"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Colombia_mesh.tres"
+outline_file = "res://resources/countries/Colombia_outline.tres"
+polygons = Array[ExtResource("1_d13qq")]([SubResource("Resource_xobj8"), SubResource("Resource_h8280")])

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=5 format=3 uid="uid://bvj32hgm1n6bf"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_cqwox"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_l0qq3"]
+
+[sub_resource type="Resource" id="Resource_ag63q"]
+script = ExtResource("1_cqwox")
+start_index = 0
+count = 16
+bbox = Vector4(115.027, 4.34722, 115.327, 4.89976)
+
+[sub_resource type="Resource" id="Resource_ml6d3"]
+script = ExtResource("1_cqwox")
+start_index = 16
+count = 40
+bbox = Vector4(114.064, 4.02397, 115.048, 5.02236)
+
+[resource]
+script = ExtResource("2_l0qq3")
+name = "Brunei"
+alt_names = Array[String]([])
+code = "BN"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Brunei_mesh.tres"
+outline_file = "res://resources/countries/Brunei_outline.tres"
+polygons = Array[ExtResource("1_cqwox")]([SubResource("Resource_ag63q"), SubResource("Resource_ml6d3")])

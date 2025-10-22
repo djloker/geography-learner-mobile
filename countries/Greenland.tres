@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=20 format=3 uid="uid://0gjplhesspie"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_7ykfw"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_m4hs0"]
+
+[sub_resource type="Resource" id="Resource_pjbc6"]
+script = ExtResource("1_7ykfw")
+start_index = 0
+count = 12
+bbox = Vector4(-46.79, 60.6603, -46.2052, 60.9435)
+
+[sub_resource type="Resource" id="Resource_lnjok"]
+script = ExtResource("1_7ykfw")
+start_index = 12
+count = 8
+bbox = Vector4(-37.2384, 65.5313, -36.9531, 65.7223)
+
+[sub_resource type="Resource" id="Resource_gutfe"]
+script = ExtResource("1_7ykfw")
+start_index = 20
+count = 19
+bbox = Vector4(-51.3503, 69.5171, -50.679, 69.9242)
+
+[sub_resource type="Resource" id="Resource_4a8ku"]
+script = ExtResource("1_7ykfw")
+start_index = 39
+count = 56
+bbox = Vector4(-54.9191, 69.2566, -51.9002, 70.3173)
+
+[sub_resource type="Resource" id="Resource_1ufwt"]
+script = ExtResource("1_7ykfw")
+start_index = 95
+count = 11
+bbox = Vector4(-52.148, 70.8525, -51.6069, 70.9765)
+
+[sub_resource type="Resource" id="Resource_otqr7"]
+script = ExtResource("1_7ykfw")
+start_index = 106
+count = 41
+bbox = Vector4(-28.0368, 70.454, -25.3463, 71.0437)
+
+[sub_resource type="Resource" id="Resource_5luut"]
+script = ExtResource("1_7ykfw")
+start_index = 147
+count = 16
+bbox = Vector4(-53.9578, 71.0343, -53.4321, 71.2971)
+
+[sub_resource type="Resource" id="Resource_i6twj"]
+script = ExtResource("1_7ykfw")
+start_index = 163
+count = 25
+bbox = Vector4(-56.2148, 72.5644, -55.0169, 72.8417)
+
+[sub_resource type="Resource" id="Resource_wu2h5"]
+script = ExtResource("1_7ykfw")
+start_index = 188
+count = 16
+bbox = Vector4(-18.8913, 74.9928, -17.392, 75.4073)
+
+[sub_resource type="Resource" id="Resource_nrm8y"]
+script = ExtResource("1_7ykfw")
+start_index = 204
+count = 9
+bbox = Vector4(-19.0854, 76.0159, -18.5826, 76.7038)
+
+[sub_resource type="Resource" id="Resource_q7qnu"]
+script = ExtResource("1_7ykfw")
+start_index = 213
+count = 14
+bbox = Vector4(-72.4949, 77.3165, -71.4334, 77.4671)
+
+[sub_resource type="Resource" id="Resource_ofcgv"]
+script = ExtResource("1_7ykfw")
+start_index = 227
+count = 10
+bbox = Vector4(-18.22, 77.6423, -17.6414, 77.8746)
+
+[sub_resource type="Resource" id="Resource_g5crv"]
+script = ExtResource("1_7ykfw")
+start_index = 237
+count = 12
+bbox = Vector4(-19.3147, 77.9385, -18.8825, 78.4412)
+
+[sub_resource type="Resource" id="Resource_0c4v7"]
+script = ExtResource("1_7ykfw")
+start_index = 249
+count = 11
+bbox = Vector4(-19.1383, 79.7112, -17.4008, 80.0552)
+
+[sub_resource type="Resource" id="Resource_7xek7"]
+script = ExtResource("1_7ykfw")
+start_index = 260
+count = 11
+bbox = Vector4(-19.6105, 81.8143, -18.6647, 82.1232)
+
+[sub_resource type="Resource" id="Resource_iwqfo"]
+script = ExtResource("1_7ykfw")
+start_index = 271
+count = 15
+bbox = Vector4(-47.3512, 82.066, -44.7499, 82.6921)
+
+[sub_resource type="Resource" id="Resource_k01t0"]
+script = ExtResource("1_7ykfw")
+start_index = 286
+count = 1954
+bbox = Vector4(-72.8181, 59.8155, -11.4255, 83.5996)
+
+[resource]
+script = ExtResource("2_m4hs0")
+name = "Greenland"
+alt_names = Array[String]([])
+code = "GL"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Greenland_mesh.tres"
+outline_file = "res://resources/countries/Greenland_outline.tres"
+polygons = Array[ExtResource("1_7ykfw")]([SubResource("Resource_pjbc6"), SubResource("Resource_lnjok"), SubResource("Resource_gutfe"), SubResource("Resource_4a8ku"), SubResource("Resource_1ufwt"), SubResource("Resource_otqr7"), SubResource("Resource_5luut"), SubResource("Resource_i6twj"), SubResource("Resource_wu2h5"), SubResource("Resource_nrm8y"), SubResource("Resource_q7qnu"), SubResource("Resource_ofcgv"), SubResource("Resource_g5crv"), SubResource("Resource_0c4v7"), SubResource("Resource_7xek7"), SubResource("Resource_iwqfo"), SubResource("Resource_k01t0")])

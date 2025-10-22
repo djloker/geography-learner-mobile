@@ -1,0 +1,9 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://co1do6iw4fvla"]
+
+[ext_resource type="Sky" uid="uid://due7s1w3msunj" path="res://environment/space_sky.tres" id="1_8gmpv"]
+
+[resource]
+background_mode = 2
+sky = ExtResource("1_8gmpv")
+ambient_light_source = 1
+reflected_light_source = 1

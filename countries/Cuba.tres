@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=10 format=3 uid="uid://b3ysn6vtllitf"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_gaicu"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_yixha"]
+
+[sub_resource type="Resource" id="Resource_vhhw6"]
+script = ExtResource("1_gaicu")
+start_index = 0
+count = 21
+bbox = Vector4(-83.1838, 21.4413, -82.5618, 21.9427)
+
+[sub_resource type="Resource" id="Resource_wq4hx"]
+script = ExtResource("1_gaicu")
+start_index = 21
+count = 12
+bbox = Vector4(-77.9186, 21.9213, -77.6337, 22.0919)
+
+[sub_resource type="Resource" id="Resource_6i0ac"]
+script = ExtResource("1_gaicu")
+start_index = 33
+count = 12
+bbox = Vector4(-78.0416, 22.1247, -77.8425, 22.3021)
+
+[sub_resource type="Resource" id="Resource_vlhx8"]
+script = ExtResource("1_gaicu")
+start_index = 45
+count = 12
+bbox = Vector4(-78.2735, 22.2685, -78.0271, 22.4376)
+
+[sub_resource type="Resource" id="Resource_co5l3"]
+script = ExtResource("1_gaicu")
+start_index = 57
+count = 14
+bbox = Vector4(-78.6955, 22.4451, -78.2839, 22.5522)
+
+[sub_resource type="Resource" id="Resource_np71u"]
+script = ExtResource("1_gaicu")
+start_index = 71
+count = 8
+bbox = Vector4(-79.6282, 22.6377, -79.3479, 22.8067)
+
+[sub_resource type="Resource" id="Resource_vcxjn"]
+script = ExtResource("1_gaicu")
+start_index = 79
+count = 226
+bbox = Vector4(-84.8872, 19.8555, -74.1368, 23.1904)
+
+[resource]
+script = ExtResource("2_yixha")
+name = "Cuba"
+alt_names = Array[String]([])
+code = "CU"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Cuba_mesh.tres"
+outline_file = "res://resources/countries/Cuba_outline.tres"
+polygons = Array[ExtResource("1_gaicu")]([SubResource("Resource_vhhw6"), SubResource("Resource_wq4hx"), SubResource("Resource_6i0ac"), SubResource("Resource_vlhx8"), SubResource("Resource_co5l3"), SubResource("Resource_np71u"), SubResource("Resource_vcxjn")])

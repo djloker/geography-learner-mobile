@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CountryResource" load_steps=4 format=3 uid="uid://d12wjoyt7jvy6"]
+
+[ext_resource type="Script" uid="uid://cvnulybgevoca" path="res://_legacy/poly_meta_data.gd" id="1_yol4p"]
+[ext_resource type="Script" uid="uid://d2olq6gfmik8e" path="res://_legacy/country scripts/country_resource.gd" id="2_peadd"]
+
+[sub_resource type="Resource" id="Resource_cnf5c"]
+script = ExtResource("1_yol4p")
+start_index = 0
+count = 79
+bbox = Vector4(42.6564, 7.99707, 48.9386, 11.4998)
+
+[resource]
+script = ExtResource("2_peadd")
+name = "Somaliland"
+alt_names = Array[String]([])
+code = "-99"
+capital = ""
+color = Color(0, 0, 0, 1)
+mesh_file = "res://resources/countries/Somaliland_mesh.tres"
+outline_file = "res://resources/countries/Somaliland_outline.tres"
+polygons = Array[ExtResource("1_yol4p")]([SubResource("Resource_cnf5c")])
