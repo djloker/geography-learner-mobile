@@ -6,7 +6,7 @@ extends Node
 @export var country_ids: Texture2D
 @export var country_list: CountryList
 
-@onready var planet_3d: Node3D = $Planet3D
+@onready var planet_3d: Node3D = %Planet3D
 @onready var camera: Camera3D = %Camera3D
 
 @onready var country_input_dialog: Control = %CountryInputDialog
@@ -88,6 +88,7 @@ func _ready() -> void:
 	solved_capitals.resize(country_list.size)
 	
 	country_input_dialog.lineedit_gui_input.connect(_on_lineedit_gui_input)
+	country_input_dialog.request_vkey_text.connect(_refresh_vkey_text)
 	
 	settings.visible = settings_button.button_pressed
 	
@@ -129,6 +130,8 @@ func _process(_delta: float) -> void:
 	# the keyboard if it is not visible:
 	if has_v_key:
 		%VirtualKeyboardSpacer.custom_minimum_size.y = DisplayServer.virtual_keyboard_get_height()
+		camera.latitude_offset = float(DisplayServer.virtual_keyboard_get_height()) / float(get_window().size.y)
+		camera.update_position(camera.latitude, camera.longitude)
 
 func solve_countries() -> void:
 	for i in range(len(solved_countries)):
@@ -161,7 +164,7 @@ func select(id: int, force_focus := true) -> void:
 func snap_camera_to(id: int) -> void:
 	var country := country_list.countries[id]
 	var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
-	var point := Utilities.latlong_to_point(rad_coord.x, rad_coord.y)
+	var point := Utilities.latlong_to_point(rad_coord.x + camera.latitude_offset, rad_coord.y)
 	camera.animate_to(point)
 
 func _initialize_labels() -> void:
@@ -194,6 +197,10 @@ func _on_lineedit_gui_input(event: InputEvent, input: LineEdit) -> void:
 			_refresh_vkey_text(input.text, true)
 			#accept_event()
 
+func _on_lineedit_focus_entered(input: LineEdit) -> void:
+	if input.editable:
+		_refresh_vkey_text(input.text)
+
 func _is_totally_solved(ID: int) -> bool:
 	return solved_countries[ID] and solved_capitals[ID]
 
@@ -214,6 +221,8 @@ func _refresh_input() -> void:
 		solved_countries[selected_id],
 		solved_capitals[selected_id]
 	)
+	if _is_vkey_open():
+		country_input_dialog.focus_unsolved()
 
 func _on_camera_3d_world_clicked() -> void:
 	pass #country_input_dialog.drop_focus()

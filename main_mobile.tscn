@@ -53,7 +53,6 @@ theme = ExtResource("3_ti0qx")
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
-theme_override_constants/margin_bottom = 24
 
 [node name="ButtonsPanelsVBox" type="VBoxContainer" parent="GUI"]
 layout_mode = 2
@@ -136,27 +135,24 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
-control_below = NodePath("../VBoxContainer/CountryInputDialog")
+control_below = NodePath("../CountryInputDialog")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GUI/ButtonsPanelsVBox"]
-layout_mode = 2
-size_flags_vertical = 10
-
-[node name="CountryInputDialog" parent="GUI/ButtonsPanelsVBox/VBoxContainer" instance=ExtResource("8_1ex10")]
+[node name="CountryInputDialog" parent="GUI/ButtonsPanelsVBox" instance=ExtResource("8_1ex10")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 46)
 layout_mode = 2
 size_flags_horizontal = 1
 size_flags_vertical = 10
 
-[node name="VirtualKeyboardSpacer" type="Control" parent="GUI/ButtonsPanelsVBox/VBoxContainer"]
+[node name="VirtualKeyboardSpacer" type="Control" parent="GUI/ButtonsPanelsVBox"]
 unique_name_in_owner = true
 layout_mode = 2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.9980531, 0, 0.062343482, 0, 1, 0, -0.062343482, 0, -0.9980531, 0, 0, 0)
+transform = Transform3D(-0.7740303, 0, 0.63314587, 0, 1, 0, -0.63314587, 0, -0.7740303, 0, 0, 0)
 
 [node name="Planet3D" parent="." node_paths=PackedStringArray("sun_light") instance=ExtResource("18_hlluc")]
+unique_name_in_owner = true
 orbit_speed = 0.1
 shaded_material = ExtResource("2_pcave")
 unshaded_material = ExtResource("19_2q1f4")
@@ -182,11 +178,11 @@ environment = ExtResource("3_qvu74")
 [connection signal="solve_capitals_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_capitals"]
 [connection signal="solve_countries_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_countries"]
 [connection signal="lineedit_gui_input" from="GUI/ButtonsPanelsVBox/WordBank" to="." method="_on_lineedit_gui_input"]
-[connection signal="request_goto" from="GUI/ButtonsPanelsVBox/VBoxContainer/CountryInputDialog" to="." method="_on_input_request_goto"]
-[connection signal="request_next" from="GUI/ButtonsPanelsVBox/VBoxContainer/CountryInputDialog" to="." method="_on_input_request_next"]
-[connection signal="request_previous" from="GUI/ButtonsPanelsVBox/VBoxContainer/CountryInputDialog" to="." method="_on_input_request_previous"]
-[connection signal="solved_capital" from="GUI/ButtonsPanelsVBox/VBoxContainer/CountryInputDialog" to="." method="_on_country_input_dialog_solved_capital"]
-[connection signal="solved_country" from="GUI/ButtonsPanelsVBox/VBoxContainer/CountryInputDialog" to="." method="_on_country_input_dialog_solved_country"]
+[connection signal="request_goto" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_goto"]
+[connection signal="request_next" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_next"]
+[connection signal="request_previous" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_previous"]
+[connection signal="solved_capital" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_capital"]
+[connection signal="solved_country" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_country"]
 [connection signal="country_selected" from="Camera3D" to="." method="_on_camera_3d_country_selected"]
 [connection signal="distance_changed" from="Camera3D" to="." method="_on_camera_distance_changed"]
 [connection signal="world_clicked" from="Camera3D" to="." method="_on_camera_3d_world_clicked"]

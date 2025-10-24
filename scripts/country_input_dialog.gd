@@ -5,10 +5,13 @@ signal solved_country(ID: int, player: bool)
 signal solved_capital(ID: int, player: bool)
 
 signal lineedit_gui_input(event: InputEvent, input: LineEdit)
+#signal lineedit_focus_entered(input: LineEdit)
 
 signal request_goto
 signal request_previous
 signal request_next
+
+signal request_vkey_text(text: String)
 
 @export var max_width := 200
 @export var unsolved_color := Color.RED
@@ -63,7 +66,7 @@ func reset() -> void:
 	country_input.editable = true
 	capital_input.editable = true
 	solve_button.disabled = false
-	#_refresh_vkey_text("")
+	request_vkey_text.emit("")
 
 func load_country(ID: int, country: CountryResource, country_solved: bool, capital_solved: bool) -> void:
 	reset()
@@ -83,17 +86,16 @@ func load_country(ID: int, country: CountryResource, country_solved: bool, capit
 		capital_input.editable = false
 	
 	config_solve_button_disabled()
-	#if _is_vkey_open(): focus_unsolved()
 
 func focus_unsolved() -> void:
 	if not _country_is_solved:
-		country_input.grab_focus()
 		country_input.edit()
-		#_refresh_vkey_text(country_input.text, true)
+		country_input.grab_focus()
+		request_vkey_text.emit(country_input.text)
 	elif not _capital_is_solved:
-		capital_input.grab_focus()
 		capital_input.edit()
-		#_refresh_vkey_text(capital_input.text, true)
+		capital_input.grab_focus()
+		request_vkey_text.emit(capital_input.text)
 
 func drop_focus() -> void:
 	country_input.release_focus()

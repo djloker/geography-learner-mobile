@@ -18,6 +18,7 @@ signal distance_changed(distance: float, delta: float)
 @export var max_distance := 2.0
 
 @export var animation_speed := 2.0
+@export var latitude_offset := 0.0
 
 @onready var raycast: RayCast3D = %RayCast3D
 
@@ -26,6 +27,7 @@ var zooming := false
 
 var latitude := 0.0
 var longitude := PI
+
 var mouse_drag := false
 var drag_damp := 250.0
 
@@ -37,24 +39,27 @@ var animation_progress: float
 var _dragging_time := 0.0
 var _pick_waiting := false
 var _pick_UV: Vector2
+var _offset_latitude: float
 
 func animate_to(point: Vector3) -> void:
 	animating = true
 	animate_start = position
 	animate_target = point
 	var lat_long := Utilities.latlong_from_point(animate_target)
-	latitude = lat_long.x
+	_offset_latitude = lat_long.x
+	latitude = lat_long.x - latitude_offset
 	longitude = lat_long.y
 
 func update_position(lat: float, long: float) -> void:
-	latitude = lat
+	latitude = clamp(lat, -PI/2.01, PI/2.01)
+	_offset_latitude = clamp(lat + latitude_offset, -PI/2.01, PI/2.01)
 	longitude = long
-	var look_position := Utilities.latlong_to_point(latitude, longitude)
+	var look_position := Utilities.latlong_to_point(_offset_latitude, longitude)
 	look_at_from_position(look_position * cam_distance, Vector3.ZERO)
 
 func update_cam_distance(distance: float) -> void:
 	cam_distance = distance
-	var look_position := Utilities.latlong_to_point(latitude, longitude)
+	var look_position := Utilities.latlong_to_point(_offset_latitude, longitude)
 	look_at_from_position(look_position * cam_distance, Vector3.ZERO)
 
 func _ready() -> void:
@@ -103,7 +108,7 @@ func pan_camera(delta: Vector2) -> void:
 	var screenx: float = delta.x / drag_damp
 	var screeny: float = delta.y / drag_damp
 	var zoomed_speed := drag_speed * pow(cam_distance / max_distance, drag_zoom_power)
-	update_position(clamp(latitude-(screeny*zoomed_speed), -PI/2.01, PI/2.01), longitude - (screenx*zoomed_speed))
+	update_position(latitude-(screeny*zoomed_speed), longitude - (screenx*zoomed_speed))
 
 static func sphere_point_to_UV(point: Vector3) -> Vector2:
 	var u := (-atan2(point.x, -point.z) + PI) / (2.0 * PI)
