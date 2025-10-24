@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://xf3txcnn1n8d"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://xf3txcnn1n8d"]
+
+[ext_resource type="Texture2D" uid="uid://dhbc0lo1nciw3" path="res://icons/1x/cross_1x.png" id="1_ynw2n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x74p1"]
 content_margin_left = 12.0
@@ -24,8 +26,27 @@ corner_radius_bottom_right = 9
 corner_radius_bottom_left = 9
 corner_detail = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u551q"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.37276152, 0.455696, 0.44366056, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+corner_detail = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hpkc7"]
+bg_color = Color(0.37254903, 0.45490196, 0.44313726, 1)
+
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_432vs"]
-color = Color(0.26404998, 0.44963938, 0.26421362, 1)
+color = Color(0.081, 0.45, 0.081, 1)
 thickness = 7
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynw2n"]
@@ -48,8 +69,13 @@ Control/font_sizes/font_size = 32
 FlowContainer/constants/h_separation = 16
 GreenButton/base_type = &"Button"
 GreenButton/styles/normal = SubResource("StyleBoxFlat_432vs")
+HSeparator/constants/separation = 16
+LineEdit/icons/clear = ExtResource("1_ynw2n")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_u551q")
 PopupMenu/font_sizes/font_size = 28
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_hpkc7")
 WordBankGrabber/base_type = &"HSeparator"
+WordBankGrabber/constants/separation = 0
 WordBankGrabber/styles/separator = SubResource("StyleBoxLine_432vs")
 WordBankLabel/base_type = &"Label"
 WordBankLabel/styles/normal = SubResource("StyleBoxFlat_ynw2n")

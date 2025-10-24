@@ -2,7 +2,24 @@ extends Camera3D
 
 signal country_selected(UV: Vector2)
 signal world_clicked
-signal distance_changed(distance: float)
+signal distance_changed(distance: float, delta: float)
+
+@export var min_FOV := 30.0
+@export var max_FOV := 90.0
+
+@export var select_time := 0.25
+
+@export var drag_speed := 1.0
+@export var drag_zoom_power := 2.0
+#@export var zoom_speed := 1.0
+@export var cam_distance := 2.0
+@export var cam_distance_tick := 0.01
+@export var min_distance := 0.55
+@export var max_distance := 2.0
+
+@export var animation_speed := 2.0
+
+@onready var raycast: RayCast3D = %RayCast3D
 
 var panning := false
 var zooming := false
@@ -17,22 +34,9 @@ var animate_start: Vector3
 var animate_target: Vector3
 var animation_progress: float
 
-@export var min_FOV := 30.0
-@export var max_FOV := 90.0
-
-@export var drag_speed := 1.0
-@export var drag_zoom_power := 2.0
-#@export var zoom_speed := 1.0
-@export var cam_distance := 2.0
-@export var cam_distance_tick := 0.01
-@export var min_distance := 0.55
-@export var max_distance := 2.0
-
-@export var animation_speed := 2.0
-
-@onready var raycast: RayCast3D = $RayCast3D
-
+var _dragging_time := 0.0
 var _pick_waiting := false
+var _pick_UV: Vector2
 
 func animate_to(point: Vector3) -> void:
 	animating = true
@@ -70,12 +74,17 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		match event.button_index:
 			MOUSE_BUTTON_LEFT:
-				mouse_drag = event.pressed
 				if event.pressed:
+					_dragging_time = 0.0
+					mouse_drag = true
 					var projected: Vector3 = project_position(event.position, cam_distance)
 					raycast.target_position = raycast.to_local(projected)
 					_pick_waiting = true
-					world_clicked.emit()
+				else: ## we select on mouse release
+					mouse_drag = false
+					if _dragging_time < select_time:
+						country_selected.emit(_pick_UV)
+						world_clicked.emit()
 			MOUSE_BUTTON_WHEEL_UP:
 				update_cam_distance(clampf(cam_distance - cam_distance_tick, min_distance, max_distance))
 				var progress := (cam_distance - min_distance) / distance_range_size
@@ -113,6 +122,7 @@ func _physics_process(delta: float) -> void:
 		raycast.force_raycast_update()
 		if raycast.is_colliding():
 			var sphere_point := raycast.get_collision_point().normalized()
-			var UV := sphere_point_to_UV(sphere_point)
-			country_selected.emit(UV)
+			_pick_UV = sphere_point_to_UV(sphere_point)
 		_pick_waiting = false
+	if mouse_drag:
+		_dragging_time += delta

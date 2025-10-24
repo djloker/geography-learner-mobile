@@ -1,5 +1,7 @@
 extends Control
 
+signal lineedit_gui_input(event: InputEvent, input: LineEdit)
+
 @onready var countries: Container = %Countries
 @onready var countries_flow: FlowContainer = %CountriesFlow
 @onready var countries_title: Label = %CountriesTitle
@@ -23,6 +25,7 @@ var _dragging := false
 var _requested_y: float
 
 func _ready() -> void:
+	filter_edit.gui_input.connect(lineedit_gui_input.emit.bind(filter_edit))
 	countries.visible = not capitals_check.button_pressed
 	capitals.visible = capitals_check.button_pressed
 	_requested_y = size.y

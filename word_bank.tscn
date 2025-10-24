@@ -22,12 +22,15 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Search"
+virtual_keyboard_enabled = false
+virtual_keyboard_show_on_focus = false
 clear_button_enabled = true
 
 [node name="CapitalsCheckButton" type="CheckButton" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
+focus_mode = 3
 text = "Capitals"
 
 [node name="Countries" type="VBoxContainer" parent="VBoxContainer"]

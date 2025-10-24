@@ -3,30 +3,30 @@ extends Node
 @export var label_distance := 0.55
 @export var label_hide_threshold := 0.7
 @export var label_code_threshold := 1.4
-
-@export var camera: Camera3D
-@export var raycast: RayCast3D
-@onready var solve_sound_player: AudioStreamPlayer = $SolveSoundPlayer
-
 @export var country_ids: Texture2D
 @export var country_list: CountryList
 
 @onready var planet_3d: Node3D = $Planet3D
-@onready var planet_labels: Node3D = %PlanetLabels
-
-
-@onready var settings_button: BaseButton = %SettingsButton
-@onready var word_bank_button: BaseButton = %WordBankButton
-
-@onready var show_labels_button: BaseButton = %ShowLabelsButton
-@onready var show_solved_button: BaseButton = %ShowSolvedButton
-@onready var audio_button: BaseButton = %AudioButton
-
-@onready var settings: Control = %Settings
-@onready var word_bank: PanelContainer = %WordBank
+@onready var camera: Camera3D = %Camera3D
 
 @onready var country_input_dialog: Control = %CountryInputDialog
+@onready var show_solved_button: BaseButton = %ShowSolvedButton
 
+@onready var settings: Control = %Settings
+@onready var settings_button: BaseButton = %SettingsButton
+@onready var word_bank: Control = %WordBank
+@onready var word_bank_button: BaseButton = %WordBankButton
+
+@onready var planet_labels: Node3D = %PlanetLabels
+@onready var show_labels_button: BaseButton = %ShowLabelsButton
+
+@onready var sfx_button: BaseButton = %SFXButton
+@onready var solve_sound_player: AudioStreamPlayer = %SolveSoundPlayer
+@onready var mute_music_button: TextureButton = %MuteMusicButton
+@onready var music_player: AudioStreamPlayer = %MusicPlayer
+
+
+@onready var has_v_key := DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD)
 var selected_id: int
 var solved_countries: Array[bool]
 var solved_capitals: Array[bool]
@@ -46,7 +46,8 @@ func save_settings() -> void:
 	config.set_value("planet", "show_solved", show_solved_button.button_pressed)
 	config.set_value("planet", "render_mode", settings.get_render_mode())
 	config.set_value("planet", "show_labels", show_labels_button.button_pressed)
-	config.set_value("sound", "muted", audio_button.button_pressed)
+	config.set_value("sound", "sfx_muted", sfx_button.button_pressed)
+	config.set_value("sound", "music_muted", mute_music_button.button_pressed)
 	
 	var error := config.save("user://config.cfg")
 	if error != OK:
@@ -74,7 +75,8 @@ func load_settings() -> void:
 		show_solved_button.button_pressed = config.get_value("planet", "show_solved", false)
 		show_labels_button.button_pressed = config.get_value("planet", "show_labels", true)
 		var render_mode: int = config.get_value("planet", "render_mode", 0)
-		audio_button.button_pressed = config.get_value("sound", "muted", false)
+		sfx_button.button_pressed = config.get_value("sound", "sfx_muted", false)
+		mute_music_button.button_pressed = config.get_value("sound", "music_muted", true)
 		settings.set_render_mode_silent(render_mode)
 		planet_3d.set_render_mode(render_mode)
 
@@ -84,6 +86,8 @@ func _ready() -> void:
 	
 	solved_countries.resize(country_list.size)
 	solved_capitals.resize(country_list.size)
+	
+	country_input_dialog.lineedit_gui_input.connect(_on_lineedit_gui_input)
 	
 	settings.visible = settings_button.button_pressed
 	
@@ -98,6 +102,9 @@ func _ready() -> void:
 	for i in range(country_list.size):
 		if country_list.countries[i].capital == "":
 			solved_capitals[i] = true
+	
+	if not mute_music_button.button_pressed:
+		music_player.play()
 
 func _notification(what):
 	match what:
@@ -111,6 +118,17 @@ func _notification(what):
 			## see: Application > Config > Quit On Go Back
 			save_settings()
 			save_state()
+
+func _process(_delta: float) -> void:
+	if Engine.is_editor_hint(): return
+	## https://stackoverflow.com/questions/78633119/how-to-make-virtual-keyboard-show-all-the-time-in-godot-4
+	# Without doing all the work my idea would be to make a node, which handles if the virtual keyboard is shown.
+	# (Let's call it KeyboardHandler) On ready it looks for every node in the scene that needs a keyboard by iterating
+	# the nodes and checking for 'virtual_keyboard_enabled'. It then sets this property to false to make sure only the
+	# handler itself triggers the keyboard. Then it conntects a signal to these nodes (e.g focus_entered) to activate
+	# the keyboard if it is not visible:
+	if has_v_key:
+		%VirtualKeyboardSpacer.custom_minimum_size.y = DisplayServer.virtual_keyboard_get_height()
 
 func solve_countries() -> void:
 	for i in range(len(solved_countries)):
@@ -132,19 +150,18 @@ func reset_solved() -> void:
 	_refresh_solved()
 	_refresh_input()
 
-func select(id: int) -> void:
-	if id == selected_id:
-		country_input_dialog.focus_unsolved()
-	else:
+func select(id: int, force_focus := true) -> void:
+	if selected_id != id:
 		selected_id = id
 		planet_3d.set_selected_id(id)
 		_refresh_input()
+	if force_focus:
+		country_input_dialog.focus_unsolved()
 
 func snap_camera_to(id: int) -> void:
 	var country := country_list.countries[id]
 	var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
 	var point := Utilities.latlong_to_point(rad_coord.x, rad_coord.y)
-	print(country.name, ' ', country.centroid, ' ', rad_coord)
 	camera.animate_to(point)
 
 func _initialize_labels() -> void:
@@ -161,6 +178,21 @@ func _initialize_labels() -> void:
 		label.hide()
 		label.set_meta("country", country)
 		planet_labels.add_child(label)
+
+## Virtual Keyboard controller
+func _is_vkey_open() -> bool:
+	return has_v_key and DisplayServer.virtual_keyboard_get_height() > 0
+
+func _refresh_vkey_text(text: String, force_open := false) -> void:
+	if has_v_key and (_is_vkey_open() or force_open):
+		DisplayServer.virtual_keyboard_show(text)
+
+func _on_lineedit_gui_input(event: InputEvent, input: LineEdit) -> void:
+	if not input.editable: return
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			_refresh_vkey_text(input.text, true)
+			#accept_event()
 
 func _is_totally_solved(ID: int) -> bool:
 	return solved_countries[ID] and solved_capitals[ID]
@@ -184,7 +216,7 @@ func _refresh_input() -> void:
 	)
 
 func _on_camera_3d_world_clicked() -> void:
-	country_input_dialog.drop_focus()
+	pass #country_input_dialog.drop_focus()
 
 func _on_camera_3d_country_selected(UV: Vector2) -> void:
 	var ids_image := country_ids.get_image()
@@ -201,17 +233,15 @@ func _on_camera_distance_changed(distance: float, delta: float) -> void:
 	planet_labels.visible = show_labels_button.button_pressed and distance > label_hide_threshold
 	var was_code := (distance - delta) > label_code_threshold
 	var is_code := distance > label_code_threshold
-	print(distance)
 	if was_code != is_code:
 		for child in planet_labels.get_children():
 			var country: CountryResource = child.get_meta("country")
 			child.text = country.code if is_code else country.name
-		
 
 func _on_country_input_dialog_solved_country(ID: int, player_solved: bool) -> void:
 	solved_countries[ID] = true
 	if player_solved:
-		if not audio_button.button_pressed:
+		if not sfx_button.button_pressed:
 			solve_sound_player.play()
 	_refresh_solved()
 	## TODO: reveal Label3D with country code/name
@@ -219,7 +249,7 @@ func _on_country_input_dialog_solved_country(ID: int, player_solved: bool) -> vo
 func _on_country_input_dialog_solved_capital(ID: int, player_solved: bool) -> void:
 	solved_capitals[ID] = true
 	if player_solved:
-		if not audio_button.button_pressed:
+		if not sfx_button.button_pressed:
 			solve_sound_player.play()
 	_refresh_solved()
 
@@ -231,7 +261,7 @@ func _on_input_request_previous() -> void:
 	for offset in range(1, num_countries):
 		var i := wrapi(selected_id-offset, 0, num_countries)
 		if not _is_totally_solved(i):
-			select(i)
+			select(i, false)
 			snap_camera_to(i)
 			break
 
@@ -240,6 +270,12 @@ func _on_input_request_next() -> void:
 	for offset in range(1, num_countries):
 		var i := wrapi(selected_id+offset, 0, num_countries)
 		if not _is_totally_solved(i):
-			select(i)
+			select(i, false)
 			snap_camera_to(i)
 			break
+
+func _on_mute_music_button_toggled(toggled_on: bool) -> void:
+	if toggled_on:
+		music_player.stop()
+	else:
+		music_player.play()
