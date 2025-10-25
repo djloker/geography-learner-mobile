@@ -149,7 +149,7 @@ unique_name_in_owner = true
 layout_mode = 2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.7740303, 0, 0.63314587, 0, 1, 0, -0.63314587, 0, -0.7740303, 0, 0, 0)
+transform = Transform3D(0.9949408, 0, -0.10044622, 0, 1, 0, 0.10044622, 0, 0.9949408, 0, 0, 0)
 
 [node name="Planet3D" parent="." node_paths=PackedStringArray("sun_light") instance=ExtResource("18_hlluc")]
 unique_name_in_owner = true

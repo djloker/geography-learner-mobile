@@ -6,6 +6,8 @@ extends Node
 @export var country_ids: Texture2D
 @export var country_list: CountryList
 
+@export var vkey_tilt_damp := 4.0
+
 @onready var planet_3d: Node3D = %Planet3D
 @onready var camera: Camera3D = %Camera3D
 
@@ -130,7 +132,7 @@ func _process(_delta: float) -> void:
 	# the keyboard if it is not visible:
 	if has_v_key:
 		%VirtualKeyboardSpacer.custom_minimum_size.y = DisplayServer.virtual_keyboard_get_height()
-		camera.latitude_offset = float(DisplayServer.virtual_keyboard_get_height()) / float(get_window().size.y)
+		camera.latitude_offset = (float(DisplayServer.virtual_keyboard_get_height()) / float(get_window().size.y) * camera.cam_distance) / vkey_tilt_damp
 		camera.update_position(camera.latitude, camera.longitude)
 
 func solve_countries() -> void:
