@@ -1,14 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://d0mxt4twx6bc7"]
+[gd_scene load_steps=8 format=3 uid="uid://d0mxt4twx6bc7"]
 
 [ext_resource type="Theme" uid="uid://xf3txcnn1n8d" path="res://theming/theme.tres" id="1_8x2w0"]
 [ext_resource type="Script" uid="uid://dsbnw0wmq8jmk" path="res://scripts/country_input_dialog.gd" id="1_s1qq8"]
-[ext_resource type="Texture2D" uid="uid://clamhy2ljdtbc" path="res://icons/1x/previous_1x.png" id="4_8x2w0"]
 [ext_resource type="Texture2D" uid="uid://lpt4k0ja3geq" path="res://icons/1x/checkmark_1x.png" id="4_11pm6"]
-[ext_resource type="Texture2D" uid="uid://kvavfwd6tql4" path="res://icons/1x/previous_pressed_1x.png" id="5_al8fb"]
 [ext_resource type="Script" uid="uid://bx04g4c0w3vrn" path="res://addons/MaxSizeContainer/max_size_container.gd" id="5_fhxck"]
-[ext_resource type="Texture2D" uid="uid://drhnw70m3y335" path="res://icons/1x/next_1x.png" id="6_7omkx"]
+[ext_resource type="Texture2D" uid="uid://qtbq2osqx4v2" path="res://icons/1x/return_1x.png" id="5_ycksw"]
 [ext_resource type="Texture2D" uid="uid://06j0ly2nm8a0" path="res://icons/1x/smaller_1x.png" id="6_y0o0q"]
-[ext_resource type="Texture2D" uid="uid://bi22xw4rv83vp" path="res://icons/1x/next_pressed_1x.png" id="9_ycksw"]
+[ext_resource type="Texture2D" uid="uid://3y5f3pnwvgdc" path="res://icons/1x/larger_1x.png" id="8_al8fb"]
 
 [node name="CountryInput" type="MarginContainer"]
 clip_contents = true
@@ -38,26 +36,19 @@ metadata/_custom_type_script = "uid://bx04g4c0w3vrn"
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MaxSizeContainer/PanelContainer"]
+[node name="InputVBox" type="VBoxContainer" parent="MaxSizeContainer/PanelContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="ButtonsContainer" type="HBoxContainer" parent="MaxSizeContainer/PanelContainer/VBoxContainer"]
+[node name="ButtonsContainer" type="HBoxContainer" parent="MaxSizeContainer/PanelContainer/InputVBox"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 84)
 layout_mode = 2
 alignment = 1
 metadata/_edit_lock_ = true
 
-[node name="PrevButton" type="TextureButton" parent="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-texture_normal = ExtResource("4_8x2w0")
-texture_focused = ExtResource("5_al8fb")
-stretch_mode = 3
-
-[node name="SolveButton" type="Button" parent="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer"]
+[node name="SolveButton" type="Button" parent="MaxSizeContainer/PanelContainer/InputVBox/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
@@ -68,26 +59,34 @@ text = "Solve it for Me"
 icon = ExtResource("4_11pm6")
 icon_alignment = 2
 
-[node name="GoToButton" type="Button" parent="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer"]
+[node name="GoToButton" type="Button" parent="MaxSizeContainer/PanelContainer/InputVBox/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 focus_mode = 3
 theme_type_variation = &"BlueButton"
-text = "Goto"
-icon = ExtResource("6_y0o0q")
+text = "Go To"
+icon = ExtResource("5_ycksw")
 icon_alignment = 2
 
-[node name="NextButton" type="TextureButton" parent="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer"]
+[node name="NearButton" type="TextureButton" parent="MaxSizeContainer/PanelContainer/InputVBox/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-texture_normal = ExtResource("6_7omkx")
-texture_focused = ExtResource("9_ycksw")
+focus_mode = 3
+texture_normal = ExtResource("6_y0o0q")
 stretch_mode = 3
 
-[node name="IDLabel" type="Label" parent="MaxSizeContainer/PanelContainer/VBoxContainer"]
+[node name="FarButton" type="TextureButton" parent="MaxSizeContainer/PanelContainer/InputVBox/ButtonsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 3
+texture_normal = ExtResource("8_al8fb")
+stretch_mode = 3
+
+[node name="IDLabel" type="Label" parent="MaxSizeContainer/PanelContainer/InputVBox"]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(50, 0)
@@ -95,13 +94,13 @@ layout_mode = 2
 size_flags_horizontal = 6
 text = "NOID"
 
-[node name="InputGrid" type="GridContainer" parent="MaxSizeContainer/PanelContainer/VBoxContainer"]
+[node name="InputGrid" type="GridContainer" parent="MaxSizeContainer/PanelContainer/InputVBox"]
 unique_name_in_owner = true
 layout_mode = 2
 columns = 2
 metadata/_edit_lock_ = true
 
-[node name="CountryInput" type="LineEdit" parent="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid"]
+[node name="CountryInput" type="LineEdit" parent="MaxSizeContainer/PanelContainer/InputVBox/InputGrid"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -110,13 +109,13 @@ virtual_keyboard_enabled = false
 virtual_keyboard_show_on_focus = false
 clear_button_enabled = true
 
-[node name="SolvedCountryColor" type="ColorRect" parent="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid"]
+[node name="SolvedCountryColor" type="ColorRect" parent="MaxSizeContainer/PanelContainer/InputVBox/InputGrid"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(8, 0)
 layout_mode = 2
 color = Color(1, 0, 0, 1)
 
-[node name="CapitalInput" type="LineEdit" parent="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid"]
+[node name="CapitalInput" type="LineEdit" parent="MaxSizeContainer/PanelContainer/InputVBox/InputGrid"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -125,13 +124,33 @@ virtual_keyboard_enabled = false
 virtual_keyboard_show_on_focus = false
 clear_button_enabled = true
 
-[node name="SolvedCapitalColor" type="ColorRect" parent="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid"]
+[node name="SolvedCapitalColor" type="ColorRect" parent="MaxSizeContainer/PanelContainer/InputVBox/InputGrid"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(8, 0)
 layout_mode = 2
 color = Color(1, 0, 0, 1)
 
-[connection signal="pressed" from="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer/PrevButton" to="." method="_on_prev_button_pressed"]
-[connection signal="pressed" from="MaxSizeContainer/PanelContainer/VBoxContainer/ButtonsContainer/SolveButton" to="." method="_on_solve_for_me_button_pressed"]
-[connection signal="text_changed" from="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid/CountryInput" to="." method="_on_country_input_text_changed"]
-[connection signal="text_changed" from="MaxSizeContainer/PanelContainer/VBoxContainer/InputGrid/CapitalInput" to="." method="_on_capital_input_text_changed"]
+[node name="StartupVBox" type="VBoxContainer" parent="MaxSizeContainer/PanelContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 208)
+layout_mode = 2
+
+[node name="StartupLabel" type="Label" parent="MaxSizeContainer/PanelContainer/StartupVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Welcome to Geography Learner!
+
+Tap a country to begin."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TutorialButton" type="Button" parent="MaxSizeContainer/PanelContainer/StartupVBox"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Show me the Tutorial"
+
+[connection signal="pressed" from="MaxSizeContainer/PanelContainer/InputVBox/ButtonsContainer/SolveButton" to="." method="_on_solve_for_me_button_pressed"]
+[connection signal="text_changed" from="MaxSizeContainer/PanelContainer/InputVBox/InputGrid/CountryInput" to="." method="_on_country_input_text_changed"]
+[connection signal="text_changed" from="MaxSizeContainer/PanelContainer/InputVBox/InputGrid/CapitalInput" to="." method="_on_capital_input_text_changed"]

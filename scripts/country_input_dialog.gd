@@ -8,8 +8,8 @@ signal lineedit_gui_input(event: InputEvent, input: LineEdit)
 #signal lineedit_focus_entered(input: LineEdit)
 
 signal request_goto
-signal request_previous
-signal request_next
+signal request_near
+signal request_far
 
 signal request_vkey_text(text: String)
 
@@ -19,6 +19,9 @@ signal request_vkey_text(text: String)
 @export var debug_display_ID: bool
 #@export var collapsed: bool:
 	#set = _set_collapsed
+
+@onready var input_vbox: VBoxContainer = %InputVBox
+@onready var startup_vbox: VBoxContainer = %StartupVBox
 
 @onready var buttons_container: HBoxContainer = %ButtonsContainer
 @onready var solve_button: BaseButton = %SolveButton
@@ -32,8 +35,8 @@ signal request_vkey_text(text: String)
 @onready var country_color_rect: ColorRect = %SolvedCountryColor
 @onready var capital_color_rect: ColorRect = %SolvedCapitalColor
 
-@onready var prev_button: BaseButton = %PrevButton
-@onready var next_button: BaseButton = %NextButton
+@onready var near_button: TextureButton = %NearButton
+@onready var far_button: TextureButton = %FarButton
 
 var current_id: int
 var current_country: CountryResource
@@ -42,6 +45,9 @@ var _country_is_solved: bool
 var _capital_is_solved: bool
 
 func _ready() -> void:
+	if not Engine.is_editor_hint():
+		input_vbox.visible = false
+		startup_vbox.visible = true
 	reset()
 	id_label.visible = debug_display_ID
 	
@@ -52,8 +58,8 @@ func _ready() -> void:
 	
 	#header_button.icon = texture_collapsed if collapsed else texture_expanded
 	go_to_button.pressed.connect(request_goto.emit)
-	prev_button.pressed.connect(request_previous.emit)
-	next_button.pressed.connect(request_next.emit)
+	near_button.pressed.connect(request_near.emit)
+	far_button.pressed.connect(request_far.emit)
 
 func reset() -> void:
 	country_input.clear()
@@ -70,6 +76,8 @@ func reset() -> void:
 
 func load_country(ID: int, country: CountryResource, country_solved: bool, capital_solved: bool) -> void:
 	reset()
+	input_vbox.visible = true
+	startup_vbox.visible = false
 	current_id = ID
 	current_country = country
 	if debug_display_ID:

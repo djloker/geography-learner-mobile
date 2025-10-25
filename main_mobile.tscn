@@ -149,7 +149,7 @@ unique_name_in_owner = true
 layout_mode = 2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.9949408, 0, -0.10044622, 0, 1, 0, 0.10044622, 0, 0.9949408, 0, 0, 0)
+transform = Transform3D(-0.9334697, 0, 0.35865155, 0, 1, 0, -0.35865155, 0, -0.9334697, 0, 0, 0)
 
 [node name="Planet3D" parent="." node_paths=PackedStringArray("sun_light") instance=ExtResource("18_hlluc")]
 unique_name_in_owner = true
@@ -178,9 +178,9 @@ environment = ExtResource("3_qvu74")
 [connection signal="solve_capitals_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_capitals"]
 [connection signal="solve_countries_pressed" from="GUI/ButtonsPanelsVBox/Settings" to="." method="solve_countries"]
 [connection signal="lineedit_gui_input" from="GUI/ButtonsPanelsVBox/WordBank" to="." method="_on_lineedit_gui_input"]
+[connection signal="request_far" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_request_far"]
 [connection signal="request_goto" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_goto"]
-[connection signal="request_next" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_next"]
-[connection signal="request_previous" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_input_request_previous"]
+[connection signal="request_near" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_request_near"]
 [connection signal="solved_capital" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_capital"]
 [connection signal="solved_country" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_country"]
 [connection signal="country_selected" from="Camera3D" to="." method="_on_camera_3d_country_selected"]

@@ -82,6 +82,40 @@ func load_settings() -> void:
 		settings.set_render_mode_silent(render_mode)
 		planet_3d.set_render_mode(render_mode)
 
+func solve_countries() -> void:
+	for i in range(len(solved_countries)):
+		solved_countries[i] = true
+	_refresh_solved()
+	_refresh_input()
+
+func solve_capitals() -> void:
+	for i in range(len(solved_capitals)):
+		solved_capitals[i] = true
+	_refresh_solved()
+	_refresh_input()
+
+func reset_solved() -> void:
+	for i in range(len(solved_countries)):
+		solved_countries[i] = false
+	for i in range(len(solved_capitals)):
+		solved_capitals[i] = false
+	_refresh_solved()
+	_refresh_input()
+
+func select(id: int, force_focus := true) -> void:
+	if selected_id != id:
+		selected_id = id
+		planet_3d.set_selected_id(id)
+		_refresh_input()
+	if force_focus:
+		country_input_dialog.focus_unsolved()
+
+func snap_camera_to(id: int) -> void:
+	var country := country_list.countries[id]
+	var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
+	var point := Utilities.latlong_to_point(rad_coord.x + camera.latitude_offset, rad_coord.y)
+	camera.animate_to(point)
+
 func _ready() -> void:
 	planet_labels.visible = show_labels_button.button_pressed
 	planet_3d.set_show_solved(show_solved_button.button_pressed)
@@ -135,48 +169,18 @@ func _process(_delta: float) -> void:
 		camera.latitude_offset = (float(DisplayServer.virtual_keyboard_get_height()) / float(get_window().size.y) * camera.cam_distance) / vkey_tilt_damp
 		camera.update_position(camera.latitude, camera.longitude)
 
-func solve_countries() -> void:
-	for i in range(len(solved_countries)):
-		solved_countries[i] = true
-	_refresh_solved()
-	_refresh_input()
-
-func solve_capitals() -> void:
-	for i in range(len(solved_capitals)):
-		solved_capitals[i] = true
-	_refresh_solved()
-	_refresh_input()
-
-func reset_solved() -> void:
-	for i in range(len(solved_countries)):
-		solved_countries[i] = false
-	for i in range(len(solved_capitals)):
-		solved_capitals[i] = false
-	_refresh_solved()
-	_refresh_input()
-
-func select(id: int, force_focus := true) -> void:
-	if selected_id != id:
-		selected_id = id
-		planet_3d.set_selected_id(id)
-		_refresh_input()
-	if force_focus:
-		country_input_dialog.focus_unsolved()
-
-func snap_camera_to(id: int) -> void:
-	var country := country_list.countries[id]
+func _centroid_to_point(country: CountryResource) -> Vector3:
 	var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
-	var point := Utilities.latlong_to_point(rad_coord.x + camera.latitude_offset, rad_coord.y)
-	camera.animate_to(point)
+	return Utilities.latlong_to_point(rad_coord.x, rad_coord.y) * label_distance
 
 func _initialize_labels() -> void:
 	planet_labels.get_children().map(planet_labels.remove_child)
 	for i in range(country_list.size):
 		var country := country_list.countries[i]
-		var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
+		
 		var label := Label3D.new()
 		label.text = country.code if camera.cam_distance > label_code_threshold else country.name
-		label.position = Utilities.latlong_to_point(rad_coord.x, rad_coord.y) * label_distance
+		label.position = _centroid_to_point(country)
 		label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 		label.set_draw_flag(Label3D.FLAG_FIXED_SIZE, true)
 		label.pixel_size = 0.001
@@ -290,3 +294,37 @@ func _on_mute_music_button_toggled(toggled_on: bool) -> void:
 		music_player.stop()
 	else:
 		music_player.play()
+
+func _on_request_near() -> void:
+	var min_dist_id := -1
+	var min_dist: float = INF
+	var current_centroid := country_list.countries[selected_id].centroid
+	for i in range(country_list.size):
+		if i == selected_id: continue
+		elif _is_totally_solved(i): continue
+		else:
+			var i_centroid := country_list.countries[i].centroid
+			var distance := current_centroid.distance_squared_to(i_centroid)
+			if distance < min_dist:
+				min_dist = distance
+				min_dist_id = i
+	if min_dist_id > 0:
+		select(min_dist_id, false)
+		snap_camera_to(min_dist_id)
+
+func _on_request_far() -> void:
+	var max_dist_id := -1
+	var max_dist: float = -INF
+	var current_centroid := _centroid_to_point(country_list.countries[selected_id])
+	for i in range(country_list.size):
+		if i == selected_id: continue
+		elif _is_totally_solved(i): continue
+		else:
+			var i_centroid := _centroid_to_point(country_list.countries[i])
+			var distance := current_centroid.distance_squared_to(i_centroid)
+			if distance > max_dist:
+				max_dist = distance
+				max_dist_id = i
+	if max_dist_id > 0:
+		select(max_dist_id, false)
+		snap_camera_to(max_dist_id)
