@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/fullsize=false
 boot_splash/image="uid://frjqxsbw7ywe"
 config/icon="uid://ci4yeoyhxtsvh"
+config/tags=PackedStringArray("projects")
 
 [autoload]
 

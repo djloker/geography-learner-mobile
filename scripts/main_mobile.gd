@@ -167,7 +167,8 @@ func _process(_delta: float) -> void:
 	if has_v_key:
 		%VirtualKeyboardSpacer.custom_minimum_size.y = DisplayServer.virtual_keyboard_get_height()
 		camera.latitude_offset = (float(DisplayServer.virtual_keyboard_get_height()) / float(get_window().size.y) * camera.cam_distance) / vkey_tilt_damp
-		camera.update_position(camera.latitude, camera.longitude)
+		if not camera.animating:
+			camera.update_position(camera.latitude, camera.longitude)
 
 func _centroid_to_point(country: CountryResource) -> Vector3:
 	var rad_coord := Utilities.raw_latlong_to_radians(Vector2(country.centroid.x, country.centroid.y))
@@ -308,7 +309,7 @@ func _on_request_near() -> void:
 			if distance < min_dist:
 				min_dist = distance
 				min_dist_id = i
-	if min_dist_id > 0:
+	if min_dist_id >= 0:
 		select(min_dist_id, false)
 		snap_camera_to(min_dist_id)
 
@@ -325,6 +326,6 @@ func _on_request_far() -> void:
 			if distance > max_dist:
 				max_dist = distance
 				max_dist_id = i
-	if max_dist_id > 0:
+	if max_dist_id >= 0:
 		select(max_dist_id, false)
 		snap_camera_to(max_dist_id)
