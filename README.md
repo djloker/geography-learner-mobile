@@ -19,6 +19,14 @@ Geography Learner also includes micro-states and small islands which are very di
 
 Trying to solve a country and you're **sure** you have the right answer? It may just be a spelling problem! Press and hold the country's name in the Word Bank to copy the exact answer the app expects, then paste it to see if you were truly correct! Note that many countries have a list of names they will accept: for example, *"S Korea"* will work just as well as *"South Korea"* (more alternate names may be added in the future, for ease of use.)
 
+## Screenshots
+
+<p align="center">
+    <img src="screenshots/tanzania.png" width="240" alt="Screenshot of Geography Learner">
+    <img src="screenshots/colorized.png" width="240" alt="Screenshot of colorized mode">
+    <img src="screenshots/wordbank.png" width="240" alt="Screenshot of the word bank">
+</p>
+
 ## Sources:
 Satellite images of planet earth acquired from [Visible Earth (NASA)](https://visibleearth.nasa.gov/collection/1484/blue-marble) (used for planet albedo and height-map)
 
