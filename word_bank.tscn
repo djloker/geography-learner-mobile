@@ -115,6 +115,12 @@ size_flags_vertical = 4
 mouse_filter = 1
 theme_type_variation = &"WordBankGrabber"
 
+[node name="PressTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+one_shot = true
+
 [connection signal="text_changed" from="VBoxContainer/HBoxContainer/FilterEdit" to="." method="_on_filter_edit_text_changed"]
 [connection signal="toggled" from="VBoxContainer/HBoxContainer/CapitalsCheckButton" to="." method="_on_capitals_toggled"]
 [connection signal="gui_input" from="VBoxContainer/GrabberArea" to="." method="_on_grabber_gui_input"]
+[connection signal="timeout" from="PressTimer" to="." method="_on_press_timer_timeout"]

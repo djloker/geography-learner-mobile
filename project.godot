@@ -11,12 +11,12 @@ config_version=5
 [application]
 
 config/name="Geography Learner Mobile"
+config/tags=PackedStringArray("projects")
 run/main_scene="uid://cfpxbgdrvs8n1"
 config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/fullsize=false
 boot_splash/image="uid://frjqxsbw7ywe"
 config/icon="uid://ci4yeoyhxtsvh"
-config/tags=PackedStringArray("projects")
 
 [autoload]
 

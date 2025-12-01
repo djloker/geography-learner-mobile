@@ -2,6 +2,8 @@ extends Control
 
 signal lineedit_gui_input(event: InputEvent, input: LineEdit)
 
+@export var control_below: Control
+
 @onready var countries: Container = %Countries
 @onready var countries_flow: FlowContainer = %CountriesFlow
 @onready var countries_title: Label = %CountriesTitle
@@ -12,8 +14,8 @@ signal lineedit_gui_input(event: InputEvent, input: LineEdit)
 
 @onready var filter_edit: LineEdit = %FilterEdit
 @onready var capitals_check: CheckButton = %CapitalsCheckButton
+@onready var press_timer: Timer = %PressTimer
 
-@export var control_below: Control
 
 var _country_labels: Array[Control]
 var _capital_labels: Array[Control]
@@ -23,6 +25,7 @@ var _solved_capitals: Array[bool]
 
 var _dragging := false
 var _requested_y: float
+var _pressed_label: Label
 
 func _ready() -> void:
 	filter_edit.gui_input.connect(lineedit_gui_input.emit.bind(filter_edit))
@@ -42,6 +45,9 @@ func initialize(all_countries: CountryList) -> void:
 		var country_label := Label.new()
 		country_label.text = country.name
 		country_label.theme_type_variation = "WordBankLabel"
+		country_label.mouse_filter = Control.MOUSE_FILTER_PASS
+		country_label.gui_input.connect(_on_label_gui_input.bind(country_label))
+		country_label.mouse_exited.connect(press_timer.stop)
 		countries_flow.add_child(country_label)
 		_country_labels.append(country_label)
 		num_countries += 1
@@ -50,6 +56,9 @@ func initialize(all_countries: CountryList) -> void:
 			var capital_label := Label.new()
 			capital_label.text = country.capital
 			capital_label.theme_type_variation = "WordBankLabel"
+			capital_label.mouse_filter = Control.MOUSE_FILTER_PASS
+			capital_label.gui_input.connect(_on_label_gui_input.bind(capital_label))
+			capital_label.mouse_exited.connect(press_timer.stop)
 			capital_order.append(capital_label)
 			_capital_labels.append(capital_label)
 			num_capitals += 1
@@ -99,3 +108,26 @@ func _on_grabber_gui_input(event: InputEvent) -> void:
 
 func _on_filter_edit_text_changed(new_text: String) -> void:
 	_refresh_visible(new_text)
+
+func _on_label_gui_input(event: InputEvent, label: Label) -> void:
+	if event is InputEventMouseButton:
+		match event.button_index:
+			MOUSE_BUTTON_LEFT:
+				if event.pressed:
+					#DisplayServer.clipboard_set(label.text)
+					_pressed_label = label
+					press_timer.start()
+				else:
+					if press_timer.time_left > 0:
+						press_timer.stop()
+						_pressed_label = null
+						print_debug("cancelled press (%f)" % press_timer.time_left)
+				accept_event()
+			_: pass
+
+
+func _on_press_timer_timeout() -> void:
+	if _pressed_label:
+		DisplayServer.clipboard_set(_pressed_label.text)
+		print_debug("copied %s to clipboard" % _pressed_label.text)
+	_pressed_label = null
