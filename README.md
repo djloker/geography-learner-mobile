@@ -32,5 +32,7 @@ Satellite images of planet earth acquired from [Visible Earth (NASA)](https://vi
 
 Starmap acquired from [NASA/Goddard Space Flight Center Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4851/)
 
+Several icons acquired or modified from [Kenney Game Assets](https://kenney.nl/assets)
+
 ## How to build:
 At present, Geography Learner can only be built for Android devices, using the [Godot Engine](https://godotengine.org/) (4.5). See: [Exporting for Android](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html)
