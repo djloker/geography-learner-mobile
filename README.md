@@ -28,9 +28,13 @@ Trying to solve a country and you're **sure** you have the right answer? It may 
 </p>
 
 ## Sources:
+Country vector data acquired from [Natural Earth Data](https://www.naturalearthdata.com/)
+
 Satellite images of planet earth acquired from [Visible Earth (NASA)](https://visibleearth.nasa.gov/collection/1484/blue-marble) (used for planet albedo and height-map)
 
-Starmap acquired from [NASA/Goddard Space Flight Center Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4851/)
+Starmap acquired from [NASA/Goddard Space Flight Center Scientific Visualization Studio (Deep Star Maps 2020)](https://svs.gsfc.nasa.gov/4851/)
+
+Night-lights map acquired from [NASA's Earth at Night](https://earthobservatory.nasa.gov/features/NightLights/page3.php)
 
 Several icons acquired or modified from [Kenney Game Assets](https://kenney.nl/assets)
 
