@@ -38,11 +38,13 @@ enabled=PackedStringArray("res://addons/MaxSizeContainer/plugin.cfg")
 
 folder_colors={
 "res://addons/": "orange",
+"res://android/": "gray",
 "res://audio/": "green",
 "res://build/": "gray",
 "res://countries/": "green",
 "res://environment/": "purple",
 "res://icons/": "green",
+"res://screenshots/": "gray",
 "res://scripts/": "blue",
 "res://shaders/": "blue",
 "res://textures/": "green",

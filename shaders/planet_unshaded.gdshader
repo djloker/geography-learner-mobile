@@ -4,6 +4,7 @@ render_mode unshaded;
 uniform sampler2D simplified_albedo : source_color;
 
 uniform vec3[28] colors: source_color;
+uniform int[256] countryColors;
 uniform float colorizeStrength : hint_range(0.0, 1.0);
 uniform vec3 water_color: source_color;
 
@@ -76,7 +77,7 @@ void fragment() {
 		//bordersColor = max(solvedCombined * drawStrength - ((1.0 - diff) * vec3(outlineStrength)), 0.0);
 
 		float drawInverse = 1.0 - drawStrength;
-		colorizeColor = colors[ID % 28] * drawInverse + bordersColor * drawStrength;
+		colorizeColor = colors[countryColors[ID]] * drawInverse + bordersColor * drawStrength;
 	}
 	else {
 		bordersColor = vec3(0.0);

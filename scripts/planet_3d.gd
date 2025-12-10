@@ -2,6 +2,7 @@
 extends Node3D
 
 enum RENDER_MODE {REALISTIC, UNSHADED, COLORIZED}
+const NUM_COLORS := 28
 
 @export var render_mode: RENDER_MODE:
 	set = set_render_mode
@@ -14,6 +15,13 @@ enum RENDER_MODE {REALISTIC, UNSHADED, COLORIZED}
 
 var sun_progress: float
 var sun_direction: Vector3
+
+func _ready() -> void:
+	var country_color_indices: PackedInt32Array = unshaded_material.get_shader_parameter("countryColors")
+	for i in range(len(country_color_indices)):
+		if country_color_indices[i] == 0:
+			country_color_indices[i] = i % NUM_COLORS
+	unshaded_material.set_shader_parameter("countryColors", country_color_indices)
 
 func _process(delta: float) -> void:
 	if render_mode == RENDER_MODE.REALISTIC:
