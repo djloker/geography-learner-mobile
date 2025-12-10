@@ -42,6 +42,7 @@ func save_state() -> void:
 	})
 	# Store the save dictionary as a new line in the save file.
 	save_file.store_line(json_string)
+	print_debug("Saved save-state file.")
 
 func save_settings() -> void:
 	var config := ConfigFile.new()
@@ -53,26 +54,33 @@ func save_settings() -> void:
 	
 	var error := config.save("user://config.cfg")
 	if error != OK:
-		%DEV_LABEL.text = "Config save error: %s" % error_string(error)
 		printerr("Config save error: %s" % error_string(error))
+	else:
+		print_debug("Saved config file.")
 
 func load_state() -> void:
 	var save_file := FileAccess.open("user://solved_state.save", FileAccess.READ)
-	var json_string := save_file.get_line()
-	var json := JSON.new()
-	if not json.parse(json_string) == OK:
-		printerr("JSON Parse Error: %s in %s at line %d" % [json.get_error_message(), json_string, json.get_error_line()])
-		return
-	solved_countries.assign(json.data["solved_countries"])
-	solved_capitals.assign(json.data["solved_capitals"])
-	_refresh_solved()
+	if not save_file:
+		print_debug("No save file exists yet!")
+	else:
+		var json_string := save_file.get_line()
+		var json := JSON.new()
+		if not json.parse(json_string) == OK:
+			printerr("JSON Parse Error: %s in %s at line %d" % [json.get_error_message(), json_string, json.get_error_line()])
+			return
+		solved_countries.assign(json.data["solved_countries"])
+		solved_capitals.assign(json.data["solved_capitals"])
+		_refresh_solved()
+		print_debug("Loaded save file.")
 
 func load_settings() -> void:
 	var config := ConfigFile.new()
 	var error := config.load("user://config.cfg")
 	if error != OK:
-		%DEV_LABEL.text = "Config load error: %s" % error_string(error)
-		printerr("Config load error: %s" % error_string(error))
+		if error == ERR_FILE_NOT_FOUND:
+			print_debug("No config file exists yet!")
+		else:
+			printerr("Config load error: %s" % error_string(error))
 	else:
 		show_solved_button.button_pressed = config.get_value("planet", "show_solved", false)
 		show_labels_button.button_pressed = config.get_value("planet", "show_labels", true)
@@ -81,6 +89,7 @@ func load_settings() -> void:
 		mute_music_button.button_pressed = config.get_value("sound", "music_muted", true)
 		settings.set_render_mode_silent(render_mode)
 		planet_3d.set_render_mode(render_mode)
+		print_debug("Loaded config file.")
 
 func solve_countries() -> void:
 	for i in range(len(solved_countries)):

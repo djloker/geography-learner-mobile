@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Geography Learner Mobile"
+config/name="Geography Learner"
 config/tags=PackedStringArray("projects")
 run/main_scene="uid://cfpxbgdrvs8n1"
 config/features=PackedStringArray("4.5", "Mobile")
