@@ -2,6 +2,7 @@ extends Camera3D
 
 signal country_selected(UV: Vector2)
 signal world_clicked
+signal space_clicked
 signal distance_changed(distance: float, delta: float)
 
 @export var min_FOV := 30.0
@@ -38,6 +39,7 @@ var animation_progress: float
 
 var _dragging_time := 0.0
 var _pick_waiting := false
+var _space_picked := false
 var _pick_UV: Vector2
 var _offset_latitude: float
 
@@ -88,8 +90,12 @@ func _unhandled_input(event: InputEvent) -> void:
 				else: ## we select on mouse release
 					mouse_drag = false
 					if _dragging_time < select_time:
-						country_selected.emit(_pick_UV)
-						world_clicked.emit()
+						if _space_picked:
+							space_clicked.emit()
+							_space_picked = false
+						else:
+							country_selected.emit(_pick_UV)
+							world_clicked.emit()
 			MOUSE_BUTTON_WHEEL_UP:
 				update_cam_distance(clampf(cam_distance - cam_distance_tick, min_distance, max_distance))
 				var progress := (cam_distance - min_distance) / distance_range_size
@@ -128,6 +134,8 @@ func _physics_process(delta: float) -> void:
 		if raycast.is_colliding():
 			var sphere_point := raycast.get_collision_point().normalized()
 			_pick_UV = sphere_point_to_UV(sphere_point)
+		else:
+			_space_picked = true
 		_pick_waiting = false
 	if mouse_drag:
 		_dragging_time += delta

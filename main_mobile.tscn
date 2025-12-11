@@ -216,4 +216,5 @@ environment = ExtResource("3_qvu74")
 [connection signal="solved_country" from="GUI/ButtonsPanelsVBox/CountryInputDialog" to="." method="_on_country_input_dialog_solved_country"]
 [connection signal="country_selected" from="Camera3D" to="." method="_on_camera_3d_country_selected"]
 [connection signal="distance_changed" from="Camera3D" to="." method="_on_camera_distance_changed"]
+[connection signal="space_clicked" from="Camera3D" to="." method="_on_camera_3d_space_clicked"]
 [connection signal="world_clicked" from="Camera3D" to="." method="_on_camera_3d_world_clicked"]

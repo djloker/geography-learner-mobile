@@ -243,6 +243,9 @@ func _refresh_input() -> void:
 func _on_camera_3d_world_clicked() -> void:
 	pass #country_input_dialog.drop_focus()
 
+func _on_camera_3d_space_clicked() -> void:
+	DisplayServer.virtual_keyboard_hide()
+
 func _on_camera_3d_country_selected(UV: Vector2) -> void:
 	var ids_image := country_ids.get_image()
 	## TODO unsure why width,height -1 here but it was there in the original code...
@@ -251,8 +254,6 @@ func _on_camera_3d_country_selected(UV: Vector2) -> void:
 		int(UV.y * float(ids_image.get_height()))).r8 - 1
 	if value > 0:
 		select(value)
-	#else:
-		#%SelectedLabel.text = "Unselected"
 
 func _on_camera_distance_changed(distance: float, delta: float) -> void:
 	planet_labels.visible = show_labels_button.button_pressed and distance > label_hide_threshold
