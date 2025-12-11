@@ -149,7 +149,7 @@ unique_name_in_owner = true
 layout_mode = 2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.9777748, 0, 0.2096502, 0, 1, 0, -0.2096502, 0, -0.9777748, 0, 0, 0)
+transform = Transform3D(0.6470661, 0, 0.76243156, 0, 1, 0, -0.76243156, 0, 0.6470661, 0, 0, 0)
 
 [node name="Planet3D" parent="." node_paths=PackedStringArray("sun_light") instance=ExtResource("18_hlluc")]
 unique_name_in_owner = true
@@ -157,6 +157,37 @@ orbit_speed = 0.1
 shaded_material = ExtResource("2_pcave")
 unshaded_material = ExtResource("19_2q1f4")
 sun_light = NodePath("../DirectionalLight3D")
+country_color_overrides = Dictionary[int, int]({
+1: 5,
+16: 5,
+17: 2,
+32: 5,
+40: 1,
+51: 0,
+62: 0,
+69: 4,
+75: 1,
+81: 7,
+83: 0,
+84: 3,
+86: 5,
+93: 6,
+96: 6,
+105: 4,
+110: 4,
+121: 7,
+136: 5,
+154: 1,
+156: 2,
+163: 5,
+188: 0,
+195: 6,
+197: 7,
+206: 5,
+211: 7,
+212: 0,
+233: 2
+})
 
 [node name="PlanetLabels" type="Node3D" parent="Planet3D"]
 unique_name_in_owner = true

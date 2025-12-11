@@ -1,0 +1,29 @@
+Chad - 211 - LtBlue(7)
+S. Sudan - 188 - DkBlue(0) from Purple
+Niger - 156 - Yellow(2) from Purple
+Algeria - 62 - DkBlue(0) from LtGreen
+Gabon - 75 - Pink(1) from Teal
+Eswatini - 206 Red(5) from LtGreen
+Moldova - 136 Red(5) from DkBlue
+Austria - 16 Red(5) from DkBlue
+Croatia 93 LtGreen(6) from Red
+Nepal 163 - Red(5) from Teal
+Greece - 84 Teal from Purple
+Afghanistan 1 Red from Pink
+Laos - 121 LtBlue from Pink
+Vietnam 233 Yellow from  Pink
+Indonesia - 96 LtGreen from DkBlue
+Brazil - 32 Teal from DkBlue
+Chile - 40 Pink from DkBlue
+El Salvador 195 LtGreen from Teal
+Cuba 51 DkBlue from Teal
+Namibia 154 Pink from Yellow
+Gambia 81 LtBlue from Pink
+Israel 105 - Purple from Pink
+Japan 110 - Purple from LtGreen
+Greenland 86 - Red from LtGreen
+Finland 69 Purple from Red 
+Azerbaijan 17 - Yellow from pink
+Somaliland 197 LtBlue from Red
+Eq Guinea 83 DkBlue from Teal
+Togo 212 DkBlue from Purple

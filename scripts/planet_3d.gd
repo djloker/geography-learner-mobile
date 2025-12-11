@@ -2,7 +2,7 @@
 extends Node3D
 
 enum RENDER_MODE {REALISTIC, UNSHADED, COLORIZED}
-const NUM_COLORS := 28
+const NUM_COLORS := 8
 
 @export var render_mode: RENDER_MODE:
 	set = set_render_mode
@@ -10,6 +10,8 @@ const NUM_COLORS := 28
 @export var shaded_material: ShaderMaterial
 @export var unshaded_material: ShaderMaterial
 @export var sun_light: DirectionalLight3D
+@export var country_color_overrides: Dictionary[int, int]
+
 
 @onready var mesh_instance: MeshInstance3D = $MeshInstance3D
 
@@ -19,7 +21,9 @@ var sun_direction: Vector3
 func _ready() -> void:
 	var country_color_indices: PackedInt32Array = unshaded_material.get_shader_parameter("countryColors")
 	for i in range(len(country_color_indices)):
-		if country_color_indices[i] == 0:
+		if i in country_color_overrides:
+			country_color_indices[i] = country_color_overrides[i]
+		else:
 			country_color_indices[i] = i % NUM_COLORS
 	unshaded_material.set_shader_parameter("countryColors", country_color_indices)
 
@@ -29,7 +33,7 @@ func _process(delta: float) -> void:
 		sun_direction = Vector3(sin(sun_progress), 0.0, -cos(sun_progress))
 		if shaded_material:
 			shaded_material.set_shader_parameter("lightDir", sun_direction)
-		if sun_light:
+		if sun_light and not Engine.is_editor_hint():
 			sun_light.look_at(sun_direction)
 
 func set_selected_id(ID: int) -> void:
