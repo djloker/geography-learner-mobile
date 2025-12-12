@@ -64,15 +64,15 @@ void fragment() {
 		float drawStrength = bordersStrength;
 		float solvedFactor = countriesSolved[ID] ? 1.0 : 0.0;
 		float unsolvedFactor = 1.0 - solvedFactor;
-		vec3 solvedCombined = borderSolvedColor * solvedFactor + borderUnsolvedColor * unsolvedFactor;
+		vec3 solvedCombined = (borderSolvedColor * solvedFactor) + (borderUnsolvedColor * unsolvedFactor);
 		if (ID == selectedID) {
-			solvedCombined = borderSelectedColor * bordersStrength + solvedCombined * bordersInverse;
+			solvedCombined = (borderSelectedColor * bordersStrength) + (solvedCombined * bordersInverse);
 			drawStrength = 1.0;
 		}
 		if (edge > borderEpsilon) {
 			bordersColor = solvedCombined * drawStrength;
 		} else {
-			bordersColor = max(solvedCombined * drawStrength - vec3(outlineStrength), 0.0);
+			bordersColor = max(solvedCombined * drawStrength * (1.0 - outlineStrength), 0.0);
 		}
 		//bordersColor = max(solvedCombined * drawStrength - ((1.0 - diff) * vec3(outlineStrength)), 0.0);
 

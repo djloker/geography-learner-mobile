@@ -82,7 +82,7 @@ void fragment() {
 		if (edge > borderEpsilon) {
 			bordersColor = solvedCombined * drawStrength;
 		} else {
-			bordersColor = max(solvedCombined * drawStrength - vec3(outlineStrength), 0.0);
+			bordersColor = max(solvedCombined * drawStrength * (1.0 - outlineStrength), 0.0);
 		}
 	}
 	else {

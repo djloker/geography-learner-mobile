@@ -10,10 +10,9 @@
 [ext_resource type="AudioStream" uid="uid://c5sill2ydm4ux" path="res://audio/Retro Mystic.ogg" id="5_ilvtw"]
 [ext_resource type="PackedScene" uid="uid://d0mxt4twx6bc7" path="res://country_input_dialog.tscn" id="8_1ex10"]
 [ext_resource type="ButtonGroup" uid="uid://nirdrmjr2euy" path="res://panels.button_group.tres" id="8_ucg0i"]
-[ext_resource type="Texture2D" uid="uid://isdvgdsgkebk" path="res://icons/2x/question_2x.png" id="11_0w4rd"]
+[ext_resource type="Texture2D" uid="uid://bv7xtxf4vggrj" path="res://icons/2x/information_2x.png" id="10_k6gxy"]
+[ext_resource type="Texture2D" uid="uid://bn0nokseq7apy" path="res://icons/2x/information_pressed_2x.png" id="11_2bnc1"]
 [ext_resource type="Texture2D" uid="uid://dmexk7af3qy8t" path="res://icons/2x/audioOn_2x.png" id="11_d0wab"]
-[ext_resource type="Texture2D" uid="uid://bcssdc7koiv03" path="res://icons/2x/question_pressed_2x.png" id="12_0w4rd"]
-[ext_resource type="Texture2D" uid="uid://burxcou37jgu0" path="res://icons/2x/audioOff_pressed_2x.png" id="12_lnqqy"]
 [ext_resource type="Texture2D" uid="uid://ddr433df3rnst" path="res://icons/2x/barsHorizontal_2x.png" id="13_d0wab"]
 [ext_resource type="Texture2D" uid="uid://cgoltrme7bhix" path="res://icons/2x/flag_2x.png" id="13_ilvtw"]
 [ext_resource type="Texture2D" uid="uid://c2er7epmmnf7y" path="res://icons/2x/flag_pressed_2x.png" id="14_2bnc1"]
@@ -22,10 +21,11 @@
 [ext_resource type="Texture2D" uid="uid://btch0omosnt2a" path="res://icons/2x/checkmark_2x.png" id="15_lnqqy"]
 [ext_resource type="Texture2D" uid="uid://csvyetg3ym72c" path="res://icons/2x/checkmark_pressed_2x.png" id="16_0w4rd"]
 [ext_resource type="PackedScene" uid="uid://dmwn2xu4nw7xn" path="res://word_bank.tscn" id="16_d0wab"]
+[ext_resource type="Texture2D" uid="uid://ch66c404v0r15" path="res://icons/1x/audioOff_1x.png" id="17_k6gxy"]
 [ext_resource type="PackedScene" uid="uid://801gaxanuxvr" path="res://planet.tscn" id="18_hlluc"]
 [ext_resource type="Texture2D" uid="uid://b43t6pf61i3lo" path="res://icons/2x/musicOn_2x.png" id="18_k6gxy"]
 [ext_resource type="Material" uid="uid://1cwe14agabsm" path="res://shaders/planet_unshaded_material.tres" id="19_2q1f4"]
-[ext_resource type="Texture2D" uid="uid://dxvhgs6su6ow1" path="res://icons/2x/musicOff_2x.png" id="19_6h84d"]
+[ext_resource type="Texture2D" uid="uid://bb6d7uvmur72v" path="res://icons/2x/musicOff_2x.png" id="19_6h84d"]
 [ext_resource type="PackedScene" uid="uid://s3p7d37w1stf" path="res://camera_3d.tscn" id="26_k6gxy"]
 
 [node name="MAIN" type="Node"]
@@ -80,8 +80,8 @@ size_flags_vertical = 0
 focus_mode = 3
 toggle_mode = true
 button_group = ExtResource("8_ucg0i")
-texture_normal = ExtResource("11_0w4rd")
-texture_pressed = ExtResource("12_0w4rd")
+texture_normal = ExtResource("10_k6gxy")
+texture_pressed = ExtResource("11_2bnc1")
 
 [node name="ShowLabelsButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
 unique_name_in_owner = true
@@ -104,16 +104,6 @@ toggle_mode = true
 texture_normal = ExtResource("15_lnqqy")
 texture_pressed = ExtResource("16_0w4rd")
 
-[node name="SFXButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-focus_mode = 3
-toggle_mode = true
-texture_normal = ExtResource("11_d0wab")
-texture_pressed = ExtResource("12_lnqqy")
-
 [node name="MuteMusicButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
 unique_name_in_owner = true
 layout_mode = 2
@@ -123,6 +113,16 @@ focus_mode = 3
 toggle_mode = true
 texture_normal = ExtResource("18_k6gxy")
 texture_pressed = ExtResource("19_6h84d")
+
+[node name="SFXButton" type="TextureButton" parent="GUI/ButtonsPanelsVBox/ButtonsHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+focus_mode = 3
+toggle_mode = true
+texture_normal = ExtResource("11_d0wab")
+texture_pressed = ExtResource("17_k6gxy")
 
 [node name="Settings" parent="GUI/ButtonsPanelsVBox" instance=ExtResource("15_d0wab")]
 unique_name_in_owner = true
@@ -162,9 +162,11 @@ country_color_overrides = Dictionary[int, int]({
 16: 5,
 17: 2,
 32: 5,
+37: 2,
 40: 1,
 51: 0,
 62: 0,
+67: 0,
 69: 4,
 75: 1,
 81: 7,
@@ -179,6 +181,7 @@ country_color_overrides = Dictionary[int, int]({
 136: 5,
 154: 1,
 156: 2,
+161: 7,
 163: 5,
 188: 0,
 195: 6,

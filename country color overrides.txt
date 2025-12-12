@@ -27,3 +27,6 @@ Azerbaijan 17 - Yellow from pink
 Somaliland 197 LtBlue from Red
 Eq Guinea 83 DkBlue from Teal
 Togo 212 DkBlue from Purple
+Central African Rep. 37 Yellow from Red
+Netherlands 161 LtBlue from Pink
+Estonia 67 DkBlue from Teal
