@@ -1,15 +1,15 @@
 # Geography Learner (Mobile)
 
 <p align="center">
-    <img src="icons/banner.png" width="400" alt="Geography Learner logo">
+	<img src="icons/banner.png" width="400" alt="Geography Learner logo">
 </p>
 
 ## A fun way to learn the countries of the world!
 
 **Geography Learner is a fun, intuitive way to learn the names and capital cities of the countries of the world.** Featuring beautiful normal-mapped topography and a starry backdrop, a copy-pasteable word bank, automatic solving and multiple display modes, Geography Learner is an excellent way to progressively build your knowledge of world geography.<details>
-    <summary>Development of Geography Learner was inspired by a trivia question I could not answer: **Where is Mt. Kilimanjaro located?**
-    </summary>
-    ***Tanzania, of course!***
+	<summary>Development of Geography Learner was inspired by a trivia question I could not answer: **Where is Mt. Kilimanjaro located?**
+	</summary>
+	***Tanzania, of course!***
 </details>
 
 ## Help!

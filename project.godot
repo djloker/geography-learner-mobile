@@ -26,8 +26,8 @@ Utilities="*res://scripts/utilities.gd"
 
 window/size/viewport_width=720
 window/size/viewport_height=1280
-window/size/window_width_override=400
-window/size/window_height_override=800
+window/size/window_width_override=460
+window/size/window_height_override=900
 window/handheld/orientation=6
 
 [editor_plugins]
@@ -41,9 +41,10 @@ folder_colors={
 "res://android/": "gray",
 "res://audio/": "green",
 "res://build/": "gray",
-"res://countries/": "green",
+"res://countries/": "yellow",
 "res://environment/": "purple",
 "res://icons/": "green",
+"res://notes/": "yellow",
 "res://screenshots/": "gray",
 "res://scripts/": "blue",
 "res://shaders/": "blue",
