@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://frjqxsbw7ywe"
-path="res://.godot/imported/banner.png-0bbb11c20ca73f22a2a949c262463096.ctex"
+uid="uid://sgwcxsdpaomf"
+path="res://.godot/imported/planet03_1024.png-a4ec9a084dce50a44d81d2667f3188d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/banner.png"
-dest_files=["res://.godot/imported/banner.png-0bbb11c20ca73f22a2a949c262463096.ctex"]
+source_file="res://icons/logos/planet03_1024.png"
+dest_files=["res://.godot/imported/planet03_1024.png-a4ec9a084dce50a44d81d2667f3188d4.ctex"]
 
 [params]
 
